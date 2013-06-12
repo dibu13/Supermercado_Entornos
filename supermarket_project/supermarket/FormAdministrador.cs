@@ -19,7 +19,7 @@ namespace supermarket
 
         private void button1_Click(object sender, EventArgs e)
         {
-            StreamWriter fichero_clientes = new StreamWriter("C:\\Users\\Dibu\\Documents\\GitHub\\Supermercado_Entornos\\supermarket_project\\Ficheros\\usuarios.txt",true);
+            StreamWriter fichero_clientes = new StreamWriter("Ficheros\\usuarios.txt",true);
 
             fichero_clientes.WriteLine(T_Dni.Text + "#" + T_Dni.Text + "#" + T_Direc.Text + "#" + T_Email.Text + "#" + T_Pass.Text + "#" + T_Admin.Text);
 
