@@ -8,5 +8,3 @@ C:\Users\Dibu\Documents\GitHub\Supermercado_Entornos\entornos con los de clase\s
 C:\Users\Dibu\Documents\GitHub\Supermercado_Entornos\entornos con los de clase\supermarket\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\Dibu\Documents\GitHub\Supermercado_Entornos\entornos con los de clase\supermarket\obj\x86\Debug\supermarket.exe
 C:\Users\Dibu\Documents\GitHub\Supermercado_Entornos\entornos con los de clase\supermarket\obj\x86\Debug\supermarket.pdb
-C:\Users\Norber\Documents\GitHub\Supermercado_Entornos\entornos con los de clase\supermarket\obj\x86\Debug\supermarket.exe
-C:\Users\Norber\Documents\GitHub\Supermercado_Entornos\entornos con los de clase\supermarket\obj\x86\Debug\supermarket.pdb
