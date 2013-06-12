@@ -8,6 +8,7 @@ C:\Users\Dibu\Documents\GitHub\Supermercado_Entornos\entornos con los de clase\s
 C:\Users\Dibu\Documents\GitHub\Supermercado_Entornos\entornos con los de clase\supermarket\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\Dibu\Documents\GitHub\Supermercado_Entornos\entornos con los de clase\supermarket\obj\x86\Debug\supermarket.exe
 C:\Users\Dibu\Documents\GitHub\Supermercado_Entornos\entornos con los de clase\supermarket\obj\x86\Debug\supermarket.pdb
+<<<<<<< HEAD
 C:\Users\Melancas\Documents\GitHub\Supermercado_Entornos\entornos con los de clase\supermarket\obj\x86\Debug\supermarket.exe
 C:\Users\Melancas\Documents\GitHub\Supermercado_Entornos\entornos con los de clase\supermarket\obj\x86\Debug\supermarket.pdb
 C:\Users\Melancas\Documents\GitHub\Supermercado_Entornos\entornos con los de clase\supermarket\bin\Debug\supermarket.exe
@@ -19,3 +20,7 @@ C:\Users\Melancas\Documents\GitHub\Supermercado_Entornos\entornos con los de cla
 C:\Users\Melancas\Documents\GitHub\Supermercado_Entornos\entornos con los de clase\supermarket\obj\x86\Debug\supermarket.Properties.Resources.resources
 C:\Users\Melancas\Documents\GitHub\Supermercado_Entornos\entornos con los de clase\supermarket\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\Melancas\Documents\GitHub\Supermercado_Entornos\entornos con los de clase\supermarket\obj\x86\Debug\GenerateResource.write.1.tlog
+=======
+C:\Users\Alex\Documents\GitHub\Supermercado_Entornos\entornos con los de clase\supermarket\obj\x86\Debug\supermarket.exe
+C:\Users\Alex\Documents\GitHub\Supermercado_Entornos\entornos con los de clase\supermarket\obj\x86\Debug\supermarket.pdb
+>>>>>>> casos de uso

@@ -1,105 +1,105 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="b7581daa-8c94-4a37-9361-c26cfdc9d0eb" name="casosdeuso" linkedPackageId="287654f6-f37e-4bd1-ab94-fa6aeddf0ff7" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="b7581daa-8c94-4a37-9361-c26cfdc9d0eb" name="casosdeuso" linkedPackageId="287654f6-f37e-4bd1-ab94-fa6aeddf0ff7" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <packagedElements>
     <useCaseModelRootHasTypes>
       <actor Id="db46ad53-d0c2-43d6-917a-048f6ccc6ea3" name="ADMINISTRADOR" isAbstract="false" isLeaf="false">
         <elementDefinition Id="75f39947-d0f2-4537-85e1-03fee43e4a18" />
         <targetEnds>
-          <association Id="bdca3779-4efd-4d4c-b64e-c48b93b609dc" isDerived="false" sourceEndRoleName="ADMINISTRADOR" targetEndRoleName="VER PRODUCTOS" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="ce38a3a8-b7fa-4f5f-84c2-a41f664d8ffc" LastKnownName="VER PRODUCTOS" />
+          <association Id="9a180de9-4bcf-4832-8893-dbb22a09997c" isDerived="false" sourceEndRoleName="ADMINISTRADOR" targetEndRoleName="LOGOUT" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f7e72a49-d222-442f-bd89-6366c61f0053" LastKnownName="LOGOUT" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="c88219d1-6f8a-43b2-a839-91309b78d792" name="ADMINISTRADOR" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="d36f9b80-6e81-400f-ab16-7d35565c1e04" />
+                <memberEnd Id="f5d3c9e5-1de3-4fac-9b78-10be76282e2b" name="ADMINISTRADOR" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="957b7935-7d52-4d3e-9e5e-6d9f7c7fadae" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="6047d207-af28-49a3-8b2d-9f94e510da1e" name="VER PRODUCTOS" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="f49280bb-4280-4665-8797-94783770dd06" />
+                <memberEnd Id="5a93c6ab-5509-4b63-9dc9-12a15f6a38d5" name="LOGOUT" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="89fc109b-f657-4773-923a-96af74719297" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="71240d9a-4675-4c59-940b-6f01171a7b40" />
+            <elementDefinition Id="b121602c-8c0c-486f-9b4b-ec830d727bd7" />
           </association>
-          <association Id="a1f85fcc-442d-4ac3-8f52-dce2cf28ceb5" isDerived="false" sourceEndRoleName="ADMINISTRADOR" targetEndRoleName="DESCONECTARSE" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="f7e72a49-d222-442f-bd89-6366c61f0053" LastKnownName="DESCONECTARSE" />
+          <association Id="c8b96caf-1e6e-4475-9a0c-df6eef2b4ee2" isDerived="false" sourceEndRoleName="ADMINISTRADOR" targetEndRoleName="LOGIN" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="bb9ba9f6-1afa-4807-a9e4-3fba7f12f772" LastKnownName="LOGIN" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="99b56f67-be7c-435e-a136-72289806ef4a" name="ADMINISTRADOR" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="375f2e9d-0f75-44db-ade6-403ad8e7ba36" />
+                <memberEnd Id="1962d28a-f194-4c77-b5e5-9436e03eb63c" name="ADMINISTRADOR" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="88682ca1-ef11-4941-a9e4-e7726e53aa07" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="8f8cd6b0-fed1-45dd-bdc3-6bd8d43d0b53" name="DESCONECTARSE" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="cd569984-1efe-4b74-b957-4b79cb0df4ad" />
+                <memberEnd Id="96fddc31-c8bb-4c9a-91b9-5502768aabb7" name="LOGIN" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3ad4d56d-b41e-4fe2-b002-b9b2c66ea3eb" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="268507d3-d777-43a8-a671-c331f8a0d62c" />
+            <elementDefinition Id="9146e464-ad08-49de-a4aa-ff3d791be359" />
           </association>
-          <association Id="6227c768-748e-42b9-b58f-1a3ef55b8941" isDerived="false" sourceEndRoleName="ADMINISTRADOR" targetEndRoleName="BORRAR PRODS/USERS/CATEGORIAS" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="fca57ccd-c11c-4b7b-afde-5a616d20aede" LastKnownName="BORRAR PRODS/USERS/CATEGORIAS" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="e7b7a5a9-81d8-4da8-8111-3b1f8d4e6075" name="ADMINISTRADOR" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="70ba8e17-d530-4cf4-8249-9a743b207677" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="f3c7f70f-2664-4c84-9004-645928c666a4" name="BORRAR PRODS/USERS/CATEGORIAS" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="a254cc55-dcea-4157-8ea5-d2016e381a55" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="808a223d-fada-4efd-aa6b-4dba5ec13e50" />
-          </association>
-          <association Id="67b2fcec-b828-427e-8f09-51bd61340d83" isDerived="false" sourceEndRoleName="ADMINISTRADOR" targetEndRoleName="MODIFICAR PRODS/USERS/CATEGORIAS " isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="6a819b97-4f51-4ea9-896c-b6163d37a763" LastKnownName="MODIFICAR PRODS/USERS/CATEGORIAS " />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="3cb0c64d-de09-4ed9-8d30-81f8a06ef0aa" name="ADMINISTRADOR" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="bff2fd7f-b0d0-4a2c-b14b-aadab01908b0" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="2d6c383e-46f7-4145-a024-6ac7411ed957" name="MODIFICAR PRODS/USERS/CATEGORIAS " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="af62d21e-d844-4df0-96e3-62cec0058eda" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="21046113-fea9-45ba-9d7d-f3f6193d6f2b" />
-          </association>
-          <association Id="7b85e6e7-c93b-46ad-a7cb-689ee21d4f78" isDerived="false" sourceEndRoleName="ADMINISTRADOR" targetEndRoleName="CREAR PRODS/USERS/CATEGORIAS" isLeaf="false" isAbstract="false">
+          <association Id="f7b2953b-b0e4-42c6-b7f3-d3313ef53d1c" isDerived="false" sourceEndRoleName="ADMINISTRADOR" targetEndRoleName="CREAR PRODS/USERS/CATEGORIAS" isLeaf="false" isAbstract="false">
             <useCaseMoniker Id="28e19b8b-4018-47f2-8364-f1e2ffa65a94" LastKnownName="CREAR PRODS/USERS/CATEGORIAS" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="0fed1a6b-0f3e-4b14-94ab-a352d8aa573e" name="ADMINISTRADOR" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="5eab9a1f-7b8f-4418-970d-769bf724a2b2" />
+                <memberEnd Id="0cb65986-30f9-40f6-8af6-43c55555580d" name="ADMINISTRADOR" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0644b2f0-65eb-44e5-977a-871663084d62" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="6bd07e43-425f-4ce1-83cc-1b44741c3902" name="CREAR PRODS/USERS/CATEGORIAS" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="02033eb0-dd26-4acc-a9b9-bfcddd115576" />
+                <memberEnd Id="01c41d7f-3b16-4ec7-846e-9b6c699786ff" name="CREAR PRODS/USERS/CATEGORIAS" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6f1e490b-5c22-458a-82ed-d249a90eec8e" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="a21d9df1-74be-4d5f-a2a4-c9b0863f720e" />
+            <elementDefinition Id="701a7e80-f008-494b-a0c5-776ec4177e39" />
           </association>
-          <association Id="8795688f-00f5-4773-b7d4-e45640288cee" isDerived="false" sourceEndRoleName="ADMINISTRADOR" targetEndRoleName="LISTADO_PEDIDOS" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="0e80bdfc-5499-42f9-98bc-968ab887bf53" LastKnownName="LISTADO_PEDIDOS" />
+          <association Id="c2336e9d-03df-4fec-aaa8-fa754f004dcc" isDerived="false" sourceEndRoleName="ADMINISTRADOR" targetEndRoleName="VER LISTADO DE PEDIDOS" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="eae390a9-30d1-41b4-a74b-7e79a7c8d52d" LastKnownName="VER LISTADO DE PEDIDOS" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="01de2673-37da-489f-a399-0c7ee883771c" name="ADMINISTRADOR" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="9176bbaa-efe2-42e9-a78a-f60936440259" />
+                <memberEnd Id="1ad164a3-94d8-4803-bdf3-c1d2db8b72a9" name="ADMINISTRADOR" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="468f7934-067c-4711-bc90-5d72a69b7ed1" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="3ed1a71a-80e2-4571-bdff-d7e1fc562243" name="LISTADO_PEDIDOS" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="97f047a4-057c-4c72-bf36-df4585c57482" />
+                <memberEnd Id="baeb37e1-d97d-4f10-a1b2-210fa104affb" name="VER LISTADO DE PEDIDOS" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d67ec2dd-68d3-4aaf-9b67-af7a568f708d" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="036663ce-f87d-4225-a903-6770fbf8bd1c" />
+            <elementDefinition Id="d07b845b-70ad-420b-96cd-bba499fb5f3c" />
+          </association>
+          <association Id="04eb1e52-1d31-49d3-80ec-6c8adf23261b" isDerived="false" sourceEndRoleName="ADMINISTRADOR" targetEndRoleName="MODIFICAR PRODS/USERS/CATEGORIAS " isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6a819b97-4f51-4ea9-896c-b6163d37a763" LastKnownName="MODIFICAR PRODS/USERS/CATEGORIAS " />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cddafab7-597d-40e2-afc2-fe31a893478c" name="ADMINISTRADOR" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="600ca0b0-783e-4841-b1f6-d8cb3a3a0711" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ba12e5ec-e6bd-4811-9c3f-29df59998cdd" name="MODIFICAR PRODS/USERS/CATEGORIAS " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="670a8421-88c9-4ed3-a304-e74e4b4001b6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a39fee26-4166-45e4-bfa1-2670d54031a0" />
+          </association>
+          <association Id="41e5ed87-75be-4403-8173-5f7da57cf13d" isDerived="false" sourceEndRoleName="ADMINISTRADOR" targetEndRoleName="BORRAR PRODS/USERS/CATEGORIAS" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fca57ccd-c11c-4b7b-afde-5a616d20aede" LastKnownName="BORRAR PRODS/USERS/CATEGORIAS" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e790f5e9-0486-48e7-96dd-e09e7f028acb" name="ADMINISTRADOR" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bac5a7b4-6566-4146-8407-41a4bb8fa4f8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="41018a7c-7579-4328-a9a4-d4848c947258" name="BORRAR PRODS/USERS/CATEGORIAS" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7f1781ec-7184-4ee8-b364-4a364563ae04" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3215bf2b-2f59-4a6c-9a72-75739f3bfbd6" />
           </association>
         </targetEnds>
       </actor>
@@ -108,167 +108,264 @@
       <actor Id="238ac563-b45c-48fe-9607-864f865a4c8f" name="CLIENTE" isAbstract="false" isLeaf="false">
         <elementDefinition Id="5f73cf5a-59d0-4901-b955-0a2622a2ba4b" />
         <targetEnds>
-          <association Id="ebb0592b-607f-460f-8ebb-6521a6aabc54" isDerived="false" sourceEndRoleName="CLIENTE" targetEndRoleName="VER PRODUCTOS" isLeaf="false" isAbstract="false">
+          <association Id="d8d4fd40-6e3a-4b5b-81e7-bd71291fed5e" isDerived="false" sourceEndRoleName="CLIENTE" targetEndRoleName="LOGIN" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="bb9ba9f6-1afa-4807-a9e4-3fba7f12f772" LastKnownName="LOGIN" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e84cff23-e986-4812-ad60-abcbfcd531bf" name="CLIENTE" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e2258bb5-e3c3-41e0-ad79-c5c69715e852" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4e919060-98b6-4492-b493-d89be383c919" name="LOGIN" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f5cfa1e2-2029-4dad-8641-f8f39107c27b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bcd47729-0ccd-48fb-884f-67b32420fe18" />
+          </association>
+          <association Id="18c2f255-1466-413b-825f-ef760290bf69" isDerived="false" sourceEndRoleName="CLIENTE" targetEndRoleName="LOGOUT" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f7e72a49-d222-442f-bd89-6366c61f0053" LastKnownName="LOGOUT" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9b23f211-488a-46fa-9008-2cfdf93dae93" name="CLIENTE" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="da2b1d40-4117-47c5-b500-32cd1e1871ab" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="93412b92-f7ce-4f8c-b72e-3f60e0b56097" name="LOGOUT" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2b5ff5dc-adf2-4940-9c56-3bfe8b2de3a9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="210b2047-5281-40c6-b646-35fbedc302e4" />
+          </association>
+          <association Id="08709165-e740-4b3a-979d-3db812adfcab" isDerived="false" sourceEndRoleName="CLIENTE" targetEndRoleName="VER PRODUCTOS" isLeaf="false" isAbstract="false">
             <useCaseMoniker Id="ce38a3a8-b7fa-4f5f-84c2-a41f664d8ffc" LastKnownName="VER PRODUCTOS" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="a6f04197-0ebb-434d-a9c9-08fe993719e4" name="CLIENTE" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="306cbf8c-4979-4465-a8c1-1adda7342e90" />
+                <memberEnd Id="c1eaa5b3-77da-4541-9d01-34cd964e038e" name="CLIENTE" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="aa150813-4de7-4d3e-88cb-24bad0345887" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="24f592dd-06fc-4c92-b61f-45ac8243ee59" name="VER PRODUCTOS" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="c5ff3545-0428-4dd7-9021-865b4956349c" />
+                <memberEnd Id="5f3f7344-08ef-469b-afd6-5dd6e8e31956" name="VER PRODUCTOS" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="973753ac-2147-475d-bbaa-816eccb6e57b" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="13747f6e-63ad-4c3f-a3de-81691fa2401c" />
+            <elementDefinition Id="c38f8e5d-c342-4d17-a38f-49b681e56153" />
           </association>
-          <association Id="91b0887f-f591-4e50-876d-9a18e8c3afef" isDerived="false" sourceEndRoleName="CLIENTE" targetEndRoleName="DESCONECTARSE" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="f7e72a49-d222-442f-bd89-6366c61f0053" LastKnownName="DESCONECTARSE" />
+          <association Id="e558f3f3-8b91-4bdd-b106-2a8fbf76b895" isDerived="false" sourceEndRoleName="CLIENTE" targetEndRoleName="AÑADIR AL CARRO" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c2f6dddd-7154-49a3-a9da-420366e01425" LastKnownName="AÑADIR AL CARRO" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="c8df6845-b83d-44ef-a52a-4bfda9ec29c2" name="CLIENTE" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="d4f5b3aa-87d3-44cd-ac52-38731c72730f" />
+                <memberEnd Id="e352ba52-92f2-40be-bc09-74a6b53bc5fa" name="CLIENTE" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a2eb1dca-e7fc-48a7-a28a-81d764a04449" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="af49276e-5962-4472-87ac-1872e681b89d" name="DESCONECTARSE" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="f6f55cbb-a6a9-4462-b42d-bbe9e4f7b0f6" />
+                <memberEnd Id="052c8607-a382-4980-bf6a-d36a76de07f3" name="AÑADIR AL CARRO" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8b98f6ca-fb74-4025-8bc5-3f9b54e6185c" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="0c2d7931-39f7-49f6-a71e-0f845a8ea3e5" />
+            <elementDefinition Id="f02a8f26-b819-452c-9760-8a34dd81daa6" />
           </association>
-          <association Id="9f01f6fd-c583-46e6-8e02-f17c440d0100" isDerived="false" sourceEndRoleName="CLIENTE" targetEndRoleName="AÑADIR CARRO" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="c2f6dddd-7154-49a3-a9da-420366e01425" LastKnownName="AÑADIR CARRO" />
+          <association Id="d0b3f9a5-d901-4966-b148-a056d1b38c92" isDerived="false" sourceEndRoleName="CLIENTE" targetEndRoleName="PEDIDOS ORDENADOS" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0e80bdfc-5499-42f9-98bc-968ab887bf53" LastKnownName="PEDIDOS ORDENADOS" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="bd36f053-0a33-46e1-8b29-de65916cc612" name="CLIENTE" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="fdf4df21-5cf2-4c1f-a9fc-2434c05e0ada" />
+                <memberEnd Id="9bbe74f2-05b5-4c96-8ec8-f413e0dd0da5" name="CLIENTE" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="17e79035-76b5-41d4-8fff-44452c26a329" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="d79cdd4f-f486-471d-95ca-ae0c09d85ec6" name="AÑADIR CARRO" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="027d6118-5d6b-449e-88e3-8923e7b35ca6" />
+                <memberEnd Id="8926a77b-c99f-458a-92db-0fede9868004" name="PEDIDOS ORDENADOS" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f765b6f4-524b-4afc-b5a8-9e6c8c8ae263" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="36ed9428-8a0c-40d1-a957-c327a1ab1ad7" />
+            <elementDefinition Id="f9fb8f3c-e9c3-4f68-ad74-e1d84812b042" />
           </association>
-          <association Id="6fa4ef94-8fec-4e6e-bcb4-12c854bc78c4" isDerived="false" sourceEndRoleName="CLIENTE" targetEndRoleName="FINALIZAR CARRO" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="578f9a3c-c5f5-4673-9926-b9de14b4bc40" LastKnownName="FINALIZAR CARRO" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="201c0e3f-9b42-4e01-8865-81f5297fe1bf" name="CLIENTE" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="d4e56bdc-ffa8-4bd9-bd98-6a1d39943695" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="a11a0a64-a85b-4a6d-89f1-ba3f00a13396" name="FINALIZAR CARRO" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="dbc05a33-8587-4714-b1d6-aa96fbf21507" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="d430085d-b12e-4795-8062-442727900292" />
-          </association>
-          <association Id="7bf1ad38-9397-48df-8776-dbe2fcb884fe" isDerived="false" sourceEndRoleName="CLIENTE" targetEndRoleName="MODIFICAR DIRECCION" isLeaf="false" isAbstract="false">
+          <association Id="93108865-dfac-46d6-af46-f1df7417d144" isDerived="false" sourceEndRoleName="CLIENTE" targetEndRoleName="MODIFICAR DIRECCION" isLeaf="false" isAbstract="false">
             <useCaseMoniker Id="c4fe9995-cc4a-4efc-9806-0b5e0abec3c9" LastKnownName="MODIFICAR DIRECCION" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="ce403557-aa77-408e-94fd-4417e1c06a72" name="CLIENTE" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="d9fe12d5-3c93-4aac-90fa-a98c3f4aab0a" />
+                <memberEnd Id="a6e8f2ef-7416-4e3a-a440-2cc68c02598d" name="CLIENTE" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ac94a126-e0d0-44c5-b358-622638b93d24" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="68e6ca4d-2bdf-4267-9653-fd2eba816f36" name="MODIFICAR DIRECCION" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="ec4bcd1f-37b8-4af1-ab18-bc3f59012418" />
+                <memberEnd Id="28f5b1e5-31ac-47e1-ad24-f747013be68f" name="MODIFICAR DIRECCION" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4b5d1c3a-f223-4b39-8521-56bef861655f" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="3148a213-86b5-47e3-aa67-840a441e637c" />
+            <elementDefinition Id="b258ed71-50ea-4496-96c5-2f1f6481aa85" />
           </association>
-          <association Id="26e28c0e-fb2f-4d3d-b1e8-ac94ad1293c9" isDerived="false" sourceEndRoleName="CLIENTE" targetEndRoleName="VER FACTURA" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="eae390a9-30d1-41b4-a74b-7e79a7c8d52d" LastKnownName="VER FACTURA" />
+          <association Id="5075b6be-d1d8-4ef3-bf53-10dd826011d2" isDerived="false" sourceEndRoleName="CLIENTE" targetEndRoleName="FINALIZAR EL CARRO" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="578f9a3c-c5f5-4673-9926-b9de14b4bc40" LastKnownName="FINALIZAR EL CARRO" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="ca4617ed-ad2e-458c-a592-0e7ec2fb80d2" name="CLIENTE" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="d259e427-4fa6-4279-b7dc-8fd169e644e0" />
+                <memberEnd Id="6be0d3d5-7e37-473e-9b38-7b9d7daf6e00" name="CLIENTE" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fe297a70-68db-4274-b98d-0213d44bd423" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="e9085190-1df0-4858-83ad-d851f470d5e1" name="VER FACTURA" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="3c820a72-d690-4d7f-b08e-73978316e710" />
+                <memberEnd Id="3a7fe3e1-c69c-4695-b9da-d95c2af3eceb" name="FINALIZAR EL CARRO" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9b3a3f3a-3f6b-4a65-b27d-6ea4443ac27a" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="b9ff60c0-56b1-4cc8-bb84-168b77e9b84e" />
+            <elementDefinition Id="2d7ad380-2d22-42fc-a2e1-9c5892d70b00" />
           </association>
         </targetEnds>
       </actor>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="f7e72a49-d222-442f-bd89-6366c61f0053" name="DESCONECTARSE" isAbstract="false" isLeaf="false">
+      <useCase Id="f7e72a49-d222-442f-bd89-6366c61f0053" name="LOGOUT" isAbstract="false" isLeaf="false">
         <elementDefinition Id="f57a3e20-55fe-4f32-bea7-5dfbbdfd95f8" />
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
       <useCase Id="ce38a3a8-b7fa-4f5f-84c2-a41f664d8ffc" name="VER PRODUCTOS" isAbstract="false" isLeaf="false">
         <elementDefinition Id="d63d4737-a68e-490d-b410-f3e9bc95e5ce" />
+        <additions>
+          <include Id="3c5f27c6-582a-46ba-a196-57d6ccb28ff8">
+            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA DATOS" />
+            <elementDefinition Id="38249b35-3c67-4b0a-aca1-8d2ad4eb0f49" />
+          </include>
+        </additions>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
       <useCase Id="fca57ccd-c11c-4b7b-afde-5a616d20aede" name="BORRAR PRODS/USERS/CATEGORIAS" isAbstract="false" isLeaf="false">
         <elementDefinition Id="8c6bce7b-a664-4827-a001-ef9d933563e5" />
+        <additions>
+          <include Id="f161469e-3f99-4cd8-9da8-240a3a37d292">
+            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA DATOS" />
+            <elementDefinition Id="4b4f608b-2694-482e-bb12-7b23c8bc94b6" />
+          </include>
+        </additions>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
       <useCase Id="6a819b97-4f51-4ea9-896c-b6163d37a763" name="MODIFICAR PRODS/USERS/CATEGORIAS " isAbstract="false" isLeaf="false">
         <elementDefinition Id="6a6101e4-0e5a-4bd4-a3c3-a5baf6bca491" />
+        <additions>
+          <include Id="afb74bda-bdf9-4dc1-8bd1-5219aa482f33">
+            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA DATOS" />
+            <elementDefinition Id="cf0a01b0-c838-407c-b272-1179ea711035" />
+          </include>
+        </additions>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
       <useCase Id="28e19b8b-4018-47f2-8364-f1e2ffa65a94" name="CREAR PRODS/USERS/CATEGORIAS" isAbstract="false" isLeaf="false">
         <elementDefinition Id="0dfe82f5-c827-4b73-b18a-ea7303162cbd" />
+        <additions>
+          <include Id="1d1addce-c3cd-4676-ba3c-b529912e9cf3">
+            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA DATOS" />
+            <elementDefinition Id="3e249c22-b21f-4647-a121-8f29a2d55f36" />
+          </include>
+        </additions>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="0e80bdfc-5499-42f9-98bc-968ab887bf53" name="LISTADO_PEDIDOS" isAbstract="false" isLeaf="false">
+      <useCase Id="0e80bdfc-5499-42f9-98bc-968ab887bf53" name="PEDIDOS ORDENADOS" isAbstract="false" isLeaf="false">
         <elementDefinition Id="0e7bef1c-69db-4d36-ab84-c6592379a80f" />
+        <additions>
+          <include Id="d9d78377-67e2-4e81-9621-9259ff94f678">
+            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA DATOS" />
+            <elementDefinition Id="52012e82-dec8-4aaa-ac65-88fe88043e21" />
+          </include>
+        </additions>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="eae390a9-30d1-41b4-a74b-7e79a7c8d52d" name="VER FACTURA" isAbstract="false" isLeaf="false">
+      <useCase Id="eae390a9-30d1-41b4-a74b-7e79a7c8d52d" name="VER LISTADO DE PEDIDOS" isAbstract="false" isLeaf="false">
         <elementDefinition Id="d1175ff3-af09-4c2e-bc57-c8db1eb9453c" />
+        <additions>
+          <include Id="dcd220cb-9cd3-4154-b0fa-376898013fcb">
+            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA DATOS" />
+            <elementDefinition Id="819f5d61-835d-4a1a-9d15-46f237e356ee" />
+          </include>
+        </additions>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
       <useCase Id="c4fe9995-cc4a-4efc-9806-0b5e0abec3c9" name="MODIFICAR DIRECCION" isAbstract="false" isLeaf="false">
         <elementDefinition Id="f285d99e-6e66-4734-ad77-e9b34129b0d0" />
+        <additions>
+          <include Id="1209462a-5cae-417d-85f7-7f747e8a2331">
+            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA DATOS" />
+            <elementDefinition Id="7906a6f6-9074-4f1f-9e07-3b54f1f1240f" />
+          </include>
+        </additions>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="578f9a3c-c5f5-4673-9926-b9de14b4bc40" name="FINALIZAR CARRO" isAbstract="false" isLeaf="false">
+      <useCase Id="578f9a3c-c5f5-4673-9926-b9de14b4bc40" name="FINALIZAR EL CARRO" isAbstract="false" isLeaf="false">
         <elementDefinition Id="d253a48d-4195-47bc-8e5a-8e2347cdfd77" />
+        <additions>
+          <include Id="429f1165-392b-4396-88b3-0c1750e5d910">
+            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA DATOS" />
+            <elementDefinition Id="a4ad7e3e-45d0-4660-969a-99ca27a84a8a" />
+          </include>
+        </additions>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="c2f6dddd-7154-49a3-a9da-420366e01425" name="AÑADIR CARRO" isAbstract="false" isLeaf="false">
+      <useCase Id="c2f6dddd-7154-49a3-a9da-420366e01425" name="AÑADIR AL CARRO" isAbstract="false" isLeaf="false">
         <elementDefinition Id="1b0a1e80-4e80-48cb-844c-db1aafc92f9b" />
+        <additions>
+          <include Id="ad9560fc-599e-4493-bb72-4a23fbc647a6">
+            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA DATOS" />
+            <elementDefinition Id="d50bd67a-ef20-4bf2-8dc2-bac039bf67ee" />
+          </include>
+        </additions>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
       <actor Id="e38586ed-a08d-40e5-bca2-ba72cd498244" name="PROGRAMA" isAbstract="false" isLeaf="false">
         <elementDefinition Id="92daaa5c-31b8-46db-b03c-f257abf6baf8" />
+        <targetEnds>
+          <association Id="c1fa63f6-603e-42cf-8c42-d795a26c55d4" isDerived="false" sourceEndRoleName="PROGRAMA" targetEndRoleName="COMPRUEBA DATOS" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA DATOS" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f5c63211-c631-40e7-aeb9-7b2f3b60c54f" name="PROGRAMA" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="348b558e-2fa7-483a-abd7-d618018fb223" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6be31e46-bcb2-4d9f-b481-912e8c0b9491" name="COMPRUEBA DATOS" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9799a64f-ff33-4523-9ba0-4b03408e6c94" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fc98a3d8-5c57-4a95-b460-c2291c505e27" />
+          </association>
+        </targetEnds>
       </actor>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="cc7f1aa4-6836-44a0-afd4-5bc1835c36c4" name="MUESTRA RESULTADOS POR PANTALLA" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="70d2bc35-212d-4ba6-b42c-57fb89a7455f" />
+      <useCase Id="bb9ba9f6-1afa-4807-a9e4-3fba7f12f772" name="LOGIN" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4c95b98b-0a3c-493e-9649-aafdad4dd30f" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" name="COMPRUEBA DATOS" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7" />
         <additions>
-          <include Id="6a44996e-2d75-4e6c-98f0-79e5f07093bf">
-            <useCaseMoniker Id="0e80bdfc-5499-42f9-98bc-968ab887bf53" LastKnownName="LISTADO_PEDIDOS" />
-            <elementDefinition Id="3ba32432-8380-478d-a58d-9aa0a2f28358" />
+          <include Id="d6f2950a-cd07-41c5-bccd-47c190079c13">
+            <useCaseMoniker Id="bb9ba9f6-1afa-4807-a9e4-3fba7f12f772" LastKnownName="LOGIN" />
+            <elementDefinition Id="f81da582-bb9b-47a1-bc41-1d3913397dab" />
+          </include>
+          <include Id="e09dbedc-6abb-483a-a3c6-1d0700d21587">
+            <useCaseMoniker Id="f7e72a49-d222-442f-bd89-6366c61f0053" LastKnownName="LOGOUT" />
+            <elementDefinition Id="5bc3f5f0-0c5f-4012-977a-a826d2be460c" />
           </include>
         </additions>
       </useCase>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="0b219d3e-0bda-428b-864f-ca6b95352832"
   name="supermercado" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -1291,20 +1291,20 @@
         isLeaf="false">
         <targetEnds>
           <association
-            Id="71240d9a-4675-4c59-940b-6f01171a7b40"
+            Id="ebd95e6d-d016-4f08-97ec-b0c294df38c0"
             isDerived="false"
             sourceEndRoleName="ADMINISTRADOR"
-            targetEndRoleName="VER PRODUCTOS"
+            targetEndRoleName="LOGIN"
             isLeaf="false"
             isAbstract="false">
             <useCaseMoniker
-              Id="d63d4737-a68e-490d-b410-f3e9bc95e5ce"
-              LastKnownName="VER PRODUCTOS"
+              Id="fe1c14e9-72d1-4986-ae45-82797851e152"
+              LastKnownName="LOGIN"
               LastKnownLocation="supermercado.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="d36f9b80-6e81-400f-ab16-7d35565c1e04"
+                  Id="b2a26827-3a38-4274-8583-8f00bd4687b6"
                   name="ADMINISTRADOR"
                   isLeaf="false"
                   isStatic="false"
@@ -1317,8 +1317,8 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="f49280bb-4280-4665-8797-94783770dd06"
-                  name="VER PRODUCTOS"
+                  Id="aa9b9a3f-276a-45df-b463-cb7f81542024"
+                  name="LOGIN"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -1330,20 +1330,20 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="268507d3-d777-43a8-a671-c331f8a0d62c"
+            Id="b121602c-8c0c-486f-9b4b-ec830d727bd7"
             isDerived="false"
             sourceEndRoleName="ADMINISTRADOR"
-            targetEndRoleName="DESCONECTARSE"
+            targetEndRoleName="LOGOUT"
             isLeaf="false"
             isAbstract="false">
             <useCaseMoniker
               Id="f57a3e20-55fe-4f32-bea7-5dfbbdfd95f8"
-              LastKnownName="DESCONECTARSE"
+              LastKnownName="LOGOUT"
               LastKnownLocation="supermercado.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="375f2e9d-0f75-44db-ade6-403ad8e7ba36"
+                  Id="957b7935-7d52-4d3e-9e5e-6d9f7c7fadae"
                   name="ADMINISTRADOR"
                   isLeaf="false"
                   isStatic="false"
@@ -1356,8 +1356,8 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="cd569984-1efe-4b74-b957-4b79cb0df4ad"
-                  name="DESCONECTARSE"
+                  Id="89fc109b-f657-4773-923a-96af74719297"
+                  name="LOGOUT"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -1369,20 +1369,20 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="808a223d-fada-4efd-aa6b-4dba5ec13e50"
+            Id="9146e464-ad08-49de-a4aa-ff3d791be359"
             isDerived="false"
             sourceEndRoleName="ADMINISTRADOR"
-            targetEndRoleName="BORRAR PRODS/USERS/CATEGORIAS"
+            targetEndRoleName="LOGIN"
             isLeaf="false"
             isAbstract="false">
             <useCaseMoniker
-              Id="8c6bce7b-a664-4827-a001-ef9d933563e5"
-              LastKnownName="BORRAR PRODS/USERS/CATEGORIAS"
+              Id="4c95b98b-0a3c-493e-9649-aafdad4dd30f"
+              LastKnownName="LOGIN"
               LastKnownLocation="supermercado.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="70ba8e17-d530-4cf4-8249-9a743b207677"
+                  Id="88682ca1-ef11-4941-a9e4-e7726e53aa07"
                   name="ADMINISTRADOR"
                   isLeaf="false"
                   isStatic="false"
@@ -1395,8 +1395,8 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="a254cc55-dcea-4157-8ea5-d2016e381a55"
-                  name="BORRAR PRODS/USERS/CATEGORIAS"
+                  Id="3ad4d56d-b41e-4fe2-b002-b9b2c66ea3eb"
+                  name="LOGIN"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -1408,46 +1408,7 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="21046113-fea9-45ba-9d7d-f3f6193d6f2b"
-            isDerived="false"
-            sourceEndRoleName="ADMINISTRADOR"
-            targetEndRoleName="MODIFICAR PRODS/USERS/CATEGORIAS "
-            isLeaf="false"
-            isAbstract="false">
-            <useCaseMoniker
-              Id="6a6101e4-0e5a-4bd4-a3c3-a5baf6bca491"
-              LastKnownName="MODIFICAR PRODS/USERS/CATEGORIAS "
-              LastKnownLocation="supermercado.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="bff2fd7f-b0d0-4a2c-b14b-aadab01908b0"
-                  name="ADMINISTRADOR"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="af62d21e-d844-4df0-96e3-62cec0058eda"
-                  name="MODIFICAR PRODS/USERS/CATEGORIAS "
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="a21d9df1-74be-4d5f-a2a4-c9b0863f720e"
+            Id="701a7e80-f008-494b-a0c5-776ec4177e39"
             isDerived="false"
             sourceEndRoleName="ADMINISTRADOR"
             targetEndRoleName="CREAR PRODS/USERS/CATEGORIAS"
@@ -1460,7 +1421,7 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="5eab9a1f-7b8f-4418-970d-769bf724a2b2"
+                  Id="0644b2f0-65eb-44e5-977a-871663084d62"
                   name="ADMINISTRADOR"
                   isLeaf="false"
                   isStatic="false"
@@ -1473,7 +1434,7 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="02033eb0-dd26-4acc-a9b9-bfcddd115576"
+                  Id="6f1e490b-5c22-458a-82ed-d249a90eec8e"
                   name="CREAR PRODS/USERS/CATEGORIAS"
                   isLeaf="false"
                   isStatic="false"
@@ -1486,20 +1447,20 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="036663ce-f87d-4225-a903-6770fbf8bd1c"
+            Id="d07b845b-70ad-420b-96cd-bba499fb5f3c"
             isDerived="false"
             sourceEndRoleName="ADMINISTRADOR"
-            targetEndRoleName="LISTADO_PEDIDOS"
+            targetEndRoleName="VER LISTADO DE PEDIDOS"
             isLeaf="false"
             isAbstract="false">
             <useCaseMoniker
-              Id="0e7bef1c-69db-4d36-ab84-c6592379a80f"
-              LastKnownName="LISTADO_PEDIDOS"
+              Id="d1175ff3-af09-4c2e-bc57-c8db1eb9453c"
+              LastKnownName="VER LISTADO DE PEDIDOS"
               LastKnownLocation="supermercado.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="9176bbaa-efe2-42e9-a78a-f60936440259"
+                  Id="468f7934-067c-4711-bc90-5d72a69b7ed1"
                   name="ADMINISTRADOR"
                   isLeaf="false"
                   isStatic="false"
@@ -1512,8 +1473,86 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="97f047a4-057c-4c72-bf36-df4585c57482"
-                  name="LISTADO_PEDIDOS"
+                  Id="d67ec2dd-68d3-4aaf-9b67-af7a568f708d"
+                  name="VER LISTADO DE PEDIDOS"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a39fee26-4166-45e4-bfa1-2670d54031a0"
+            isDerived="false"
+            sourceEndRoleName="ADMINISTRADOR"
+            targetEndRoleName="MODIFICAR PRODS/USERS/CATEGORIAS "
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6a6101e4-0e5a-4bd4-a3c3-a5baf6bca491"
+              LastKnownName="MODIFICAR PRODS/USERS/CATEGORIAS "
+              LastKnownLocation="supermercado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="600ca0b0-783e-4841-b1f6-d8cb3a3a0711"
+                  name="ADMINISTRADOR"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="670a8421-88c9-4ed3-a304-e74e4b4001b6"
+                  name="MODIFICAR PRODS/USERS/CATEGORIAS "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="3215bf2b-2f59-4a6c-9a72-75739f3bfbd6"
+            isDerived="false"
+            sourceEndRoleName="ADMINISTRADOR"
+            targetEndRoleName="BORRAR PRODS/USERS/CATEGORIAS"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="8c6bce7b-a664-4827-a001-ef9d933563e5"
+              LastKnownName="BORRAR PRODS/USERS/CATEGORIAS"
+              LastKnownLocation="supermercado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bac5a7b4-6566-4146-8407-41a4bb8fa4f8"
+                  name="ADMINISTRADOR"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7f1781ec-7184-4ee8-b364-4a364563ae04"
+                  name="BORRAR PRODS/USERS/CATEGORIAS"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -1535,7 +1574,85 @@
         isLeaf="false">
         <targetEnds>
           <association
-            Id="13747f6e-63ad-4c3f-a3de-81691fa2401c"
+            Id="bcd47729-0ccd-48fb-884f-67b32420fe18"
+            isDerived="false"
+            sourceEndRoleName="CLIENTE"
+            targetEndRoleName="LOGIN"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="4c95b98b-0a3c-493e-9649-aafdad4dd30f"
+              LastKnownName="LOGIN"
+              LastKnownLocation="supermercado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e2258bb5-e3c3-41e0-ad79-c5c69715e852"
+                  name="CLIENTE"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f5cfa1e2-2029-4dad-8641-f8f39107c27b"
+                  name="LOGIN"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="210b2047-5281-40c6-b646-35fbedc302e4"
+            isDerived="false"
+            sourceEndRoleName="CLIENTE"
+            targetEndRoleName="LOGOUT"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f57a3e20-55fe-4f32-bea7-5dfbbdfd95f8"
+              LastKnownName="LOGOUT"
+              LastKnownLocation="supermercado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="da2b1d40-4117-47c5-b500-32cd1e1871ab"
+                  name="CLIENTE"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2b5ff5dc-adf2-4940-9c56-3bfe8b2de3a9"
+                  name="LOGOUT"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c38f8e5d-c342-4d17-a38f-49b681e56153"
             isDerived="false"
             sourceEndRoleName="CLIENTE"
             targetEndRoleName="VER PRODUCTOS"
@@ -1548,7 +1665,7 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="306cbf8c-4979-4465-a8c1-1adda7342e90"
+                  Id="aa150813-4de7-4d3e-88cb-24bad0345887"
                   name="CLIENTE"
                   isLeaf="false"
                   isStatic="false"
@@ -1561,7 +1678,7 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="c5ff3545-0428-4dd7-9021-865b4956349c"
+                  Id="973753ac-2147-475d-bbaa-816eccb6e57b"
                   name="VER PRODUCTOS"
                   isLeaf="false"
                   isStatic="false"
@@ -1574,59 +1691,20 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="0c2d7931-39f7-49f6-a71e-0f845a8ea3e5"
+            Id="f02a8f26-b819-452c-9760-8a34dd81daa6"
             isDerived="false"
             sourceEndRoleName="CLIENTE"
-            targetEndRoleName="DESCONECTARSE"
-            isLeaf="false"
-            isAbstract="false">
-            <useCaseMoniker
-              Id="f57a3e20-55fe-4f32-bea7-5dfbbdfd95f8"
-              LastKnownName="DESCONECTARSE"
-              LastKnownLocation="supermercado.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="d4f5b3aa-87d3-44cd-ac52-38731c72730f"
-                  name="CLIENTE"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="f6f55cbb-a6a9-4462-b42d-bbe9e4f7b0f6"
-                  name="DESCONECTARSE"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="36ed9428-8a0c-40d1-a957-c327a1ab1ad7"
-            isDerived="false"
-            sourceEndRoleName="CLIENTE"
-            targetEndRoleName="AÑADIR CARRO"
+            targetEndRoleName="AÑADIR AL CARRO"
             isLeaf="false"
             isAbstract="false">
             <useCaseMoniker
               Id="1b0a1e80-4e80-48cb-844c-db1aafc92f9b"
-              LastKnownName="AÑADIR CARRO"
+              LastKnownName="AÑADIR AL CARRO"
               LastKnownLocation="supermercado.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="fdf4df21-5cf2-4c1f-a9fc-2434c05e0ada"
+                  Id="a2eb1dca-e7fc-48a7-a28a-81d764a04449"
                   name="CLIENTE"
                   isLeaf="false"
                   isStatic="false"
@@ -1639,8 +1717,8 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="027d6118-5d6b-449e-88e3-8923e7b35ca6"
-                  name="AÑADIR CARRO"
+                  Id="8b98f6ca-fb74-4025-8bc5-3f9b54e6185c"
+                  name="AÑADIR AL CARRO"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -1652,20 +1730,20 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="d430085d-b12e-4795-8062-442727900292"
+            Id="f9fb8f3c-e9c3-4f68-ad74-e1d84812b042"
             isDerived="false"
             sourceEndRoleName="CLIENTE"
-            targetEndRoleName="FINALIZAR CARRO"
+            targetEndRoleName="PEDIDOS ORDENADOS"
             isLeaf="false"
             isAbstract="false">
             <useCaseMoniker
-              Id="d253a48d-4195-47bc-8e5a-8e2347cdfd77"
-              LastKnownName="FINALIZAR CARRO"
+              Id="0e7bef1c-69db-4d36-ab84-c6592379a80f"
+              LastKnownName="PEDIDOS ORDENADOS"
               LastKnownLocation="supermercado.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="d4e56bdc-ffa8-4bd9-bd98-6a1d39943695"
+                  Id="17e79035-76b5-41d4-8fff-44452c26a329"
                   name="CLIENTE"
                   isLeaf="false"
                   isStatic="false"
@@ -1678,8 +1756,8 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="dbc05a33-8587-4714-b1d6-aa96fbf21507"
-                  name="FINALIZAR CARRO"
+                  Id="f765b6f4-524b-4afc-b5a8-9e6c8c8ae263"
+                  name="PEDIDOS ORDENADOS"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -1691,7 +1769,7 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="3148a213-86b5-47e3-aa67-840a441e637c"
+            Id="b258ed71-50ea-4496-96c5-2f1f6481aa85"
             isDerived="false"
             sourceEndRoleName="CLIENTE"
             targetEndRoleName="MODIFICAR DIRECCION"
@@ -1704,7 +1782,7 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="d9fe12d5-3c93-4aac-90fa-a98c3f4aab0a"
+                  Id="ac94a126-e0d0-44c5-b358-622638b93d24"
                   name="CLIENTE"
                   isLeaf="false"
                   isStatic="false"
@@ -1717,7 +1795,7 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="ec4bcd1f-37b8-4af1-ab18-bc3f59012418"
+                  Id="4b5d1c3a-f223-4b39-8521-56bef861655f"
                   name="MODIFICAR DIRECCION"
                   isLeaf="false"
                   isStatic="false"
@@ -1730,20 +1808,20 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="b9ff60c0-56b1-4cc8-bb84-168b77e9b84e"
+            Id="2d7ad380-2d22-42fc-a2e1-9c5892d70b00"
             isDerived="false"
             sourceEndRoleName="CLIENTE"
-            targetEndRoleName="VER FACTURA"
+            targetEndRoleName="FINALIZAR EL CARRO"
             isLeaf="false"
             isAbstract="false">
             <useCaseMoniker
-              Id="d1175ff3-af09-4c2e-bc57-c8db1eb9453c"
-              LastKnownName="VER FACTURA"
+              Id="d253a48d-4195-47bc-8e5a-8e2347cdfd77"
+              LastKnownName="FINALIZAR EL CARRO"
               LastKnownLocation="supermercado.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="d259e427-4fa6-4279-b7dc-8fd169e644e0"
+                  Id="fe297a70-68db-4274-b98d-0213d44bd423"
                   name="CLIENTE"
                   isLeaf="false"
                   isStatic="false"
@@ -1756,8 +1834,8 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="3c820a72-d690-4d7f-b08e-73978316e710"
-                  name="VER FACTURA"
+                  Id="9b3a3f3a-3f6b-4a65-b27d-6ea4443ac27a"
+                  name="FINALIZAR EL CARRO"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -1774,7 +1852,7 @@
     <packageHasNamedElement>
       <useCase
         Id="f57a3e20-55fe-4f32-bea7-5dfbbdfd95f8"
-        name="DESCONECTARSE"
+        name="LOGOUT"
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>
@@ -1783,63 +1861,153 @@
         Id="d63d4737-a68e-490d-b410-f3e9bc95e5ce"
         name="VER PRODUCTOS"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <additions>
+          <include
+            Id="38249b35-3c67-4b0a-aca1-8d2ad4eb0f49">
+            <useCaseMoniker
+              Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7"
+              LastKnownName="COMPRUEBA DATOS"
+              LastKnownLocation="supermercado.uml" />
+          </include>
+        </additions>
+      </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="8c6bce7b-a664-4827-a001-ef9d933563e5"
         name="BORRAR PRODS/USERS/CATEGORIAS"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <additions>
+          <include
+            Id="4b4f608b-2694-482e-bb12-7b23c8bc94b6">
+            <useCaseMoniker
+              Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7"
+              LastKnownName="COMPRUEBA DATOS"
+              LastKnownLocation="supermercado.uml" />
+          </include>
+        </additions>
+      </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="6a6101e4-0e5a-4bd4-a3c3-a5baf6bca491"
         name="MODIFICAR PRODS/USERS/CATEGORIAS "
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <additions>
+          <include
+            Id="cf0a01b0-c838-407c-b272-1179ea711035">
+            <useCaseMoniker
+              Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7"
+              LastKnownName="COMPRUEBA DATOS"
+              LastKnownLocation="supermercado.uml" />
+          </include>
+        </additions>
+      </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="0dfe82f5-c827-4b73-b18a-ea7303162cbd"
         name="CREAR PRODS/USERS/CATEGORIAS"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <additions>
+          <include
+            Id="3e249c22-b21f-4647-a121-8f29a2d55f36">
+            <useCaseMoniker
+              Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7"
+              LastKnownName="COMPRUEBA DATOS"
+              LastKnownLocation="supermercado.uml" />
+          </include>
+        </additions>
+      </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="0e7bef1c-69db-4d36-ab84-c6592379a80f"
-        name="LISTADO_PEDIDOS"
+        name="PEDIDOS ORDENADOS"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <additions>
+          <include
+            Id="52012e82-dec8-4aaa-ac65-88fe88043e21">
+            <useCaseMoniker
+              Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7"
+              LastKnownName="COMPRUEBA DATOS"
+              LastKnownLocation="supermercado.uml" />
+          </include>
+        </additions>
+      </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="d1175ff3-af09-4c2e-bc57-c8db1eb9453c"
-        name="VER FACTURA"
+        name="VER LISTADO DE PEDIDOS"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <additions>
+          <include
+            Id="819f5d61-835d-4a1a-9d15-46f237e356ee">
+            <useCaseMoniker
+              Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7"
+              LastKnownName="COMPRUEBA DATOS"
+              LastKnownLocation="supermercado.uml" />
+          </include>
+        </additions>
+      </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="f285d99e-6e66-4734-ad77-e9b34129b0d0"
         name="MODIFICAR DIRECCION"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <additions>
+          <include
+            Id="7906a6f6-9074-4f1f-9e07-3b54f1f1240f">
+            <useCaseMoniker
+              Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7"
+              LastKnownName="COMPRUEBA DATOS"
+              LastKnownLocation="supermercado.uml" />
+          </include>
+        </additions>
+      </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="d253a48d-4195-47bc-8e5a-8e2347cdfd77"
-        name="FINALIZAR CARRO"
+        name="FINALIZAR EL CARRO"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <additions>
+          <include
+            Id="a4ad7e3e-45d0-4660-969a-99ca27a84a8a">
+            <useCaseMoniker
+              Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7"
+              LastKnownName="COMPRUEBA DATOS"
+              LastKnownLocation="supermercado.uml" />
+          </include>
+        </additions>
+      </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="1b0a1e80-4e80-48cb-844c-db1aafc92f9b"
-        name="AÑADIR CARRO"
+        name="AÑADIR AL CARRO"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <additions>
+          <include
+            Id="d50bd67a-ef20-4bf2-8dc2-bac039bf67ee">
+            <useCaseMoniker
+              Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7"
+              LastKnownName="COMPRUEBA DATOS"
+              LastKnownLocation="supermercado.uml" />
+          </include>
+        </additions>
+      </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <actor
@@ -1887,6 +2055,84 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="0571dced-c2cb-4fb8-9bdd-2007b2fb1e6b"
+            isDerived="false"
+            sourceEndRoleName="PROGRAMA"
+            targetEndRoleName="NUEVA ACCION"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="91dc9ac6-4fe6-4d37-8558-e07e9724b5b9"
+              LastKnownName="EJECUTAR"
+              LastKnownLocation="supermercado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="44e30692-d654-4bf4-9e1b-ddeced767bb7"
+                  name="PROGRAMA"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1cb98361-b715-4873-8af5-03d2bde58bb5"
+                  name="NUEVA ACCION"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="fc98a3d8-5c57-4a95-b460-c2291c505e27"
+            isDerived="false"
+            sourceEndRoleName="PROGRAMA"
+            targetEndRoleName="COMPRUEBA DATOS"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7"
+              LastKnownName="COMPRUEBA DATOS"
+              LastKnownLocation="supermercado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="348b558e-2fa7-483a-abd7-d618018fb223"
+                  name="PROGRAMA"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9799a64f-ff33-4523-9ba0-4b03408e6c94"
+                  name="COMPRUEBA DATOS"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
       </actor>
     </packageHasNamedElement>
@@ -1902,17 +2148,7 @@
         Id="70d2bc35-212d-4ba6-b42c-57fb89a7455f"
         name="MUESTRA RESULTADOS POR PANTALLA"
         isAbstract="false"
-        isLeaf="false">
-        <additions>
-          <include
-            Id="3ba32432-8380-478d-a58d-9aa0a2f28358">
-            <useCaseMoniker
-              Id="0e7bef1c-69db-4d36-ab84-c6592379a80f"
-              LastKnownName="LISTADO_PEDIDOS"
-              LastKnownLocation="supermercado.uml" />
-          </include>
-        </additions>
-      </useCase>
+        isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
@@ -1944,6 +2180,116 @@
           </include>
         </additions>
       </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2eb6ae48-5e99-4064-9bed-cfa5354d088c"
+        name="EJECTUTAR ACCIONES"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4c95b98b-0a3c-493e-9649-aafdad4dd30f"
+        name="LOGIN"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="fe1c14e9-72d1-4986-ae45-82797851e152"
+        name="LOGIN"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7"
+        name="COMPRUEBA DATOS"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="514dc35b-2a66-4310-b84d-ca3d6e30ce01"
+            isDerived="false"
+            sourceEndRoleName="COMPRUEBA DATOS"
+            targetEndRoleName="EJECUTAR"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="8ca5b23a-1a36-4a75-8082-c2da3fb421a9"
+              LastKnownName="EJECUTAR"
+              LastKnownLocation="supermercado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bc561d3c-42ea-4d4f-b329-01302ae1a581"
+                  name="COMPRUEBA DATOS"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d8f8ffbc-c559-41a1-a4be-088149db0f61"
+                  name="EJECUTAR"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <additions>
+          <include
+            Id="f81da582-bb9b-47a1-bc41-1d3913397dab">
+            <useCaseMoniker
+              Id="4c95b98b-0a3c-493e-9649-aafdad4dd30f"
+              LastKnownName="LOGIN"
+              LastKnownLocation="supermercado.uml" />
+          </include>
+          <include
+            Id="5bc3f5f0-0c5f-4012-977a-a826d2be460c">
+            <useCaseMoniker
+              Id="f57a3e20-55fe-4f32-bea7-5dfbbdfd95f8"
+              LastKnownName="LOGOUT"
+              LastKnownLocation="supermercado.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="91dc9ac6-4fe6-4d37-8558-e07e9724b5b9"
+        name="EJECUTAR"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="456abb2f-3585-4c70-9342-39d95aa166de">
+            <useCaseMoniker
+              Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7"
+              LastKnownName="COMPRUEBA DATOS"
+              LastKnownLocation="supermercado.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8ca5b23a-1a36-4a75-8082-c2da3fb421a9"
+        name="EJECUTAR"
+        isAbstract="false"
+        isLeaf="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
