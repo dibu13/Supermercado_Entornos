@@ -45,6 +45,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.B_Enviaralcarro = new System.Windows.Forms.Button();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.L_IdProducto = new System.Windows.Forms.Label();
@@ -52,20 +57,16 @@
             this.B_VerProductos = new System.Windows.Forms.Button();
             this.ListaProductos = new System.Windows.Forms.ListBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.LabelUser = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.label9 = new System.Windows.Forms.Label();
-            this.B_Enviaralcarro = new System.Windows.Forms.Button();
-            this.ListaCarro = new System.Windows.Forms.ListBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.ListaCarro = new System.Windows.Forms.ListBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.label10 = new System.Windows.Forms.Label();
             this.ListaPedidos = new System.Windows.Forms.ListBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.LabelUser = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.B_VerPedidos = new System.Windows.Forms.Button();
             this.Datos_Usuario.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -245,6 +246,43 @@
             this.tabPage2.Text = "Productos";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // B_Enviaralcarro
+            // 
+            this.B_Enviaralcarro.Location = new System.Drawing.Point(512, 206);
+            this.B_Enviaralcarro.Name = "B_Enviaralcarro";
+            this.B_Enviaralcarro.Size = new System.Drawing.Size(85, 23);
+            this.B_Enviaralcarro.TabIndex = 11;
+            this.B_Enviaralcarro.Text = "Añadir al Carro";
+            this.B_Enviaralcarro.UseVisualStyleBackColor = true;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(423, 208);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(52, 20);
+            this.textBox4.TabIndex = 10;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(423, 168);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(52, 20);
+            this.textBox3.TabIndex = 9;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(423, 131);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(52, 20);
+            this.textBox2.TabIndex = 8;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(423, 92);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(194, 20);
+            this.textBox1.TabIndex = 7;
+            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -283,7 +321,7 @@
             // 
             // B_VerProductos
             // 
-            this.B_VerProductos.Location = new System.Drawing.Point(156, 35);
+            this.B_VerProductos.Location = new System.Drawing.Point(162, 30);
             this.B_VerProductos.Name = "B_VerProductos";
             this.B_VerProductos.Size = new System.Drawing.Size(75, 23);
             this.B_VerProductos.TabIndex = 2;
@@ -307,51 +345,6 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "PRODUCTOS";
             // 
-            // LabelUser
-            // 
-            this.LabelUser.AutoSize = true;
-            this.LabelUser.Location = new System.Drawing.Point(586, 10);
-            this.LabelUser.Name = "LabelUser";
-            this.LabelUser.Size = new System.Drawing.Size(0, 13);
-            this.LabelUser.TabIndex = 3;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(423, 92);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(194, 20);
-            this.textBox1.TabIndex = 7;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(423, 131);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(52, 20);
-            this.textBox2.TabIndex = 8;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(423, 168);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(52, 20);
-            this.textBox3.TabIndex = 9;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(423, 208);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(52, 20);
-            this.textBox4.TabIndex = 10;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(656, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Desloguear";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.button2);
@@ -364,32 +357,6 @@
             this.tabPage3.Text = "Carrito de Compra";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(44, 63);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(75, 13);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "PRODUCTOS";
-            // 
-            // B_Enviaralcarro
-            // 
-            this.B_Enviaralcarro.Location = new System.Drawing.Point(512, 206);
-            this.B_Enviaralcarro.Name = "B_Enviaralcarro";
-            this.B_Enviaralcarro.Size = new System.Drawing.Size(85, 23);
-            this.B_Enviaralcarro.TabIndex = 11;
-            this.B_Enviaralcarro.Text = "Añadir al Carro";
-            this.B_Enviaralcarro.UseVisualStyleBackColor = true;
-            // 
-            // ListaCarro
-            // 
-            this.ListaCarro.FormattingEnabled = true;
-            this.ListaCarro.Location = new System.Drawing.Point(47, 91);
-            this.ListaCarro.Name = "ListaCarro";
-            this.ListaCarro.Size = new System.Drawing.Size(163, 173);
-            this.ListaCarro.TabIndex = 1;
-            // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(125, 58);
@@ -399,8 +366,26 @@
             this.button2.Text = "Hacer Pedido";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // ListaCarro
+            // 
+            this.ListaCarro.FormattingEnabled = true;
+            this.ListaCarro.Location = new System.Drawing.Point(47, 91);
+            this.ListaCarro.Name = "ListaCarro";
+            this.ListaCarro.Size = new System.Drawing.Size(163, 173);
+            this.ListaCarro.TabIndex = 1;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(44, 63);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(75, 13);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "PRODUCTOS";
+            // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.B_VerPedidos);
             this.tabPage4.Controls.Add(this.ListaPedidos);
             this.tabPage4.Controls.Add(this.label10);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
@@ -409,6 +394,14 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Pedidos";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // ListaPedidos
+            // 
+            this.ListaPedidos.FormattingEnabled = true;
+            this.ListaPedidos.Location = new System.Drawing.Point(63, 73);
+            this.ListaPedidos.Name = "ListaPedidos";
+            this.ListaPedidos.Size = new System.Drawing.Size(297, 173);
+            this.ListaPedidos.TabIndex = 1;
             // 
             // label10
             // 
@@ -419,13 +412,31 @@
             this.label10.TabIndex = 0;
             this.label10.Text = "PEDIDOS";
             // 
-            // ListaPedidos
+            // LabelUser
             // 
-            this.ListaPedidos.FormattingEnabled = true;
-            this.ListaPedidos.Location = new System.Drawing.Point(30, 72);
-            this.ListaPedidos.Name = "ListaPedidos";
-            this.ListaPedidos.Size = new System.Drawing.Size(120, 173);
-            this.ListaPedidos.TabIndex = 1;
+            this.LabelUser.AutoSize = true;
+            this.LabelUser.Location = new System.Drawing.Point(586, 10);
+            this.LabelUser.Name = "LabelUser";
+            this.LabelUser.Size = new System.Drawing.Size(0, 13);
+            this.LabelUser.TabIndex = 3;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(656, 5);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(93, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Desloguear";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // B_VerPedidos
+            // 
+            this.B_VerPedidos.Location = new System.Drawing.Point(285, 39);
+            this.B_VerPedidos.Name = "B_VerPedidos";
+            this.B_VerPedidos.Size = new System.Drawing.Size(75, 23);
+            this.B_VerPedidos.TabIndex = 2;
+            this.B_VerPedidos.Text = "Ver Pedidos";
+            this.B_VerPedidos.UseVisualStyleBackColor = true;
             // 
             // FormUsuario
             // 
@@ -491,5 +502,6 @@
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.ListBox ListaPedidos;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button B_VerPedidos;
     }
 }
