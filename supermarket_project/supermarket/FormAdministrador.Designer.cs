@@ -30,9 +30,6 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.B_BorrarCliente = new System.Windows.Forms.Button();
-            this.B_ModUsuarios = new System.Windows.Forms.Button();
             this.T_Admin = new System.Windows.Forms.TextBox();
             this.T_Direc = new System.Windows.Forms.TextBox();
             this.T_Email = new System.Windows.Forms.TextBox();
@@ -51,6 +48,9 @@
             this.ListaClientes = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.B_ModUsuarios = new System.Windows.Forms.Button();
+            this.B_BorrarCliente = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.B_BorrarCat = new System.Windows.Forms.Button();
             this.B_GuardarCat = new System.Windows.Forms.Button();
@@ -62,7 +62,11 @@
             this.ListaCategorias = new System.Windows.Forms.ListBox();
             this.label16 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.B_GuardarProd = new System.Windows.Forms.Button();
+            this.B_NuevaCat = new System.Windows.Forms.Button();
+            this.B_EliminarCat = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.B_VerProductos = new System.Windows.Forms.Button();
+            this.ListaProductos = new System.Windows.Forms.ListBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -71,11 +75,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.L_IdProducto = new System.Windows.Forms.Label();
             this.L_NombreProd = new System.Windows.Forms.Label();
-            this.ListaProductos = new System.Windows.Forms.ListBox();
-            this.B_VerProductos = new System.Windows.Forms.Button();
-            this.B_NuevaCat = new System.Windows.Forms.Button();
-            this.B_EliminarCat = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
+            this.B_GuardarProd = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.LabelUser = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
@@ -125,34 +125,6 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Clientes";
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(134, 238);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(92, 23);
-            this.button1.TabIndex = 30;
-            this.button1.Text = "Nuevo CLiente";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // B_BorrarCliente
-            // 
-            this.B_BorrarCliente.Location = new System.Drawing.Point(44, 238);
-            this.B_BorrarCliente.Name = "B_BorrarCliente";
-            this.B_BorrarCliente.Size = new System.Drawing.Size(84, 23);
-            this.B_BorrarCliente.TabIndex = 29;
-            this.B_BorrarCliente.Text = "Borrar Cliente";
-            this.B_BorrarCliente.UseVisualStyleBackColor = true;
-            // 
-            // B_ModUsuarios
-            // 
-            this.B_ModUsuarios.Location = new System.Drawing.Point(644, 180);
-            this.B_ModUsuarios.Name = "B_ModUsuarios";
-            this.B_ModUsuarios.Size = new System.Drawing.Size(75, 23);
-            this.B_ModUsuarios.TabIndex = 28;
-            this.B_ModUsuarios.Text = "Guardar";
-            this.B_ModUsuarios.UseVisualStyleBackColor = true;
             // 
             // T_Admin
             // 
@@ -313,6 +285,33 @@
             this.tabPage2.Text = "Categorias";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // B_ModUsuarios
+            // 
+            this.B_ModUsuarios.Location = new System.Drawing.Point(644, 180);
+            this.B_ModUsuarios.Name = "B_ModUsuarios";
+            this.B_ModUsuarios.Size = new System.Drawing.Size(75, 23);
+            this.B_ModUsuarios.TabIndex = 28;
+            this.B_ModUsuarios.Text = "Guardar";
+            this.B_ModUsuarios.UseVisualStyleBackColor = true;
+            // 
+            // B_BorrarCliente
+            // 
+            this.B_BorrarCliente.Location = new System.Drawing.Point(44, 238);
+            this.B_BorrarCliente.Name = "B_BorrarCliente";
+            this.B_BorrarCliente.Size = new System.Drawing.Size(84, 23);
+            this.B_BorrarCliente.TabIndex = 29;
+            this.B_BorrarCliente.Text = "Borrar Cliente";
+            this.B_BorrarCliente.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(134, 238);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(92, 23);
+            this.button1.TabIndex = 30;
+            this.button1.Text = "Nuevo CLiente";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(142, 242);
@@ -421,14 +420,49 @@
             this.tabPage3.Text = "Productos";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // B_GuardarProd
+            // B_NuevaCat
             // 
-            this.B_GuardarProd.Location = new System.Drawing.Point(289, 211);
-            this.B_GuardarProd.Name = "B_GuardarProd";
-            this.B_GuardarProd.Size = new System.Drawing.Size(75, 23);
-            this.B_GuardarProd.TabIndex = 66;
-            this.B_GuardarProd.Text = "button3";
-            this.B_GuardarProd.UseVisualStyleBackColor = true;
+            this.B_NuevaCat.Location = new System.Drawing.Point(137, 240);
+            this.B_NuevaCat.Name = "B_NuevaCat";
+            this.B_NuevaCat.Size = new System.Drawing.Size(92, 23);
+            this.B_NuevaCat.TabIndex = 55;
+            this.B_NuevaCat.Text = "Nueva";
+            this.B_NuevaCat.UseVisualStyleBackColor = true;
+            // 
+            // B_EliminarCat
+            // 
+            this.B_EliminarCat.Location = new System.Drawing.Point(47, 240);
+            this.B_EliminarCat.Name = "B_EliminarCat";
+            this.B_EliminarCat.Size = new System.Drawing.Size(84, 23);
+            this.B_EliminarCat.TabIndex = 54;
+            this.B_EliminarCat.Text = "Eliminar";
+            this.B_EliminarCat.UseVisualStyleBackColor = true;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(55, 19);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(76, 13);
+            this.label9.TabIndex = 51;
+            this.label9.Text = "CATEGORIAS";
+            // 
+            // B_VerProductos
+            // 
+            this.B_VerProductos.Location = new System.Drawing.Point(154, 14);
+            this.B_VerProductos.Name = "B_VerProductos";
+            this.B_VerProductos.Size = new System.Drawing.Size(75, 23);
+            this.B_VerProductos.TabIndex = 56;
+            this.B_VerProductos.Text = "Ver Detalles";
+            this.B_VerProductos.UseVisualStyleBackColor = true;
+            // 
+            // ListaProductos
+            // 
+            this.ListaProductos.FormattingEnabled = true;
+            this.ListaProductos.Location = new System.Drawing.Point(47, 48);
+            this.ListaProductos.Name = "ListaProductos";
+            this.ListaProductos.Size = new System.Drawing.Size(182, 186);
+            this.ListaProductos.TabIndex = 57;
             // 
             // textBox4
             // 
@@ -494,49 +528,14 @@
             this.L_NombreProd.TabIndex = 58;
             this.L_NombreProd.Text = "Nombre Producto";
             // 
-            // ListaProductos
+            // B_GuardarProd
             // 
-            this.ListaProductos.FormattingEnabled = true;
-            this.ListaProductos.Location = new System.Drawing.Point(47, 48);
-            this.ListaProductos.Name = "ListaProductos";
-            this.ListaProductos.Size = new System.Drawing.Size(182, 186);
-            this.ListaProductos.TabIndex = 57;
-            // 
-            // B_VerProductos
-            // 
-            this.B_VerProductos.Location = new System.Drawing.Point(154, 14);
-            this.B_VerProductos.Name = "B_VerProductos";
-            this.B_VerProductos.Size = new System.Drawing.Size(75, 23);
-            this.B_VerProductos.TabIndex = 56;
-            this.B_VerProductos.Text = "Ver Detalles";
-            this.B_VerProductos.UseVisualStyleBackColor = true;
-            // 
-            // B_NuevaCat
-            // 
-            this.B_NuevaCat.Location = new System.Drawing.Point(137, 240);
-            this.B_NuevaCat.Name = "B_NuevaCat";
-            this.B_NuevaCat.Size = new System.Drawing.Size(92, 23);
-            this.B_NuevaCat.TabIndex = 55;
-            this.B_NuevaCat.Text = "Nueva";
-            this.B_NuevaCat.UseVisualStyleBackColor = true;
-            // 
-            // B_EliminarCat
-            // 
-            this.B_EliminarCat.Location = new System.Drawing.Point(47, 240);
-            this.B_EliminarCat.Name = "B_EliminarCat";
-            this.B_EliminarCat.Size = new System.Drawing.Size(84, 23);
-            this.B_EliminarCat.TabIndex = 54;
-            this.B_EliminarCat.Text = "Eliminar";
-            this.B_EliminarCat.UseVisualStyleBackColor = true;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(55, 19);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(76, 13);
-            this.label9.TabIndex = 51;
-            this.label9.Text = "CATEGORIAS";
+            this.B_GuardarProd.Location = new System.Drawing.Point(289, 211);
+            this.B_GuardarProd.Name = "B_GuardarProd";
+            this.B_GuardarProd.Size = new System.Drawing.Size(75, 23);
+            this.B_GuardarProd.TabIndex = 66;
+            this.B_GuardarProd.Text = "button3";
+            this.B_GuardarProd.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
@@ -554,6 +553,7 @@
             this.LabelUser.Name = "LabelUser";
             this.LabelUser.Size = new System.Drawing.Size(0, 13);
             this.LabelUser.TabIndex = 5;
+            this.LabelUser.Click += new System.EventHandler(this.LabelUser_Click);
             // 
             // FormAdministrador
             // 
