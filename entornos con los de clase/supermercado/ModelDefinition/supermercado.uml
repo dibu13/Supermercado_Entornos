@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="0b219d3e-0bda-428b-864f-ca6b95352832"
   name="supermercado" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -1846,7 +1846,104 @@
         Id="92daaa5c-31b8-46db-b03c-f257abf6baf8"
         name="PROGRAMA"
         isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="d0c70bca-a15e-4c49-a431-88d25cbba476"
+            isDerived="false"
+            sourceEndRoleName="PROGRAMA"
+            targetEndRoleName="MOSTRAR RESULTADOS"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="85843753-e40d-49d2-8736-5358944d6653"
+              LastKnownName="MOSTRAR RESULTADOS"
+              LastKnownLocation="supermercado.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a148f066-49e7-417a-8734-d2c1d8085c4a"
+                  name="PROGRAMA"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7a7e861f-86da-452c-982c-136e1035d62f"
+                  name="MOSTRAR RESULTADOS"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="79f4ff79-a627-4941-ac04-602bb90ff806"
+        name="UseCase1"
+        isAbstract="false"
         isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="70d2bc35-212d-4ba6-b42c-57fb89a7455f"
+        name="MUESTRA RESULTADOS POR PANTALLA"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="3ba32432-8380-478d-a58d-9aa0a2f28358">
+            <useCaseMoniker
+              Id="0e7bef1c-69db-4d36-ab84-c6592379a80f"
+              LastKnownName="LISTADO_PEDIDOS"
+              LastKnownLocation="supermercado.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="85843753-e40d-49d2-8736-5358944d6653"
+        name="MOSTRAR RESULTADOS"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="3331e063-dd81-48bf-9803-babb805084e9">
+            <useCaseMoniker
+              Id="0dfe82f5-c827-4b73-b18a-ea7303162cbd"
+              LastKnownName="CREAR PRODS/USERS/CATEGORIAS"
+              LastKnownLocation="supermercado.uml" />
+          </include>
+          <include
+            Id="b531f677-b64b-4090-883e-9c5e3eaf6185">
+            <useCaseMoniker
+              Id="6a6101e4-0e5a-4bd4-a3c3-a5baf6bca491"
+              LastKnownName="MODIFICAR PRODS/USERS/CATEGORIAS "
+              LastKnownLocation="supermercado.uml" />
+          </include>
+          <include
+            Id="d89e6a6c-fcff-4a07-8d14-3f233d4f9d6b">
+            <useCaseMoniker
+              Id="8c6bce7b-a664-4827-a001-ef9d933563e5"
+              LastKnownName="BORRAR PRODS/USERS/CATEGORIAS"
+              LastKnownLocation="supermercado.uml" />
+          </include>
+        </additions>
+      </useCase>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

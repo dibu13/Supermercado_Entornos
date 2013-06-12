@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="b7581daa-8c94-4a37-9361-c26cfdc9d0eb" name="casosdeuso" linkedPackageId="287654f6-f37e-4bd1-ab94-fa6aeddf0ff7" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
-  <profileInstances>
-    <packageHasProfileInstances Id="3087e7ab-3886-4792-b4fb-9f351af9ed6f">
-      <profileInstance Id="f56c36f4-c60c-46aa-8102-4061e1ff7f64" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="461334e9-30a0-4914-92d8-32d7d4554ae4">
-      <profileInstance Id="91bdd046-fe1c-49ca-90dd-96cdf1e4842a" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <useCaseModelRootHasTypes>
       <actor Id="db46ad53-d0c2-43d6-917a-048f6ccc6ea3" name="ADMINISTRADOR" isAbstract="false" isLeaf="false">
@@ -276,8 +262,33 @@
         <elementDefinition Id="92daaa5c-31b8-46db-b03c-f257abf6baf8" />
       </actor>
     </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="cc7f1aa4-6836-44a0-afd4-5bc1835c36c4" name="MUESTRA RESULTADOS POR PANTALLA" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="70d2bc35-212d-4ba6-b42c-57fb89a7455f" />
+        <additions>
+          <include Id="6a44996e-2d75-4e6c-98f0-79e5f07093bf">
+            <useCaseMoniker Id="0e80bdfc-5499-42f9-98bc-968ab887bf53" LastKnownName="LISTADO_PEDIDOS" />
+            <elementDefinition Id="3ba32432-8380-478d-a58d-9aa0a2f28358" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
   </packagedElements>
   <package Id="287654f6-f37e-4bd1-ab94-fa6aeddf0ff7" name="supermercado">
     <elementDefinition Id="0b219d3e-0bda-428b-864f-ca6b95352832" />
+    <profileInstances>
+      <packageHasProfileInstances Id="3087e7ab-3886-4792-b4fb-9f351af9ed6f">
+        <profileInstance Id="f56c36f4-c60c-46aa-8102-4061e1ff7f64" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="461334e9-30a0-4914-92d8-32d7d4554ae4">
+        <profileInstance Id="91bdd046-fe1c-49ca-90dd-96cdf1e4842a" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </useCaseModelRoot>
