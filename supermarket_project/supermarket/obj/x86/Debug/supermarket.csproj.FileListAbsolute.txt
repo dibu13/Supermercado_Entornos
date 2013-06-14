@@ -20,3 +20,5 @@ C:\Users\Alex\Documents\GitHub\Supermercado_Entornos\supermarket_project\superma
 C:\Users\Alex\Documents\GitHub\Supermercado_Entornos\supermarket_project\supermarket\obj\x86\Debug\supermarket.Properties.Resources.resources
 C:\Users\Alex\Documents\GitHub\Supermercado_Entornos\supermarket_project\supermarket\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\Alex\Documents\GitHub\Supermercado_Entornos\supermarket_project\supermarket\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Packard\Documents\GitHub\Supermercado_Entornos\supermarket_project\supermarket\obj\x86\Debug\supermarket.exe
+C:\Users\Packard\Documents\GitHub\Supermercado_Entornos\supermarket_project\supermarket\obj\x86\Debug\supermarket.pdb

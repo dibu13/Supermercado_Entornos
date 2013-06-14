@@ -5,6 +5,8 @@ Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "supermercado", "supermercad
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "supermarket", "supermarket\supermarket.csproj", "{6BE89F02-D315-4C94-9665-68B5092E33E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "supermarket_class", "supermarket_class\supermarket_class\supermarket_class.csproj", "{0A934542-61DA-4344-89E5-44D62491C552}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,16 @@ Global
 		{6BE89F02-D315-4C94-9665-68B5092E33E6}.Release|Mixed Platforms.Build.0 = Release|x86
 		{6BE89F02-D315-4C94-9665-68B5092E33E6}.Release|x86.ActiveCfg = Release|x86
 		{6BE89F02-D315-4C94-9665-68B5092E33E6}.Release|x86.Build.0 = Release|x86
+		{0A934542-61DA-4344-89E5-44D62491C552}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A934542-61DA-4344-89E5-44D62491C552}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A934542-61DA-4344-89E5-44D62491C552}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{0A934542-61DA-4344-89E5-44D62491C552}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{0A934542-61DA-4344-89E5-44D62491C552}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0A934542-61DA-4344-89E5-44D62491C552}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A934542-61DA-4344-89E5-44D62491C552}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A934542-61DA-4344-89E5-44D62491C552}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{0A934542-61DA-4344-89E5-44D62491C552}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{0A934542-61DA-4344-89E5-44D62491C552}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
