@@ -38,6 +38,8 @@ namespace supermarket
                 }
             }
 
+            fichero_users.Close();
+
             if (datos[5]==Textbox_Password.Text)
             {
                 if (Convert.ToBoolean(datos[6])==true)
@@ -55,6 +57,7 @@ namespace supermarket
             {
                 MessageBox.Show("Usuario o contraseña incorrectos.");
             }
+
 
 
             /*FormAdministrador ventana = new FormAdministrador();
