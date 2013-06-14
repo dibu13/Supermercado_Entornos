@@ -1,0 +1,5 @@
+C:\Users\Packard\Documents\GitHub\Supermercado_Entornos\supermarket_project\supermarket_class\supermarket_class\bin\Debug\supermarket_class.dll
+C:\Users\Packard\Documents\GitHub\Supermercado_Entornos\supermarket_project\supermarket_class\supermarket_class\bin\Debug\supermarket_class.pdb
+C:\Users\Packard\Documents\GitHub\Supermercado_Entornos\supermarket_project\supermarket_class\supermarket_class\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Packard\Documents\GitHub\Supermercado_Entornos\supermarket_project\supermarket_class\supermarket_class\obj\Debug\supermarket_class.dll
+C:\Users\Packard\Documents\GitHub\Supermercado_Entornos\supermarket_project\supermarket_class\supermarket_class\obj\Debug\supermarket_class.pdb
