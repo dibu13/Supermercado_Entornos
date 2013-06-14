@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.Textbox_Password = new System.Windows.Forms.TextBox();
             this.Textbox_Usuario = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.Textbox_Password = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -44,13 +44,6 @@
             this.button1.Text = "ENVIAR";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // Textbox_Password
-            // 
-            this.Textbox_Password.Location = new System.Drawing.Point(130, 88);
-            this.Textbox_Password.Name = "Textbox_Password";
-            this.Textbox_Password.Size = new System.Drawing.Size(174, 20);
-            this.Textbox_Password.TabIndex = 8;
             // 
             // Textbox_Usuario
             // 
@@ -77,13 +70,21 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "USUARIO";
             // 
+            // Textbox_Password
+            // 
+            this.Textbox_Password.Location = new System.Drawing.Point(130, 88);
+            this.Textbox_Password.Name = "Textbox_Password";
+            this.Textbox_Password.PasswordChar = '*';
+            this.Textbox_Password.Size = new System.Drawing.Size(174, 20);
+            this.Textbox_Password.TabIndex = 10;
+            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(365, 174);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.Textbox_Password);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.Textbox_Usuario);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -98,10 +99,10 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox Textbox_Password;
         private System.Windows.Forms.TextBox Textbox_Usuario;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.MaskedTextBox Textbox_Password;
     }
 }
 
