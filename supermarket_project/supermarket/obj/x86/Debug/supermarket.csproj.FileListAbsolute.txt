@@ -33,3 +33,5 @@ C:\Users\Packard\Documents\GitHub\Supermercado_Entornos\supermarket_project\supe
 C:\Users\Packard\Documents\GitHub\Supermercado_Entornos\supermarket_project\supermarket\bin\Debug\supermarket.pdb
 C:\Users\Packard\Documents\GitHub\Supermercado_Entornos\supermarket_project\supermarket\bin\Debug\supermarket_class.dll
 C:\Users\Packard\Documents\GitHub\Supermercado_Entornos\supermarket_project\supermarket\bin\Debug\supermarket_class.pdb
+C:\Users\Dibu\Documents\GitHub\Supermercado_Entornos\supermarket_project\supermarket\bin\Debug\supermarket_class.dll
+C:\Users\Dibu\Documents\GitHub\Supermercado_Entornos\supermarket_project\supermarket\bin\Debug\supermarket_class.pdb
