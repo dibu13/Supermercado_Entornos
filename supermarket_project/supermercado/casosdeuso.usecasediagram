@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="b7581daa-8c94-4a37-9361-c26cfdc9d0eb" name="casosdeuso" linkedPackageId="287654f6-f37e-4bd1-ab94-fa6aeddf0ff7" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="b7581daa-8c94-4a37-9361-c26cfdc9d0eb" name="casosdeuso" linkedPackageId="287654f6-f37e-4bd1-ab94-fa6aeddf0ff7" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <packagedElements>
     <useCaseModelRootHasTypes>
       <actor Id="db46ad53-d0c2-43d6-917a-048f6ccc6ea3" name="ADMINISTRADOR" isAbstract="false" isLeaf="false">
@@ -226,6 +226,12 @@
     <useCaseModelRootHasTypes>
       <useCase Id="f7e72a49-d222-442f-bd89-6366c61f0053" name="LOGOUT" isAbstract="false" isLeaf="false">
         <elementDefinition Id="f57a3e20-55fe-4f32-bea7-5dfbbdfd95f8" />
+        <additions>
+          <include Id="253a505f-d72e-4e95-b799-759be98be0e7">
+            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA DATOS" />
+            <elementDefinition Id="3ddf73c4-bfff-4285-a6d3-4cdcde2ddb2a" />
+          </include>
+        </additions>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
@@ -353,21 +359,17 @@
     <useCaseModelRootHasTypes>
       <useCase Id="bb9ba9f6-1afa-4807-a9e4-3fba7f12f772" name="LOGIN" isAbstract="false" isLeaf="false">
         <elementDefinition Id="4c95b98b-0a3c-493e-9649-aafdad4dd30f" />
+        <additions>
+          <include Id="b85aa8aa-a56e-4e6a-907a-8ca8b75209fb">
+            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA DATOS" />
+            <elementDefinition Id="c9e89237-75bf-4cbc-9342-59ebf26f5ce0" />
+          </include>
+        </additions>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
       <useCase Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" name="COMPRUEBA DATOS" isAbstract="false" isLeaf="false">
         <elementDefinition Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7" />
-        <additions>
-          <include Id="d6f2950a-cd07-41c5-bccd-47c190079c13">
-            <useCaseMoniker Id="bb9ba9f6-1afa-4807-a9e4-3fba7f12f772" LastKnownName="LOGIN" />
-            <elementDefinition Id="f81da582-bb9b-47a1-bc41-1d3913397dab" />
-          </include>
-          <include Id="e09dbedc-6abb-483a-a3c6-1d0700d21587">
-            <useCaseMoniker Id="f7e72a49-d222-442f-bd89-6366c61f0053" LastKnownName="LOGOUT" />
-            <elementDefinition Id="5bc3f5f0-0c5f-4012-977a-a826d2be460c" />
-          </include>
-        </additions>
       </useCase>
     </useCaseModelRootHasTypes>
   </packagedElements>
