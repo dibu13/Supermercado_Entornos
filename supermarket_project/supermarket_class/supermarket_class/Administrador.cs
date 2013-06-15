@@ -30,6 +30,14 @@ namespace supermarket_class
             fichero_productos.Close();
         }
 
+        static public void crear_categorias(int T_IdCat, string T_NombreCat)
+        {
+            StreamWriter fichero_categorias = new StreamWriter("Ficheros\\categorias.txt", true);
+
+            fichero_categorias.WriteLine(T_IdCat + "#" + T_NombreCat.ToString());
+
+            fichero_categorias.Close();
+        }
     }
 
     

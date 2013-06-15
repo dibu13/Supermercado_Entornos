@@ -121,7 +121,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(779, 281);
+            this.tabPage1.Size = new System.Drawing.Size(779, 276);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Clientes";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -310,7 +310,7 @@
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.tabPage2.Size = new System.Drawing.Size(779, 281);
+            this.tabPage2.Size = new System.Drawing.Size(779, 276);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Categorias";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -323,6 +323,7 @@
             this.button2.TabIndex = 50;
             this.button2.Text = "Nueva";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // B_BorrarCat
             // 
@@ -332,6 +333,7 @@
             this.B_BorrarCat.TabIndex = 49;
             this.B_BorrarCat.Text = "Eliminar";
             this.B_BorrarCat.UseVisualStyleBackColor = true;
+            this.B_BorrarCat.Click += new System.EventHandler(this.B_BorrarCat_Click);
             // 
             // B_GuardarCat
             // 
@@ -382,6 +384,7 @@
             this.B_VerDetCat.TabIndex = 33;
             this.B_VerDetCat.Text = "Ver Detalles";
             this.B_VerDetCat.UseVisualStyleBackColor = true;
+            this.B_VerDetCat.Click += new System.EventHandler(this.B_VerDetCat_Click);
             // 
             // ListaCategorias
             // 

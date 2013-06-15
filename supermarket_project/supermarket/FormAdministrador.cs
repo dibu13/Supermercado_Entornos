@@ -39,6 +39,17 @@ namespace supermarket
 
             fichero_productos.Close();
 
+            StreamReader fichero_categorias = new StreamReader("Ficheros\\categorias.txt");
+      
+
+            while ((linea = fichero_categorias.ReadLine()) != null)
+            {
+                datos = linea.Split(new char[] { '#' });
+                ListaCategorias.Items.Add(datos[1]);
+            }
+
+            fichero_categorias.Close();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -108,6 +119,66 @@ namespace supermarket
             T_Email.Text = datos[4];
             T_Pass.Text = datos[5];
             T_Admin.Text = datos[6];
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            supermarket_class.Administrador.crear_categorias(Convert.ToInt32(T_IdCat.Text),T_NombreCat.Text);
+            ListaCategorias.Items.Add(T_NombreCat.Text);
+        }
+
+        private void B_VerDetCat_Click(object sender, EventArgs e)
+        {
+            StreamReader fichero_categorias = new StreamReader("Ficheros\\categorias.txt");
+            string linea;
+            string[] datos = null;
+            bool encontrado = false;
+
+            while ((linea = fichero_categorias.ReadLine()) != null && encontrado == false)
+            {
+                datos = linea.Split(new char[] { '#' });
+                if (datos[1] == (string)ListaCategorias.SelectedItem)
+                {
+                    encontrado = true;
+                }
+            }
+
+            fichero_categorias.Close();
+
+            T_NombreCat.Text = datos[1];
+            T_IdCat.Text= datos[0];
+            
+        }
+
+        private void B_BorrarCat_Click(object sender, EventArgs e)
+        {
+            List<Categoria> listaProvi = new List<Categoria>();
+            List<Categoria> lC = new List<Categoria>();
+            StreamReader fichero_categorias = new StreamReader("Ficheros\\categorias.txt");
+            string linea = "";
+            while ((linea = fichero_categorias.ReadLine()) != null)
+            {
+               string [] datos = linea.Split(new char[] { '#' });
+               int id_categoria = Convert.ToInt32(datos[0]);
+               string nombre_categoria = datos[1];
+               lC.Add(new Categoria(id_categoria, nombre_categoria));
+            }
+            fichero_categorias.Close();
+            string seleccion = (string )ListaCategorias.SelectedItem;
+            foreach (Categoria item in lC)
+            {
+                if (seleccion != item.nombre_categoria) {
+                    listaProvi.Add(new Categoria(item.id_categoria, item.nombre_categoria));
+                }
+            }
+
+            StreamWriter sW = new StreamWriter("Ficheros\\categorias.txt");
+            foreach (Categoria item in listaProvi)
+            {
+                sW.WriteLine(item.id_categoria.ToString()+"#"+item.nombre_categoria);
+            }
+            sW.Close();
+           
         }
 
 
