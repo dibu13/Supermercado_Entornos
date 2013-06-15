@@ -63,10 +63,10 @@
             this.label16 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.B_GuardarProd = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.T_precio_P = new System.Windows.Forms.TextBox();
+            this.T_id_cat_P = new System.Windows.Forms.TextBox();
+            this.T_id_P = new System.Windows.Forms.TextBox();
+            this.T_nom_P = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.L_IdProducto = new System.Windows.Forms.Label();
@@ -402,10 +402,10 @@
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.B_GuardarProd);
-            this.tabPage3.Controls.Add(this.textBox4);
-            this.tabPage3.Controls.Add(this.textBox3);
-            this.tabPage3.Controls.Add(this.textBox2);
-            this.tabPage3.Controls.Add(this.textBox1);
+            this.tabPage3.Controls.Add(this.T_precio_P);
+            this.tabPage3.Controls.Add(this.T_id_cat_P);
+            this.tabPage3.Controls.Add(this.T_id_P);
+            this.tabPage3.Controls.Add(this.T_nom_P);
             this.tabPage3.Controls.Add(this.label12);
             this.tabPage3.Controls.Add(this.label11);
             this.tabPage3.Controls.Add(this.L_IdProducto);
@@ -428,36 +428,37 @@
             this.B_GuardarProd.Name = "B_GuardarProd";
             this.B_GuardarProd.Size = new System.Drawing.Size(75, 23);
             this.B_GuardarProd.TabIndex = 66;
-            this.B_GuardarProd.Text = "button3";
+            this.B_GuardarProd.Text = "Añadir";
             this.B_GuardarProd.UseVisualStyleBackColor = true;
+            this.B_GuardarProd.Click += new System.EventHandler(this.B_GuardarProd_Click);
             // 
-            // textBox4
+            // T_precio_P
             // 
-            this.textBox4.Location = new System.Drawing.Point(409, 172);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(52, 20);
-            this.textBox4.TabIndex = 65;
+            this.T_precio_P.Location = new System.Drawing.Point(409, 172);
+            this.T_precio_P.Name = "T_precio_P";
+            this.T_precio_P.Size = new System.Drawing.Size(52, 20);
+            this.T_precio_P.TabIndex = 65;
             // 
-            // textBox3
+            // T_id_cat_P
             // 
-            this.textBox3.Location = new System.Drawing.Point(409, 132);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(52, 20);
-            this.textBox3.TabIndex = 64;
+            this.T_id_cat_P.Location = new System.Drawing.Point(409, 132);
+            this.T_id_cat_P.Name = "T_id_cat_P";
+            this.T_id_cat_P.Size = new System.Drawing.Size(52, 20);
+            this.T_id_cat_P.TabIndex = 64;
             // 
-            // textBox2
+            // T_id_P
             // 
-            this.textBox2.Location = new System.Drawing.Point(409, 95);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(52, 20);
-            this.textBox2.TabIndex = 63;
+            this.T_id_P.Location = new System.Drawing.Point(409, 95);
+            this.T_id_P.Name = "T_id_P";
+            this.T_id_P.Size = new System.Drawing.Size(52, 20);
+            this.T_id_P.TabIndex = 63;
             // 
-            // textBox1
+            // T_nom_P
             // 
-            this.textBox1.Location = new System.Drawing.Point(409, 56);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(194, 20);
-            this.textBox1.TabIndex = 62;
+            this.T_nom_P.Location = new System.Drawing.Point(409, 56);
+            this.T_nom_P.Name = "T_nom_P";
+            this.T_nom_P.Size = new System.Drawing.Size(194, 20);
+            this.T_nom_P.TabIndex = 62;
             // 
             // label12
             // 
@@ -619,10 +620,10 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button B_VerProductos;
         private System.Windows.Forms.ListBox ListaProductos;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox T_precio_P;
+        private System.Windows.Forms.TextBox T_id_cat_P;
+        private System.Windows.Forms.TextBox T_id_P;
+        private System.Windows.Forms.TextBox T_nom_P;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label L_IdProducto;

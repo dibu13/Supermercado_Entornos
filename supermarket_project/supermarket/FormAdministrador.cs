@@ -37,5 +37,11 @@ namespace supermarket
             supermarket_class.Administrador.crear_user(Convert.ToInt32(T_Id.Text),T_Dni.Text, T_Nombre.Text, T_Direc.Text, T_Email.Text, T_Pass.Text,Convert.ToBoolean(T_Admin.Text));
             ListaClientes.Items.Add(T_Nombre.Text);    
         }
+
+        private void B_GuardarProd_Click(object sender, EventArgs e)
+        {
+            supermarket_class.Productos.crear_productos(Convert.ToInt32(T_id_P.Text), Convert.ToInt32(T_id_cat_P.Text), T_nom_P.Text, Convert.ToInt32(T_precio_P.Text));
+            ListaClientes.Items.Add(T_Nombre.Text);
+        }
     }
 }
