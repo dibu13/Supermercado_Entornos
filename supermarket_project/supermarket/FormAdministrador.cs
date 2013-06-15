@@ -152,33 +152,8 @@ namespace supermarket
 
         private void B_BorrarCat_Click(object sender, EventArgs e)
         {
-            List<Categoria> listaProvi = new List<Categoria>();
-            List<Categoria> lC = new List<Categoria>();
-            StreamReader fichero_categorias = new StreamReader("Ficheros\\categorias.txt");
-            string linea = "";
-            while ((linea = fichero_categorias.ReadLine()) != null)
-            {
-               string [] datos = linea.Split(new char[] { '#' });
-               int id_categoria = Convert.ToInt32(datos[0]);
-               string nombre_categoria = datos[1];
-               lC.Add(new Categoria(id_categoria, nombre_categoria));
-            }
-            fichero_categorias.Close();
-            string seleccion = (string )ListaCategorias.SelectedItem;
-            foreach (Categoria item in lC)
-            {
-                if (seleccion != item.nombre_categoria) {
-                    listaProvi.Add(new Categoria(item.id_categoria, item.nombre_categoria));
-                }
-            }
-
-            StreamWriter sW = new StreamWriter("Ficheros\\categorias.txt");
-            foreach (Categoria item in listaProvi)
-            {
-                sW.WriteLine(item.id_categoria.ToString()+"#"+item.nombre_categoria);
-            }
-            sW.Close();
-           
+            supermarket_class.Administrador.borrar_categoria((string)ListaCategorias.SelectedItem);
+            ListaCategorias.Items.Remove(ListaCategorias.SelectedItem);
         }
 
 

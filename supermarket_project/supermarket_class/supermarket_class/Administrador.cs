@@ -38,6 +38,36 @@ namespace supermarket_class
 
             fichero_categorias.Close();
         }
+
+        static public void borrar_categoria(string seleccionado)
+        {
+            List<Categoria> lista_cat = new List<Categoria>();
+            StreamReader fichero_categorias_w = new StreamReader("Ficheros\\categorias.txt");
+            string linea = "";
+            while ((linea = fichero_categorias_w.ReadLine()) != null)
+            {
+                string[] datos = linea.Split(new char[] { '#' });
+                int id_categoria = Convert.ToInt32(datos[0]);
+                string nombre_categoria = datos[1];
+                lista_cat.Add(new Categoria(id_categoria, nombre_categoria));
+            }
+            fichero_categorias_w.Close();
+            List<Categoria> lista_aux = new List<Categoria>();
+            foreach (Categoria item in lista_cat)
+            {
+                if (seleccionado != item.nombre_categoria)
+                {
+                    lista_aux.Add(new Categoria(item.id_categoria, item.nombre_categoria));
+                }
+            }
+
+            StreamWriter fichero_categorias_r = new StreamWriter("Ficheros\\categorias.txt");
+            foreach (Categoria item in lista_aux)
+            {
+                fichero_categorias_r.WriteLine(item.id_categoria.ToString() + "#" + item.nombre_categoria);
+            }
+            fichero_categorias_r.Close();
+        }
     }
 
     
