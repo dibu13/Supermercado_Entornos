@@ -29,6 +29,18 @@ namespace supermarket
 
             fichero_users.Close();
 
+            StreamReader fichero_productos = new StreamReader("Ficheros\\productos.txt");
+            //string linea;
+            //string[] datos = null;
+
+            while ((linea = fichero_productos.ReadLine()) != null)
+            {
+                datos = linea.Split(new char[] { '#' });
+                ListaProductos.Items.Add(datos[2]);
+            }
+
+            fichero_productos.Close();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -41,7 +53,7 @@ namespace supermarket
         private void B_GuardarProd_Click(object sender, EventArgs e)
         {
             supermarket_class.Productos.crear_productos(Convert.ToInt32(T_id_P.Text), Convert.ToInt32(T_id_cat_P.Text), T_nom_P.Text, Convert.ToInt32(T_precio_P.Text));
-            ListaClientes.Items.Add(T_Nombre.Text);
+            ListaProductos.Items.Add(T_nom_P.Text);
         }
     }
 }

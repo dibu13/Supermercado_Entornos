@@ -2,3 +2,4 @@
 2#6#manzana#300
 3#6#limon#300
 4#5#fresa#300
+2#4#pera#343

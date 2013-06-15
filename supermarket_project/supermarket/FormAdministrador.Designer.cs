@@ -424,11 +424,11 @@
             // 
             // B_GuardarProd
             // 
-            this.B_GuardarProd.Location = new System.Drawing.Point(289, 211);
+            this.B_GuardarProd.Location = new System.Drawing.Point(154, 240);
             this.B_GuardarProd.Name = "B_GuardarProd";
             this.B_GuardarProd.Size = new System.Drawing.Size(75, 23);
             this.B_GuardarProd.TabIndex = 66;
-            this.B_GuardarProd.Text = "Añadir";
+            this.B_GuardarProd.Text = "Nuevo";
             this.B_GuardarProd.UseVisualStyleBackColor = true;
             this.B_GuardarProd.Click += new System.EventHandler(this.B_GuardarProd_Click);
             // 
@@ -515,11 +515,11 @@
             // 
             // B_NuevaCat
             // 
-            this.B_NuevaCat.Location = new System.Drawing.Point(137, 240);
+            this.B_NuevaCat.Location = new System.Drawing.Point(360, 211);
             this.B_NuevaCat.Name = "B_NuevaCat";
             this.B_NuevaCat.Size = new System.Drawing.Size(92, 23);
             this.B_NuevaCat.TabIndex = 55;
-            this.B_NuevaCat.Text = "Nueva";
+            this.B_NuevaCat.Text = "Modificar";
             this.B_NuevaCat.UseVisualStyleBackColor = true;
             // 
             // B_EliminarCat
