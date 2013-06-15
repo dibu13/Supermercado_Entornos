@@ -106,6 +106,41 @@ namespace supermarket_class
             }
             fichero_users_r.Close();
         }
+
+        static public void borrar_prod(string seleccionado)
+        {
+            List<Producto> lista_productos = new List<Producto>();
+            StreamReader fichero_productos_w = new StreamReader("Ficheros\\productos.txt");
+            string linea = "";
+            while ((linea = fichero_productos_w.ReadLine()) != null)
+            {
+                string[] datos = linea.Split(new char[] { '#' });
+
+                int id_prod = Convert.ToInt32(datos[0]);
+                int id_cat = Convert.ToInt32(datos[1]);
+                string nombre_prod = datos[2];
+                double precio_prod = Convert.ToDouble(datos[3]);
+
+                lista_productos.Add(new Producto(id_prod, id_cat, nombre_prod, precio_prod));
+            }
+            fichero_productos_w.Close();
+
+            List<Producto> lista_aux = new List<Producto>();
+            foreach (Producto item in lista_productos)
+            {
+                if (seleccionado != item.nombre_prod)
+                {
+                    lista_aux.Add(new Producto(item.id_prod, item.id_cat, item.nombre_prod, item.precio_prod));
+                }
+            }
+
+            StreamWriter fichero_productos_r = new StreamWriter("Ficheros\\productos.txt");
+            foreach (Producto item in lista_aux)
+            {
+                fichero_productos_r.WriteLine(item.id_prod + "#" + item.id_prod + "#" + item.nombre_prod + "#" +  item.precio_prod);
+            }
+            fichero_productos_r.Close();
+        }
     }
 
     

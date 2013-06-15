@@ -162,6 +162,12 @@ namespace supermarket
             ListaUsuarios.Items.Remove(ListaUsuarios.SelectedItem);
         }
 
+        private void B_EliminarCat_Click(object sender, EventArgs e)
+        {
+            supermarket_class.Administrador.borrar_prod((string)ListaProductos.SelectedItem);
+            ListaProductos.Items.Remove(ListaProductos.SelectedItem);
+        }
+
 
 
 

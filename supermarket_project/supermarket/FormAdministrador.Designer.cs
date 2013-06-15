@@ -536,6 +536,7 @@
             this.B_EliminarCat.TabIndex = 54;
             this.B_EliminarCat.Text = "Eliminar";
             this.B_EliminarCat.UseVisualStyleBackColor = true;
+            this.B_EliminarCat.Click += new System.EventHandler(this.B_EliminarCat_Click);
             // 
             // label9
             // 
