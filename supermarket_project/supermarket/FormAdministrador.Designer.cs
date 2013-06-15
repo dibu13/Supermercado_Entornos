@@ -275,6 +275,7 @@
             this.B_VerClientes.TabIndex = 5;
             this.B_VerClientes.Text = "Ver Detalles";
             this.B_VerClientes.UseVisualStyleBackColor = true;
+            this.B_VerClientes.Click += new System.EventHandler(this.B_VerClientes_Click);
             // 
             // ListaClientes
             // 
