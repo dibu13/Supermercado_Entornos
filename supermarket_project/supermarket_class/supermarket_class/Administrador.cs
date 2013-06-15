@@ -21,6 +21,15 @@ namespace supermarket_class
 
         }
 
+        static public void crear_productos(int T_id_P, int T_id_cat_P, string T_nom_P, double T_precio_P)
+        {
+            StreamWriter fichero_productos = new StreamWriter("Ficheros\\productos.txt", true);
+
+            fichero_productos.WriteLine(T_id_P + "#" + T_id_cat_P + "#" + T_nom_P.ToString() + "#" + T_precio_P);
+
+            fichero_productos.Close();
+        }
+
     }
 
     

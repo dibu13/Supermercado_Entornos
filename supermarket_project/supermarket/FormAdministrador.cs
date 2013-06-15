@@ -30,8 +30,6 @@ namespace supermarket
             fichero_users.Close();
 
             StreamReader fichero_productos = new StreamReader("Ficheros\\productos.txt");
-            //string linea;
-            //string[] datos = null;
 
             while ((linea = fichero_productos.ReadLine()) != null)
             {
@@ -52,8 +50,13 @@ namespace supermarket
 
         private void B_GuardarProd_Click(object sender, EventArgs e)
         {
-            supermarket_class.Productos.crear_productos(Convert.ToInt32(T_id_P.Text), Convert.ToInt32(T_id_cat_P.Text), T_nom_P.Text, Convert.ToInt32(T_precio_P.Text));
+            supermarket_class.Administrador.crear_productos(Convert.ToInt32(T_id_P.Text), Convert.ToInt32(T_id_cat_P.Text), T_nom_P.Text, Convert.ToDouble(T_precio_P.Text));
             ListaProductos.Items.Add(T_nom_P.Text);
+
+            T_id_cat_P.Text = null;
+            T_id_P.Text = null;
+            T_nom_P.Text = null;
+            T_precio_P.Text = null;
         }
 
         private void B_VerProductos_Click(object sender, EventArgs e)
@@ -106,5 +109,9 @@ namespace supermarket
             T_Pass.Text = datos[5];
             T_Admin.Text = datos[6];
         }
+
+
+
+
     }
 }

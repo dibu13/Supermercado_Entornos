@@ -90,10 +90,10 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tabControl1.Location = new System.Drawing.Point(0, 36);
+            this.tabControl1.Location = new System.Drawing.Point(0, 41);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(787, 307);
+            this.tabControl1.Size = new System.Drawing.Size(787, 302);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -418,7 +418,7 @@
             this.tabPage3.Controls.Add(this.label9);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(779, 281);
+            this.tabPage3.Size = new System.Drawing.Size(779, 276);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Productos";
             this.tabPage3.UseVisualStyleBackColor = true;
