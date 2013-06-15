@@ -55,5 +55,29 @@ namespace supermarket
             supermarket_class.Productos.crear_productos(Convert.ToInt32(T_id_P.Text), Convert.ToInt32(T_id_cat_P.Text), T_nom_P.Text, Convert.ToInt32(T_precio_P.Text));
             ListaProductos.Items.Add(T_nom_P.Text);
         }
+
+        private void B_VerProductos_Click(object sender, EventArgs e)
+        {
+            StreamReader fichero_productos = new StreamReader("Ficheros\\productos.txt");
+            string linea;
+            string[] datos = null;
+            bool encontrado = false;
+
+            while ((linea = fichero_productos.ReadLine()) != null && encontrado == false)
+            {
+                datos = linea.Split(new char[] { '#' });
+                if (datos[2] == (string)ListaProductos.SelectedItem)
+                {
+                    encontrado = true;
+                }
+            }
+
+            fichero_productos.Close();
+
+            T_id_cat_P.Text = datos[1];
+            T_id_P.Text = datos[0];
+            T_nom_P.Text = datos[2];
+            T_precio_P.Text = datos[3];
+        }
     }
 }

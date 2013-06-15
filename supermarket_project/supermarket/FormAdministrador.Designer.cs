@@ -512,6 +512,7 @@
             this.B_VerProductos.TabIndex = 56;
             this.B_VerProductos.Text = "Ver Detalles";
             this.B_VerProductos.UseVisualStyleBackColor = true;
+            this.B_VerProductos.Click += new System.EventHandler(this.B_VerProductos_Click);
             // 
             // B_NuevaCat
             // 

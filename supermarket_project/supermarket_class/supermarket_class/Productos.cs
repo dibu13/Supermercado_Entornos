@@ -24,5 +24,9 @@ namespace supermarket_class
 
             fichero_productos.Close();
         }
+
+
+
+        
     }
 }
