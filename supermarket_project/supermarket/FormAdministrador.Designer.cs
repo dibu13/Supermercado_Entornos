@@ -48,7 +48,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.B_VerClientes = new System.Windows.Forms.Button();
-            this.ListaClientes = new System.Windows.Forms.ListBox();
+            this.ListaUsuarios = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button2 = new System.Windows.Forms.Button();
@@ -116,14 +116,14 @@
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.label8);
             this.tabPage1.Controls.Add(this.B_VerClientes);
-            this.tabPage1.Controls.Add(this.ListaClientes);
+            this.tabPage1.Controls.Add(this.ListaUsuarios);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(779, 276);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Clientes";
+            this.tabPage1.Text = "Usuarios";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // button1
@@ -142,8 +142,9 @@
             this.B_BorrarCliente.Name = "B_BorrarCliente";
             this.B_BorrarCliente.Size = new System.Drawing.Size(84, 23);
             this.B_BorrarCliente.TabIndex = 29;
-            this.B_BorrarCliente.Text = "Borrar Cliente";
+            this.B_BorrarCliente.Text = "Borrar Usuario";
             this.B_BorrarCliente.UseVisualStyleBackColor = true;
+            this.B_BorrarCliente.Click += new System.EventHandler(this.B_BorrarCliente_Click);
             // 
             // B_ModUsuarios
             // 
@@ -277,22 +278,22 @@
             this.B_VerClientes.UseVisualStyleBackColor = true;
             this.B_VerClientes.Click += new System.EventHandler(this.B_VerClientes_Click);
             // 
-            // ListaClientes
+            // ListaUsuarios
             // 
-            this.ListaClientes.FormattingEnabled = true;
-            this.ListaClientes.Location = new System.Drawing.Point(44, 46);
-            this.ListaClientes.Name = "ListaClientes";
-            this.ListaClientes.Size = new System.Drawing.Size(182, 173);
-            this.ListaClientes.TabIndex = 4;
+            this.ListaUsuarios.FormattingEnabled = true;
+            this.ListaUsuarios.Location = new System.Drawing.Point(44, 46);
+            this.ListaUsuarios.Name = "ListaUsuarios";
+            this.ListaUsuarios.Size = new System.Drawing.Size(182, 173);
+            this.ListaUsuarios.TabIndex = 4;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(52, 17);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 13);
+            this.label1.Size = new System.Drawing.Size(63, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "CLIENTES";
+            this.label1.Text = "USUARIOS";
             // 
             // tabPage2
             // 
@@ -591,7 +592,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button B_VerClientes;
-        private System.Windows.Forms.ListBox ListaClientes;
+        private System.Windows.Forms.ListBox ListaUsuarios;
         private System.Windows.Forms.TextBox T_Admin;
         private System.Windows.Forms.TextBox T_Direc;
         private System.Windows.Forms.TextBox T_Email;

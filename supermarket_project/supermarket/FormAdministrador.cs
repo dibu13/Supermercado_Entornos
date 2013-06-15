@@ -24,7 +24,7 @@ namespace supermarket
             while ((linea = fichero_users.ReadLine()) != null)
             {
                 datos = linea.Split(new char[] { '#' });
-                ListaClientes.Items.Add(datos[2]);
+                ListaUsuarios.Items.Add(datos[2]);
             }
 
             fichero_users.Close();
@@ -56,7 +56,7 @@ namespace supermarket
         {
 
             supermarket_class.Administrador.crear_user(Convert.ToInt32(T_Id.Text),T_Dni.Text, T_Nombre.Text, T_Direc.Text, T_Email.Text, T_Pass.Text,Convert.ToBoolean(T_Admin.Text));
-            ListaClientes.Items.Add(T_Nombre.Text);    
+            ListaUsuarios.Items.Add(T_Nombre.Text);    
         }
 
         private void B_GuardarProd_Click(object sender, EventArgs e)
@@ -104,7 +104,7 @@ namespace supermarket
             while ((linea = fichero_users.ReadLine()) != null && encontrado == false)
             {
                 datos = linea.Split(new char[] { '#' });
-                if (datos[2] == (string)ListaClientes.SelectedItem)
+                if (datos[2] == (string)ListaUsuarios.SelectedItem)
                 {
                     encontrado = true;
                 }
@@ -154,6 +154,12 @@ namespace supermarket
         {
             supermarket_class.Administrador.borrar_categoria((string)ListaCategorias.SelectedItem);
             ListaCategorias.Items.Remove(ListaCategorias.SelectedItem);
+        }
+
+        private void B_BorrarCliente_Click(object sender, EventArgs e)
+        {
+            supermarket_class.Administrador.borrar_user((string)ListaUsuarios.SelectedItem);
+            ListaUsuarios.Items.Remove(ListaUsuarios.SelectedItem);
         }
 
 

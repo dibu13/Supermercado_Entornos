@@ -9,7 +9,6 @@ namespace supermarket_class
     {
         public int id_categoria;
         public string nombre_categoria;
-        public Categoria() { }
 
 
         public Categoria(int _id_categoria, string _nombre_categoria) {
