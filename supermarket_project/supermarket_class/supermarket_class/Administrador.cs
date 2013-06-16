@@ -107,6 +107,46 @@ namespace supermarket_class
             fichero_users_r.Close();
         }
 
+        static public void modificar_user(string seleccionado, int T_Id, string T_Dni, string T_Nombre, string T_Direc, string T_Email, string T_Pass, bool T_Admin)
+        {
+            List<Usuario> lista_user = new List<Usuario>();
+            StreamReader fichero_users_w = new StreamReader("Ficheros\\usuarios.txt");
+            string linea = "";
+            while ((linea = fichero_users_w.ReadLine()) != null)
+            {
+                string[] datos = linea.Split(new char[] { '#' });
+
+                int id_user = Convert.ToInt32(datos[0]);
+                string dni_user = datos[1];
+                string nombre_user = datos[2];
+                string direccion_user = datos[3];
+                string email_user = datos[4];
+                string contraseña_user = datos[5];
+                bool admin_user = Convert.ToBoolean(datos[6]);
+
+                lista_user.Add(new Usuario(id_user, dni_user, nombre_user, direccion_user, email_user, contraseña_user, admin_user));
+            }
+            fichero_users_w.Close();
+
+            List<Usuario> lista_aux = new List<Usuario>();
+            foreach (Usuario item in lista_user)
+            {
+                if (seleccionado != item.nombre_user)
+                {
+                    lista_aux.Add(new Usuario(item.id_user, item.dni_user, item.nombre_user, item.direccion_user, item.email_user, item.contraseña_user, item.admin_user));
+                }
+                else{
+                    lista_aux.Add(new Usuario(T_Id, T_Dni, T_Nombre, T_Direc, T_Email, T_Pass, T_Admin));
+                }
+            }
+
+            StreamWriter fichero_users_r = new StreamWriter("Ficheros\\usuarios.txt");
+            foreach (Usuario item in lista_aux)
+            {
+                fichero_users_r.WriteLine(item.id_user.ToString() + "#" + item.dni_user + "#" + item.nombre_user + "#" + item.direccion_user + "#" + item.email_user + "#" + item.contraseña_user + "#" + item.admin_user);
+            }
+            fichero_users_r.Close();
+        }
         static public void borrar_prod(string seleccionado)
         {
             List<Producto> lista_productos = new List<Producto>();

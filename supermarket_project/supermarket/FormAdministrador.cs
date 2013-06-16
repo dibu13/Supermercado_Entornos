@@ -177,6 +177,13 @@ namespace supermarket
             ListaProductos.Items.Remove(ListaProductos.SelectedItem);
         }
 
+        private void B_ModUsuarios_Click(object sender, EventArgs e)
+        {
+            supermarket_class.Administrador.modificar_user((string)ListaUsuarios.SelectedItem, Convert.ToInt32(T_Id.Text), T_Dni.Text, T_Nombre.Text, T_Direc.Text, T_Email.Text, T_Pass.Text, Convert.ToBoolean(T_Admin.Text));
+            ListaUsuarios.Items.Remove(ListaUsuarios.SelectedItem);
+            ListaUsuarios.Items.Add(T_Nombre.Text);
+        }
+
 
 
 

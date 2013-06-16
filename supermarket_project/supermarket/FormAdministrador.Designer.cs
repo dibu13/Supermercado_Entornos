@@ -154,6 +154,7 @@
             this.B_ModUsuarios.TabIndex = 28;
             this.B_ModUsuarios.Text = "Guardar";
             this.B_ModUsuarios.UseVisualStyleBackColor = true;
+            this.B_ModUsuarios.Click += new System.EventHandler(this.B_ModUsuarios_Click);
             // 
             // T_Admin
             // 
