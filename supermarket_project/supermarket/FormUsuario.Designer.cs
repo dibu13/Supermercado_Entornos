@@ -30,14 +30,12 @@
         {
             this.Datos_Usuario = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.T_Admin = new System.Windows.Forms.TextBox();
             this.T_Direc = new System.Windows.Forms.TextBox();
             this.T_Email = new System.Windows.Forms.TextBox();
             this.T_Pass = new System.Windows.Forms.TextBox();
             this.T_Nombre = new System.Windows.Forms.TextBox();
             this.T_Dni = new System.Windows.Forms.TextBox();
             this.T_Id = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -90,14 +88,12 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.T_Admin);
             this.tabPage1.Controls.Add(this.T_Direc);
             this.tabPage1.Controls.Add(this.T_Email);
             this.tabPage1.Controls.Add(this.T_Pass);
             this.tabPage1.Controls.Add(this.T_Nombre);
             this.tabPage1.Controls.Add(this.T_Dni);
             this.tabPage1.Controls.Add(this.T_Id);
-            this.tabPage1.Controls.Add(this.label7);
             this.tabPage1.Controls.Add(this.label6);
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.label4);
@@ -112,14 +108,6 @@
             this.tabPage1.Text = "Datos Usuario";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // T_Admin
-            // 
-            this.T_Admin.Location = new System.Drawing.Point(680, 38);
-            this.T_Admin.Name = "T_Admin";
-            this.T_Admin.ReadOnly = true;
-            this.T_Admin.Size = new System.Drawing.Size(36, 20);
-            this.T_Admin.TabIndex = 13;
-            // 
             // T_Direc
             // 
             this.T_Direc.Location = new System.Drawing.Point(457, 73);
@@ -131,6 +119,7 @@
             // 
             this.T_Email.Location = new System.Drawing.Point(457, 38);
             this.T_Email.Name = "T_Email";
+            this.T_Email.ReadOnly = true;
             this.T_Email.Size = new System.Drawing.Size(170, 20);
             this.T_Email.TabIndex = 11;
             // 
@@ -138,6 +127,7 @@
             // 
             this.T_Pass.Location = new System.Drawing.Point(225, 73);
             this.T_Pass.Name = "T_Pass";
+            this.T_Pass.ReadOnly = true;
             this.T_Pass.Size = new System.Drawing.Size(150, 20);
             this.T_Pass.TabIndex = 10;
             // 
@@ -145,6 +135,7 @@
             // 
             this.T_Nombre.Location = new System.Drawing.Point(225, 38);
             this.T_Nombre.Name = "T_Nombre";
+            this.T_Nombre.ReadOnly = true;
             this.T_Nombre.Size = new System.Drawing.Size(150, 20);
             this.T_Nombre.TabIndex = 9;
             // 
@@ -152,6 +143,7 @@
             // 
             this.T_Dni.Location = new System.Drawing.Point(43, 73);
             this.T_Dni.Name = "T_Dni";
+            this.T_Dni.ReadOnly = true;
             this.T_Dni.Size = new System.Drawing.Size(83, 20);
             this.T_Dni.TabIndex = 8;
             // 
@@ -159,17 +151,9 @@
             // 
             this.T_Id.Location = new System.Drawing.Point(43, 38);
             this.T_Id.Name = "T_Id";
+            this.T_Id.ReadOnly = true;
             this.T_Id.Size = new System.Drawing.Size(83, 20);
             this.T_Id.TabIndex = 7;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(632, 41);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(42, 13);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "ADMIN";
             // 
             // label6
             // 
@@ -469,14 +453,12 @@
 
         private System.Windows.Forms.TabControl Datos_Usuario;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TextBox T_Admin;
         private System.Windows.Forms.TextBox T_Direc;
         private System.Windows.Forms.TextBox T_Email;
         private System.Windows.Forms.TextBox T_Pass;
         private System.Windows.Forms.TextBox T_Nombre;
         private System.Windows.Forms.TextBox T_Dni;
         private System.Windows.Forms.TextBox T_Id;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;

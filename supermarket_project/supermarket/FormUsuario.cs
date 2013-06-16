@@ -33,7 +33,7 @@ namespace supermarket
             T_Direc.Text = datos[3];
             T_Email.Text = datos[4];
             T_Pass.Text = datos[5];
-            T_Admin.Text = datos[6];
+            
 
             StreamReader fichero_productos = new StreamReader("Ficheros\\productos.txt");
 
