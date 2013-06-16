@@ -7,5 +7,7 @@ namespace supermarket_class
 {
     public class Cliente
     {
+      
+
     }
 }

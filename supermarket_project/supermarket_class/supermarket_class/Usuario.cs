@@ -25,5 +25,6 @@ namespace supermarket_class
             this.contraseña_user = _contraseña_user;
             this.admin_user = _admin_user;
         }
+
     }
 }

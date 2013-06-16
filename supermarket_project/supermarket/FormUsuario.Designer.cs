@@ -62,11 +62,11 @@
             this.ListaCarro = new System.Windows.Forms.ListBox();
             this.label9 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.B_VerPedidos = new System.Windows.Forms.Button();
             this.ListaPedidos = new System.Windows.Forms.ListBox();
             this.label10 = new System.Windows.Forms.Label();
             this.LabelUser = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.B_VerPedidos = new System.Windows.Forms.Button();
             this.Datos_Usuario.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -116,6 +116,7 @@
             // 
             this.T_Admin.Location = new System.Drawing.Point(680, 38);
             this.T_Admin.Name = "T_Admin";
+            this.T_Admin.ReadOnly = true;
             this.T_Admin.Size = new System.Drawing.Size(36, 20);
             this.T_Admin.TabIndex = 13;
             // 
@@ -395,6 +396,15 @@
             this.tabPage4.Text = "Pedidos";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // B_VerPedidos
+            // 
+            this.B_VerPedidos.Location = new System.Drawing.Point(285, 39);
+            this.B_VerPedidos.Name = "B_VerPedidos";
+            this.B_VerPedidos.Size = new System.Drawing.Size(75, 23);
+            this.B_VerPedidos.TabIndex = 2;
+            this.B_VerPedidos.Text = "Ver Pedidos";
+            this.B_VerPedidos.UseVisualStyleBackColor = true;
+            // 
             // ListaPedidos
             // 
             this.ListaPedidos.FormattingEnabled = true;
@@ -428,15 +438,6 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "Desloguear";
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // B_VerPedidos
-            // 
-            this.B_VerPedidos.Location = new System.Drawing.Point(285, 39);
-            this.B_VerPedidos.Name = "B_VerPedidos";
-            this.B_VerPedidos.Size = new System.Drawing.Size(75, 23);
-            this.B_VerPedidos.TabIndex = 2;
-            this.B_VerPedidos.Text = "Ver Pedidos";
-            this.B_VerPedidos.UseVisualStyleBackColor = true;
             // 
             // FormUsuario
             // 

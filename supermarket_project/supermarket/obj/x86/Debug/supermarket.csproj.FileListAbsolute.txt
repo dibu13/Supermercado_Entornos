@@ -50,3 +50,16 @@ C:\Users\Dibu\Desktop\supermarket_project\supermarket\obj\x86\Debug\GenerateReso
 C:\Users\Dibu\Desktop\supermarket_project\supermarket\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\Alex\Documents\GitHub\Supermercado_Entornos\supermarket_project\supermarket\bin\Debug\supermarket_class.dll
 C:\Users\Alex\Documents\GitHub\Supermercado_Entornos\supermarket_project\supermarket\bin\Debug\supermarket_class.pdb
+C:\Users\Norber\Documents\GitHub\Supermercado_Entornos\supermarket_project\supermarket\obj\x86\Debug\supermarket.exe
+C:\Users\Norber\Documents\GitHub\Supermercado_Entornos\supermarket_project\supermarket\obj\x86\Debug\supermarket.pdb
+C:\Users\Norber\Documents\GitHub\Supermercado_Entornos\supermarket_project\supermarket\bin\Debug\supermarket.exe
+C:\Users\Norber\Documents\GitHub\Supermercado_Entornos\supermarket_project\supermarket\bin\Debug\supermarket.pdb
+C:\Users\Norber\Documents\GitHub\Supermercado_Entornos\supermarket_project\supermarket\bin\Debug\supermarket_class.dll
+C:\Users\Norber\Documents\GitHub\Supermercado_Entornos\supermarket_project\supermarket\bin\Debug\supermarket_class.pdb
+C:\Users\Norber\Documents\GitHub\Supermercado_Entornos\supermarket_project\supermarket\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Norber\Documents\GitHub\Supermercado_Entornos\supermarket_project\supermarket\obj\x86\Debug\supermarket.FormAdministrador.resources
+C:\Users\Norber\Documents\GitHub\Supermercado_Entornos\supermarket_project\supermarket\obj\x86\Debug\supermarket.FormLogin.resources
+C:\Users\Norber\Documents\GitHub\Supermercado_Entornos\supermarket_project\supermarket\obj\x86\Debug\supermarket.FormUsuario.resources
+C:\Users\Norber\Documents\GitHub\Supermercado_Entornos\supermarket_project\supermarket\obj\x86\Debug\supermarket.Properties.Resources.resources
+C:\Users\Norber\Documents\GitHub\Supermercado_Entornos\supermarket_project\supermarket\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Norber\Documents\GitHub\Supermercado_Entornos\supermarket_project\supermarket\obj\x86\Debug\GenerateResource.write.1.tlog
