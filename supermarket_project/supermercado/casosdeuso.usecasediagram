@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="b7581daa-8c94-4a37-9361-c26cfdc9d0eb" name="casosdeuso" linkedPackageId="287654f6-f37e-4bd1-ab94-fa6aeddf0ff7" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="b7581daa-8c94-4a37-9361-c26cfdc9d0eb" name="casosdeuso" linkedPackageId="287654f6-f37e-4bd1-ab94-fa6aeddf0ff7" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <packagedElements>
     <useCaseModelRootHasTypes>
       <actor Id="db46ad53-d0c2-43d6-917a-048f6ccc6ea3" name="ADMINISTRADOR" isAbstract="false" isLeaf="false">
@@ -228,7 +228,7 @@
         <elementDefinition Id="f57a3e20-55fe-4f32-bea7-5dfbbdfd95f8" />
         <additions>
           <include Id="253a505f-d72e-4e95-b799-759be98be0e7">
-            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA DATOS" />
+            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS" />
             <elementDefinition Id="3ddf73c4-bfff-4285-a6d3-4cdcde2ddb2a" />
           </include>
         </additions>
@@ -239,7 +239,7 @@
         <elementDefinition Id="d63d4737-a68e-490d-b410-f3e9bc95e5ce" />
         <additions>
           <include Id="3c5f27c6-582a-46ba-a196-57d6ccb28ff8">
-            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA DATOS" />
+            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS" />
             <elementDefinition Id="38249b35-3c67-4b0a-aca1-8d2ad4eb0f49" />
           </include>
         </additions>
@@ -250,7 +250,7 @@
         <elementDefinition Id="8c6bce7b-a664-4827-a001-ef9d933563e5" />
         <additions>
           <include Id="f161469e-3f99-4cd8-9da8-240a3a37d292">
-            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA DATOS" />
+            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS" />
             <elementDefinition Id="4b4f608b-2694-482e-bb12-7b23c8bc94b6" />
           </include>
         </additions>
@@ -261,7 +261,7 @@
         <elementDefinition Id="6a6101e4-0e5a-4bd4-a3c3-a5baf6bca491" />
         <additions>
           <include Id="afb74bda-bdf9-4dc1-8bd1-5219aa482f33">
-            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA DATOS" />
+            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS" />
             <elementDefinition Id="cf0a01b0-c838-407c-b272-1179ea711035" />
           </include>
         </additions>
@@ -272,7 +272,7 @@
         <elementDefinition Id="0dfe82f5-c827-4b73-b18a-ea7303162cbd" />
         <additions>
           <include Id="1d1addce-c3cd-4676-ba3c-b529912e9cf3">
-            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA DATOS" />
+            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS" />
             <elementDefinition Id="3e249c22-b21f-4647-a121-8f29a2d55f36" />
           </include>
         </additions>
@@ -283,7 +283,7 @@
         <elementDefinition Id="0e7bef1c-69db-4d36-ab84-c6592379a80f" />
         <additions>
           <include Id="d9d78377-67e2-4e81-9621-9259ff94f678">
-            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA DATOS" />
+            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS" />
             <elementDefinition Id="52012e82-dec8-4aaa-ac65-88fe88043e21" />
           </include>
         </additions>
@@ -294,7 +294,7 @@
         <elementDefinition Id="d1175ff3-af09-4c2e-bc57-c8db1eb9453c" />
         <additions>
           <include Id="dcd220cb-9cd3-4154-b0fa-376898013fcb">
-            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA DATOS" />
+            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS" />
             <elementDefinition Id="819f5d61-835d-4a1a-9d15-46f237e356ee" />
           </include>
         </additions>
@@ -305,7 +305,7 @@
         <elementDefinition Id="f285d99e-6e66-4734-ad77-e9b34129b0d0" />
         <additions>
           <include Id="1209462a-5cae-417d-85f7-7f747e8a2331">
-            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA DATOS" />
+            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS" />
             <elementDefinition Id="7906a6f6-9074-4f1f-9e07-3b54f1f1240f" />
           </include>
         </additions>
@@ -316,7 +316,7 @@
         <elementDefinition Id="d253a48d-4195-47bc-8e5a-8e2347cdfd77" />
         <additions>
           <include Id="429f1165-392b-4396-88b3-0c1750e5d910">
-            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA DATOS" />
+            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS" />
             <elementDefinition Id="a4ad7e3e-45d0-4660-969a-99ca27a84a8a" />
           </include>
         </additions>
@@ -327,7 +327,7 @@
         <elementDefinition Id="1b0a1e80-4e80-48cb-844c-db1aafc92f9b" />
         <additions>
           <include Id="ad9560fc-599e-4493-bb72-4a23fbc647a6">
-            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA DATOS" />
+            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS" />
             <elementDefinition Id="d50bd67a-ef20-4bf2-8dc2-bac039bf67ee" />
           </include>
         </additions>
@@ -338,7 +338,7 @@
         <elementDefinition Id="92daaa5c-31b8-46db-b03c-f257abf6baf8" />
         <targetEnds>
           <association Id="c1fa63f6-603e-42cf-8c42-d795a26c55d4" isDerived="false" sourceEndRoleName="PROGRAMA" targetEndRoleName="COMPRUEBA DATOS" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA DATOS" />
+            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="f5c63211-c631-40e7-aeb9-7b2f3b60c54f" name="PROGRAMA" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -361,14 +361,14 @@
         <elementDefinition Id="4c95b98b-0a3c-493e-9649-aafdad4dd30f" />
         <additions>
           <include Id="b85aa8aa-a56e-4e6a-907a-8ca8b75209fb">
-            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA DATOS" />
+            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS" />
             <elementDefinition Id="c9e89237-75bf-4cbc-9342-59ebf26f5ce0" />
           </include>
         </additions>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" name="COMPRUEBA DATOS" isAbstract="false" isLeaf="false">
+      <useCase Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" name="COMPRUEBA Y ALMACENA             LOS DATOS" isAbstract="false" isLeaf="false">
         <elementDefinition Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7" />
       </useCase>
     </useCaseModelRootHasTypes>

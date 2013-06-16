@@ -1925,7 +1925,7 @@
             Id="3ddf73c4-bfff-4285-a6d3-4cdcde2ddb2a">
             <useCaseMoniker
               Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7"
-              LastKnownName="COMPRUEBA DATOS"
+              LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS"
               LastKnownLocation="supermercado.uml" />
           </include>
         </additions>
@@ -1942,7 +1942,7 @@
             Id="38249b35-3c67-4b0a-aca1-8d2ad4eb0f49">
             <useCaseMoniker
               Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7"
-              LastKnownName="COMPRUEBA DATOS"
+              LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS"
               LastKnownLocation="supermercado.uml" />
           </include>
         </additions>
@@ -1959,7 +1959,7 @@
             Id="4b4f608b-2694-482e-bb12-7b23c8bc94b6">
             <useCaseMoniker
               Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7"
-              LastKnownName="COMPRUEBA DATOS"
+              LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS"
               LastKnownLocation="supermercado.uml" />
           </include>
         </additions>
@@ -1976,7 +1976,7 @@
             Id="cf0a01b0-c838-407c-b272-1179ea711035">
             <useCaseMoniker
               Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7"
-              LastKnownName="COMPRUEBA DATOS"
+              LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS"
               LastKnownLocation="supermercado.uml" />
           </include>
         </additions>
@@ -1993,7 +1993,7 @@
             Id="3e249c22-b21f-4647-a121-8f29a2d55f36">
             <useCaseMoniker
               Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7"
-              LastKnownName="COMPRUEBA DATOS"
+              LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS"
               LastKnownLocation="supermercado.uml" />
           </include>
         </additions>
@@ -2010,7 +2010,7 @@
             Id="52012e82-dec8-4aaa-ac65-88fe88043e21">
             <useCaseMoniker
               Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7"
-              LastKnownName="COMPRUEBA DATOS"
+              LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS"
               LastKnownLocation="supermercado.uml" />
           </include>
         </additions>
@@ -2027,7 +2027,7 @@
             Id="819f5d61-835d-4a1a-9d15-46f237e356ee">
             <useCaseMoniker
               Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7"
-              LastKnownName="COMPRUEBA DATOS"
+              LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS"
               LastKnownLocation="supermercado.uml" />
           </include>
         </additions>
@@ -2044,7 +2044,7 @@
             Id="7906a6f6-9074-4f1f-9e07-3b54f1f1240f">
             <useCaseMoniker
               Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7"
-              LastKnownName="COMPRUEBA DATOS"
+              LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS"
               LastKnownLocation="supermercado.uml" />
           </include>
         </additions>
@@ -2061,7 +2061,7 @@
             Id="a4ad7e3e-45d0-4660-969a-99ca27a84a8a">
             <useCaseMoniker
               Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7"
-              LastKnownName="COMPRUEBA DATOS"
+              LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS"
               LastKnownLocation="supermercado.uml" />
           </include>
         </additions>
@@ -2078,7 +2078,7 @@
             Id="d50bd67a-ef20-4bf2-8dc2-bac039bf67ee">
             <useCaseMoniker
               Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7"
-              LastKnownName="COMPRUEBA DATOS"
+              LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS"
               LastKnownLocation="supermercado.uml" />
           </include>
         </additions>
@@ -2178,7 +2178,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7"
-              LastKnownName="COMPRUEBA DATOS"
+              LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS"
               LastKnownLocation="supermercado.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -2274,7 +2274,7 @@
             Id="c9e89237-75bf-4cbc-9342-59ebf26f5ce0">
             <useCaseMoniker
               Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7"
-              LastKnownName="COMPRUEBA DATOS"
+              LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS"
               LastKnownLocation="supermercado.uml" />
           </include>
         </additions>
@@ -2290,7 +2290,7 @@
     <packageHasNamedElement>
       <useCase
         Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7"
-        name="COMPRUEBA DATOS"
+        name="COMPRUEBA Y ALMACENA             LOS DATOS"
         isAbstract="false"
         isLeaf="false">
         <targetEnds>
@@ -2347,7 +2347,7 @@
             Id="456abb2f-3585-4c70-9342-39d95aa166de">
             <useCaseMoniker
               Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7"
-              LastKnownName="COMPRUEBA DATOS"
+              LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS"
               LastKnownLocation="supermercado.uml" />
           </extend>
         </extendedCases>

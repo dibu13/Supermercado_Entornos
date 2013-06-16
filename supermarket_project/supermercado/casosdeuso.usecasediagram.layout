@@ -138,7 +138,7 @@
         <useCaseShapeMoniker Id="8a179c0d-87f7-4a8f-bb8c-ba96395341e4" />
       </nodes>
     </useCaseAssociationConnector>
-    <actorShape Id="e9a6309b-3e03-4c5e-8cf5-918525869fc1" absoluteBounds="4.125, 5.875, 0.5, 0.5" isReference="false" heightOffset="0">
+    <actorShape Id="e9a6309b-3e03-4c5e-8cf5-918525869fc1" absoluteBounds="4.625, 5.875, 0.5, 0.5" isReference="false" heightOffset="0">
       <actorMoniker Id="e38586ed-a08d-40e5-bca2-ba72cd498244" LastKnownName="PROGRAMA" />
       <relativeChildShapes />
     </actorShape>
@@ -162,11 +162,11 @@
         <useCaseShapeMoniker Id="9ffa902c-f001-4a84-98d7-4c9cbf9e34e1" />
       </nodes>
     </useCaseAssociationConnector>
-    <useCaseShape Id="8049ed8c-7204-4c6e-87d5-2a6e4091b5d2" absoluteBounds="3.875, 4.5, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
-      <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA DATOS" />
+    <useCaseShape Id="8049ed8c-7204-4c6e-87d5-2a6e4091b5d2" absoluteBounds="3.875, 4.5, 2, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS" />
       <relativeChildShapes />
     </useCaseShape>
-    <useCaseAssociationConnector edgePoints="[(4.375 : 5.875); (4.375 : 5)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+    <useCaseAssociationConnector edgePoints="[(4.875 : 5.875); (4.875 : 5.25)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
       <associationMoniker Id="c1fa63f6-603e-42cf-8c42-d795a26c55d4" />
       <relativeChildShapes />
       <nodes>
@@ -174,7 +174,7 @@
         <useCaseShapeMoniker Id="8049ed8c-7204-4c6e-87d5-2a6e4091b5d2" />
       </nodes>
     </useCaseAssociationConnector>
-    <includeConnector edgePoints="[(8.05683698185399 : 1.63459947689278); (4.62936465606332 : 4.53476836794642)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black" useCaseStereotype="«include»">
+    <includeConnector edgePoints="[(8.09215840489786 : 1.65784159510214); (5.22612344158839 : 4.52387655841161)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«include»">
       <includeMoniker Id="1d1addce-c3cd-4676-ba3c-b529912e9cf3" />
       <relativeChildShapes />
       <nodes>
@@ -182,7 +182,7 @@
         <useCaseShapeMoniker Id="8049ed8c-7204-4c6e-87d5-2a6e4091b5d2" />
       </nodes>
     </includeConnector>
-    <includeConnector edgePoints="[(8.2240585861933 : 2.5990554959508); (4.70839742973491 : 4.56368967161873)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black" useCaseStereotype="«include»">
+    <includeConnector edgePoints="[(8.25129534065817 : 2.62413643956122); (5.36526123963256 : 4.54815917357829)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«include»">
       <includeMoniker Id="dcd220cb-9cd3-4154-b0fa-376898013fcb" />
       <relativeChildShapes />
       <nodes>
@@ -190,7 +190,7 @@
         <useCaseShapeMoniker Id="8049ed8c-7204-4c6e-87d5-2a6e4091b5d2" />
       </nodes>
     </includeConnector>
-    <includeConnector edgePoints="[(8.15725059696181 : 3.70851070518443); (4.81297387137413 : 4.62939849918683)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black" useCaseStereotype="«include»">
+    <includeConnector edgePoints="[(8.17313387842659 : 3.73957686152527); (5.61165265810312 : 4.62139826524319)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«include»">
       <includeMoniker Id="afb74bda-bdf9-4dc1-8bd1-5219aa482f33" />
       <relativeChildShapes />
       <nodes>
@@ -198,7 +198,7 @@
         <useCaseShapeMoniker Id="8049ed8c-7204-4c6e-87d5-2a6e4091b5d2" />
       </nodes>
     </includeConnector>
-    <includeConnector edgePoints="[(8.25110428016574 : 4.91150434500691); (4.87327287912244 : 4.77076136996344)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black" useCaseStereotype="«include»">
+    <includeConnector edgePoints="[(8.25017623925739 : 4.92711099977583); (5.87443452374741 : 4.88760933104019)]" fixedFrom="Algorithm" fixedTo="Caller" customColor="Black" useCaseStereotype="«include»">
       <includeMoniker Id="f161469e-3f99-4cd8-9da8-240a3a37d292" />
       <relativeChildShapes />
       <nodes>
@@ -206,7 +206,7 @@
         <useCaseShapeMoniker Id="8049ed8c-7204-4c6e-87d5-2a6e4091b5d2" />
       </nodes>
     </includeConnector>
-    <includeConnector edgePoints="[(1.2051823386644 : 1.22798037629378); (4.1698176613356 : 4.52201962370622)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black" useCaseStereotype="«include»">
+    <includeConnector edgePoints="[(1.22360679774998 : 1.22360679774998); (4.52387655841161 : 4.52387655841161)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«include»">
       <includeMoniker Id="3c5f27c6-582a-46ba-a196-57d6ccb28ff8" />
       <relativeChildShapes />
       <nodes>
@@ -214,7 +214,7 @@
         <useCaseShapeMoniker Id="8049ed8c-7204-4c6e-87d5-2a6e4091b5d2" />
       </nodes>
     </includeConnector>
-    <includeConnector edgePoints="[(1.25310028438211 : 2.09060394595513); (4.12189971561789 : 4.53439605404487)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black" useCaseStereotype="«include»">
+    <includeConnector edgePoints="[(1.27126271573783 : 2.08500984444219); (4.43907154627297 : 4.53750700356617)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«include»">
       <includeMoniker Id="ad9560fc-599e-4493-bb72-4a23fbc647a6" />
       <relativeChildShapes />
       <nodes>
@@ -222,7 +222,7 @@
         <useCaseShapeMoniker Id="8049ed8c-7204-4c6e-87d5-2a6e4091b5d2" />
       </nodes>
     </includeConnector>
-    <includeConnector edgePoints="[(1.40177859667237 : 3.09821033148465); (4.04051763418878 : 4.56417646343821)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black" useCaseStereotype="«include»">
+    <includeConnector edgePoints="[(1.41189169277266 : 3.08758926078589); (4.28720417251731 : 4.57162150839603)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«include»">
       <includeMoniker Id="d9d78377-67e2-4e81-9621-9259ff94f678" />
       <relativeChildShapes />
       <nodes>
@@ -230,7 +230,7 @@
         <useCaseShapeMoniker Id="8049ed8c-7204-4c6e-87d5-2a6e4091b5d2" />
       </nodes>
     </includeConnector>
-    <includeConnector edgePoints="[(1.45690577431013 : 4.10153461651336); (3.91809422568987 : 4.64846538348664)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black" useCaseStereotype="«include»">
+    <includeConnector edgePoints="[(1.45568529982934 : 4.10289668060662); (4.0183209327973 : 4.68155633966391)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«include»">
       <includeMoniker Id="1209462a-5cae-417d-85f7-7f747e8a2331" />
       <relativeChildShapes />
       <nodes>
@@ -238,7 +238,7 @@
         <useCaseShapeMoniker Id="8049ed8c-7204-4c6e-87d5-2a6e4091b5d2" />
       </nodes>
     </includeConnector>
-    <includeConnector edgePoints="[(1.61918584882531 : 4.96198570393651); (3.88081415117469 : 4.78801429606349)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black" useCaseStereotype="«include»">
+    <includeConnector edgePoints="[(1.6238925789283 : 4.98337024736906); (3.87892735930731 : 4.90820242135642)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«include»">
       <includeMoniker Id="429f1165-392b-4396-88b3-0c1750e5d910" />
       <relativeChildShapes />
       <nodes>
@@ -246,7 +246,7 @@
         <useCaseShapeMoniker Id="8049ed8c-7204-4c6e-87d5-2a6e4091b5d2" />
       </nodes>
     </includeConnector>
-    <includeConnector edgePoints="[(3.48951966686277 : 2.86835429208339); (4.26048033313723 : 4.50664570791661)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«include»">
+    <includeConnector edgePoints="[(3.53311388300842 : 2.86217082451263); (4.63246437496367 : 4.5111965624455)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«include»">
       <includeMoniker Id="b85aa8aa-a56e-4e6a-907a-8ca8b75209fb" />
       <relativeChildShapes />
       <nodes>
@@ -254,7 +254,7 @@
         <useCaseShapeMoniker Id="8049ed8c-7204-4c6e-87d5-2a6e4091b5d2" />
       </nodes>
     </includeConnector>
-    <includeConnector edgePoints="[(5.25373218748183 : 2.99253562503633); (4.49626781251817 : 4.50746437496367)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«include»">
+    <includeConnector edgePoints="[(5.3165793762163 : 2.99828765108072); (4.96289381029636 : 4.50145130624048)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«include»">
       <includeMoniker Id="253a505f-d72e-4e95-b799-759be98be0e7" />
       <relativeChildShapes />
       <nodes>
