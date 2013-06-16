@@ -56,7 +56,14 @@ namespace supermarket
         {
 
             supermarket_class.Administrador.crear_user(Convert.ToInt32(T_Id.Text),T_Dni.Text, T_Nombre.Text, T_Direc.Text, T_Email.Text, T_Pass.Text,Convert.ToBoolean(T_Admin.Text));
-            ListaUsuarios.Items.Add(T_Nombre.Text);    
+            ListaUsuarios.Items.Add(T_Nombre.Text);
+            T_Id.Text = null;
+            T_Dni.Text = null;
+            T_Nombre.Text = null;
+            T_Direc.Text = null;
+            T_Email.Text = null;
+            T_Pass.Text = null;
+            T_Admin.Text = null;
         }
 
         private void B_GuardarProd_Click(object sender, EventArgs e)
@@ -125,6 +132,8 @@ namespace supermarket
         {
             supermarket_class.Administrador.crear_categorias(Convert.ToInt32(T_IdCat.Text),T_NombreCat.Text);
             ListaCategorias.Items.Add(T_NombreCat.Text);
+            T_IdCat.Text = null;
+            T_NombreCat.Text = null;
         }
 
         private void B_VerDetCat_Click(object sender, EventArgs e)
