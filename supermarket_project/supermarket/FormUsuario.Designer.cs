@@ -46,10 +46,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.B_Enviaralcarro = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.T_Precio = new System.Windows.Forms.TextBox();
+            this.T_IdCategoria = new System.Windows.Forms.TextBox();
+            this.T_IdProd = new System.Windows.Forms.TextBox();
+            this.T_NombreProducto = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.L_IdProducto = new System.Windows.Forms.Label();
@@ -228,10 +228,10 @@
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.B_Enviaralcarro);
-            this.tabPage2.Controls.Add(this.textBox4);
-            this.tabPage2.Controls.Add(this.textBox3);
-            this.tabPage2.Controls.Add(this.textBox2);
-            this.tabPage2.Controls.Add(this.textBox1);
+            this.tabPage2.Controls.Add(this.T_Precio);
+            this.tabPage2.Controls.Add(this.T_IdCategoria);
+            this.tabPage2.Controls.Add(this.T_IdProd);
+            this.tabPage2.Controls.Add(this.T_NombreProducto);
             this.tabPage2.Controls.Add(this.label12);
             this.tabPage2.Controls.Add(this.label11);
             this.tabPage2.Controls.Add(this.L_IdProducto);
@@ -256,33 +256,33 @@
             this.B_Enviaralcarro.Text = "Añadir al Carro";
             this.B_Enviaralcarro.UseVisualStyleBackColor = true;
             // 
-            // textBox4
+            // T_Precio
             // 
-            this.textBox4.Location = new System.Drawing.Point(423, 208);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(52, 20);
-            this.textBox4.TabIndex = 10;
+            this.T_Precio.Location = new System.Drawing.Point(423, 208);
+            this.T_Precio.Name = "T_Precio";
+            this.T_Precio.Size = new System.Drawing.Size(52, 20);
+            this.T_Precio.TabIndex = 10;
             // 
-            // textBox3
+            // T_IdCategoria
             // 
-            this.textBox3.Location = new System.Drawing.Point(423, 168);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(52, 20);
-            this.textBox3.TabIndex = 9;
+            this.T_IdCategoria.Location = new System.Drawing.Point(423, 168);
+            this.T_IdCategoria.Name = "T_IdCategoria";
+            this.T_IdCategoria.Size = new System.Drawing.Size(52, 20);
+            this.T_IdCategoria.TabIndex = 9;
             // 
-            // textBox2
+            // T_IdProd
             // 
-            this.textBox2.Location = new System.Drawing.Point(423, 131);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(52, 20);
-            this.textBox2.TabIndex = 8;
+            this.T_IdProd.Location = new System.Drawing.Point(423, 131);
+            this.T_IdProd.Name = "T_IdProd";
+            this.T_IdProd.Size = new System.Drawing.Size(52, 20);
+            this.T_IdProd.TabIndex = 8;
             // 
-            // textBox1
+            // T_NombreProducto
             // 
-            this.textBox1.Location = new System.Drawing.Point(423, 92);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(194, 20);
-            this.textBox1.TabIndex = 7;
+            this.T_NombreProducto.Location = new System.Drawing.Point(423, 92);
+            this.T_NombreProducto.Name = "T_NombreProducto";
+            this.T_NombreProducto.Size = new System.Drawing.Size(194, 20);
+            this.T_NombreProducto.TabIndex = 7;
             // 
             // label12
             // 
@@ -328,6 +328,7 @@
             this.B_VerProductos.TabIndex = 2;
             this.B_VerProductos.Text = "Ver Detalles";
             this.B_VerProductos.UseVisualStyleBackColor = true;
+            this.B_VerProductos.Click += new System.EventHandler(this.B_VerProductos_Click);
             // 
             // ListaProductos
             // 
@@ -490,10 +491,10 @@
         private System.Windows.Forms.Button B_VerProductos;
         private System.Windows.Forms.ListBox ListaProductos;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox T_Precio;
+        private System.Windows.Forms.TextBox T_IdCategoria;
+        private System.Windows.Forms.TextBox T_IdProd;
+        private System.Windows.Forms.TextBox T_NombreProducto;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button B_Enviaralcarro;

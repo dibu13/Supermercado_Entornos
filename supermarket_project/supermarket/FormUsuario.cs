@@ -34,7 +34,44 @@ namespace supermarket
             T_Email.Text = datos[4];
             T_Pass.Text = datos[5];
             T_Admin.Text = datos[6];
+
+            StreamReader fichero_productos = new StreamReader("Ficheros\\productos.txt");
+
+            while ((linea = fichero_productos.ReadLine()) != null) {
+                datos = linea.Split(new char[] { '#' });
+                ListaProductos.Items.Add(datos[2]);
+            }
+
+            fichero_productos.Close();
+
         }
 
-    }
+        private void B_VerProductos_Click(object sender, EventArgs e) {
+           
+            StreamReader fichero_productos = new StreamReader("Ficheros\\productos.txt");
+            string linea;
+            string[] datos = null;
+            bool encontrado = false;
+
+            while ((linea = fichero_productos.ReadLine()) != null && encontrado == false)
+            {
+                datos = linea.Split(new char[] { '#' });
+                if (datos[2] == (string)ListaProductos.SelectedItem)
+                {
+                    encontrado = true;
+                }
+            }
+
+            fichero_productos.Close();
+            T_NombreProducto.Text = datos[2];
+            T_IdProd.Text = datos[0];
+            T_IdCategoria.Text = datos[1];
+            T_Precio.Text = datos[3];
+
+        
+        }
+
+        }
+
+    
 }
