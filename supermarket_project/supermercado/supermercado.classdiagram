@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="93ab29c7-e4f6-4808-a8fc-24bd47ddff6c" name="supermercado" linkedPackageId="8607e1f1-42a9-4889-91ad-e82aa5940d1e" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="99ae02f9-6247-440c-b1b6-4cca11052b6c">
-      <profileInstance Id="75e487e4-5261-4bcd-a341-9c45c804d148" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="8ba593cb-8cd4-4109-aa42-304102ef9d39">
-      <profileInstance Id="e04315cd-2007-4d52-8371-649fb2b5440c" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="93ab29c7-e4f6-4808-a8fc-24bd47ddff6c" name="supermercado" linkedPackageId="8607e1f1-42a9-4889-91ad-e82aa5940d1e" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="52eb2762-3794-4855-96b1-bd1bd9b4e2c6" name="CLIENTE" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -30,6 +16,16 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="d6adaed4-e2ec-4778-93ae-6eb725149cc1" name="CLIENTE" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="ceaf1e77-5fd2-4a9e-a6b3-031f09f08419" name="Lower" value="1">
+                      <elementDefinition Id="de3ebf35-79ad-46f7-b8c4-ea9ea76e0782" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="2b46a93e-dbaf-4f03-b785-44e4154ce1f3" name="Upper" value="*">
+                      <elementDefinition Id="89156f18-12ed-4d1c-8a16-49c3d60113c0" />
+                    </literalString>
+                  </upperValueInternal>
                   <elementDefinition Id="47e68b6d-c055-4f3d-a8a9-d46e4484e05a" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -41,7 +37,7 @@
                     </literalString>
                   </lowerValueInternal>
                   <upperValueInternal>
-                    <literalString Id="3c451d3d-d973-4357-9dec-b34432d34b86" name="Upper" value="*">
+                    <literalString Id="3c451d3d-d973-4357-9dec-b34432d34b86" name="Upper" value="1">
                       <elementDefinition Id="8b118e3f-26af-4575-8763-fdcd7be84b38" />
                     </literalString>
                   </upperValueInternal>
@@ -113,6 +109,16 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="852cb6b8-1b39-4c3a-9929-dabf4e3ac3f5" name="CATEGORIAS" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="1e01a8ca-6581-448e-890d-62aa5977549c" name="Lower" value="1">
+                      <elementDefinition Id="b7f92d3a-c5ab-4476-85fc-9dba99fb3fa8" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="24c80488-6296-47be-aee1-9051c2a77f11" name="Upper" value="*">
+                      <elementDefinition Id="31f8a950-b702-472d-91ec-54d6852d883a" />
+                    </literalString>
+                  </upperValueInternal>
                   <elementDefinition Id="ada81451-85bb-460d-9e7c-32c1c4c729f5" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -124,7 +130,7 @@
                     </literalString>
                   </lowerValueInternal>
                   <upperValueInternal>
-                    <literalString Id="554540bc-6587-46c0-b5a1-614ee7b05451" name="Upper" value="*">
+                    <literalString Id="554540bc-6587-46c0-b5a1-614ee7b05451" name="Upper" value="1">
                       <elementDefinition Id="866ee83d-61ce-4bcc-ae58-5712ada40f90" />
                     </literalString>
                   </upperValueInternal>
@@ -301,6 +307,16 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="c87ab60f-ac17-44d7-a2e6-6fdd8b168097" name="ADMINISTRADOR" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="a344ba2b-990a-41df-a401-e5c8e95ba51d" name="Lower" value="1">
+                      <elementDefinition Id="6e6f95ec-b280-455f-ade9-2a01b41f0b0c" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="94faffd8-1bb3-4edf-9041-3a60462dd89c" name="Upper" value="*">
+                      <elementDefinition Id="666c2838-b24c-47e8-8bce-5a14da145d15" />
+                    </literalString>
+                  </upperValueInternal>
                   <elementDefinition Id="2e9230a3-d11d-405b-a2fb-755a20766438" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -312,7 +328,7 @@
                     </literalString>
                   </lowerValueInternal>
                   <upperValueInternal>
-                    <literalString Id="a1ea02d8-d34b-4aa4-9fb1-501e18dc33db" name="Upper" value="*">
+                    <literalString Id="a1ea02d8-d34b-4aa4-9fb1-501e18dc33db" name="Upper" value="1">
                       <elementDefinition Id="435ade00-2e06-4df3-8a32-bb2d0c84e814" />
                     </literalString>
                   </upperValueInternal>
@@ -327,6 +343,16 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="7718ec37-c8bc-4607-80f5-1d8ca9c6185a" name="ADMINISTRADOR" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="df3a62b8-d001-4d4b-b2dc-a34d20bc1df2" name="Lower" value="1">
+                      <elementDefinition Id="88566af4-2cfd-4b53-99a4-e25704584b6d" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="cfc7f7a6-7fc1-4cd5-9b7d-742dce46aa1e" name="Upper" value="*">
+                      <elementDefinition Id="0e4907b4-ed83-43cf-9838-9a2d3d2936de" />
+                    </literalString>
+                  </upperValueInternal>
                   <elementDefinition Id="25d32b56-2cf1-4111-8dc6-8c94e6e076f5" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -338,7 +364,7 @@
                     </literalString>
                   </lowerValueInternal>
                   <upperValueInternal>
-                    <literalString Id="40f74042-ab17-4070-87c4-8a2f0daa3ab6" name="Upper" value="*">
+                    <literalString Id="40f74042-ab17-4070-87c4-8a2f0daa3ab6" name="Upper" value="1">
                       <elementDefinition Id="0d2b4752-9a97-4278-9b20-4cfe410f6a7f" />
                     </literalString>
                   </upperValueInternal>
@@ -353,6 +379,16 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="03b8fad4-53aa-4f62-b7a8-ffb2d2e8b25c" name="ADMINISTRADOR" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="cd4aa72e-d5e5-4f9c-ad79-3549cd16036e" name="Lower" value="1">
+                      <elementDefinition Id="59284356-7091-4a09-ab63-972ac39f788e" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="599f6f0c-360c-4ac3-bb59-f182b0715c56" name="Upper" value="*">
+                      <elementDefinition Id="b150e28b-76be-4c30-906e-af1daf2ca477" />
+                    </literalString>
+                  </upperValueInternal>
                   <elementDefinition Id="6f942951-a56d-4eab-96af-f6a566e067f6" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -364,7 +400,7 @@
                     </literalString>
                   </lowerValueInternal>
                   <upperValueInternal>
-                    <literalString Id="4f94b917-b710-436b-9717-40d5bd819141" name="Upper" value="*">
+                    <literalString Id="4f94b917-b710-436b-9717-40d5bd819141" name="Upper" value="1">
                       <elementDefinition Id="5eda0df3-e873-4d7a-944c-62cbc2db4b70" />
                     </literalString>
                   </upperValueInternal>
@@ -428,5 +464,19 @@
   </packagedElements>
   <package Id="8607e1f1-42a9-4889-91ad-e82aa5940d1e" name="supermercado">
     <elementDefinition Id="0b219d3e-0bda-428b-864f-ca6b95352832" />
+    <profileInstances>
+      <packageHasProfileInstances Id="99ae02f9-6247-440c-b1b6-4cca11052b6c">
+        <profileInstance Id="75e487e4-5261-4bcd-a341-9c45c804d148" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="8ba593cb-8cd4-4109-aa42-304102ef9d39">
+        <profileInstance Id="e04315cd-2007-4d52-8371-649fb2b5440c" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>
