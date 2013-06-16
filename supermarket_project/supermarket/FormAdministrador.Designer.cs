@@ -345,6 +345,7 @@
             this.B_GuardarCat.TabIndex = 48;
             this.B_GuardarCat.Text = "Guardar";
             this.B_GuardarCat.UseVisualStyleBackColor = true;
+            this.B_GuardarCat.Click += new System.EventHandler(this.B_GuardarCat_Click);
             // 
             // T_NombreCat
             // 
@@ -528,6 +529,7 @@
             this.B_NuevaCat.TabIndex = 55;
             this.B_NuevaCat.Text = "Modificar";
             this.B_NuevaCat.UseVisualStyleBackColor = true;
+            this.B_NuevaCat.Click += new System.EventHandler(this.B_NuevaCat_Click);
             // 
             // B_EliminarCat
             // 

@@ -184,6 +184,20 @@ namespace supermarket
             ListaUsuarios.Items.Add(T_Nombre.Text);
         }
 
+        private void B_NuevaCat_Click(object sender, EventArgs e)
+        {
+            supermarket_class.Administrador.modificar_prod((string)ListaProductos.SelectedItem, Convert.ToInt32(T_id_P.Text), Convert.ToInt32(T_id_cat_P.Text), T_nom_P.Text, Convert.ToDouble(T_precio_P.Text));
+            ListaProductos.Items.Remove(ListaProductos.SelectedItem);
+            ListaProductos.Items.Add(T_nom_P.Text);
+        }
+
+        private void B_GuardarCat_Click(object sender, EventArgs e)
+        {
+            supermarket_class.Administrador.modificar_categoria((string)ListaCategorias.SelectedItem, Convert.ToInt32(T_IdCat.Text), T_NombreCat.Text);
+            ListaCategorias.Items.Remove(ListaCategorias.SelectedItem);
+            ListaCategorias.Items.Add(T_NombreCat.Text);
+        }
+
 
 
 

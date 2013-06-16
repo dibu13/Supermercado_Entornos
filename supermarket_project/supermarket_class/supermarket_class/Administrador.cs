@@ -10,6 +10,8 @@ namespace supermarket_class
     public class Administrador : Usuario
     {
         Administrador(int _id_user, string _dni_user, string _nombre_user, string _direccion_user, string _email_user, string _contraseña_user, bool _admin_user) : base(_id_user, _dni_user, _nombre_user, _direccion_user, _email_user, _contraseña_user, _admin_user){ }
+
+        #region Metodos usuarios
         static public void crear_user(int T_Id, string T_Dni, string T_Nombre, string T_Direc, string T_Email, string T_Pass, bool T_Admin){
 
             StreamWriter fichero_users = new StreamWriter("Ficheros\\usuarios.txt", true);
@@ -19,54 +21,6 @@ namespace supermarket_class
             fichero_users.Close();
 
 
-        }
-
-        static public void crear_productos(int T_id_P, int T_id_cat_P, string T_nom_P, double T_precio_P)
-        {
-            StreamWriter fichero_productos = new StreamWriter("Ficheros\\productos.txt", true);
-
-            fichero_productos.WriteLine(T_id_P + "#" + T_id_cat_P + "#" + T_nom_P.ToString() + "#" + T_precio_P);
-
-            fichero_productos.Close();
-        }
-
-        static public void crear_categorias(int T_IdCat, string T_NombreCat)
-        {
-            StreamWriter fichero_categorias = new StreamWriter("Ficheros\\categorias.txt", true);
-
-            fichero_categorias.WriteLine(T_IdCat + "#" + T_NombreCat.ToString());
-
-            fichero_categorias.Close();
-        }
-
-        static public void borrar_categoria(string seleccionado)
-        {
-            List<Categoria> lista_cat = new List<Categoria>();
-            StreamReader fichero_categorias_w = new StreamReader("Ficheros\\categorias.txt");
-            string linea = "";
-            while ((linea = fichero_categorias_w.ReadLine()) != null)
-            {
-                string[] datos = linea.Split(new char[] { '#' });
-                int id_categoria = Convert.ToInt32(datos[0]);
-                string nombre_categoria = datos[1];
-                lista_cat.Add(new Categoria(id_categoria, nombre_categoria));
-            }
-            fichero_categorias_w.Close();
-            List<Categoria> lista_aux = new List<Categoria>();
-            foreach (Categoria item in lista_cat)
-            {
-                if (seleccionado != item.nombre_categoria)
-                {
-                    lista_aux.Add(new Categoria(item.id_categoria, item.nombre_categoria));
-                }
-            }
-
-            StreamWriter fichero_categorias_r = new StreamWriter("Ficheros\\categorias.txt");
-            foreach (Categoria item in lista_aux)
-            {
-                fichero_categorias_r.WriteLine(item.id_categoria.ToString() + "#" + item.nombre_categoria);
-            }
-            fichero_categorias_r.Close();
         }
 
         static public void borrar_user(string seleccionado)
@@ -147,6 +101,20 @@ namespace supermarket_class
             }
             fichero_users_r.Close();
         }
+
+        #endregion
+
+        #region Metodos productos
+
+        static public void crear_productos(int T_id_P, int T_id_cat_P, string T_nom_P, double T_precio_P)
+        {
+            StreamWriter fichero_productos = new StreamWriter("Ficheros\\productos.txt", true);
+
+            fichero_productos.WriteLine(T_id_P + "#" + T_id_cat_P + "#" + T_nom_P.ToString() + "#" + T_precio_P);
+
+            fichero_productos.Close();
+        }
+
         static public void borrar_prod(string seleccionado)
         {
             List<Producto> lista_productos = new List<Producto>();
@@ -181,6 +149,125 @@ namespace supermarket_class
             }
             fichero_productos_r.Close();
         }
+
+        static public void modificar_prod(string seleccionado, int T_id_P, int T_id_cat_P, string T_nom_P, double T_precio_P)
+        {
+            List<Producto> lista_productos = new List<Producto>();
+            StreamReader fichero_productos_w = new StreamReader("Ficheros\\productos.txt");
+            string linea = "";
+            while ((linea = fichero_productos_w.ReadLine()) != null)
+            {
+                string[] datos = linea.Split(new char[] { '#' });
+
+                int id_prod = Convert.ToInt32(datos[0]);
+                int id_cat = Convert.ToInt32(datos[1]);
+                string nombre_prod = datos[2];
+                double precio_prod = Convert.ToDouble(datos[3]);
+
+                lista_productos.Add(new Producto(id_prod, id_cat, nombre_prod, precio_prod));
+            }
+            fichero_productos_w.Close();
+
+            List<Producto> lista_aux = new List<Producto>();
+            foreach (Producto item in lista_productos)
+            {
+                if (seleccionado != item.nombre_prod)
+                {
+                    lista_aux.Add(new Producto(item.id_prod, item.id_cat, item.nombre_prod, item.precio_prod));
+                }
+                else
+                {
+                    lista_aux.Add(new Producto(T_id_P, T_id_cat_P, T_nom_P, T_precio_P));
+                }
+            }
+
+            StreamWriter fichero_productos_r = new StreamWriter("Ficheros\\productos.txt");
+            foreach (Producto item in lista_aux)
+            {
+                fichero_productos_r.WriteLine(item.id_prod + "#" + item.id_prod + "#" + item.nombre_prod + "#" + item.precio_prod);
+            }
+            fichero_productos_r.Close();
+        }
+
+        #endregion
+
+        #region Metodos categorias
+
+        static public void crear_categorias(int T_IdCat, string T_NombreCat)
+        {
+            StreamWriter fichero_categorias = new StreamWriter("Ficheros\\categorias.txt", true);
+
+            fichero_categorias.WriteLine(T_IdCat + "#" + T_NombreCat.ToString());
+
+            fichero_categorias.Close();
+        }
+
+        static public void borrar_categoria(string seleccionado)
+        {
+            List<Categoria> lista_cat = new List<Categoria>();
+            StreamReader fichero_categorias_w = new StreamReader("Ficheros\\categorias.txt");
+            string linea = "";
+            while ((linea = fichero_categorias_w.ReadLine()) != null)
+            {
+                string[] datos = linea.Split(new char[] { '#' });
+                int id_categoria = Convert.ToInt32(datos[0]);
+                string nombre_categoria = datos[1];
+                lista_cat.Add(new Categoria(id_categoria, nombre_categoria));
+            }
+            fichero_categorias_w.Close();
+            List<Categoria> lista_aux = new List<Categoria>();
+            foreach (Categoria item in lista_cat)
+            {
+                if (seleccionado != item.nombre_categoria)
+                {
+                    lista_aux.Add(new Categoria(item.id_categoria, item.nombre_categoria));
+                }
+            }
+
+            StreamWriter fichero_categorias_r = new StreamWriter("Ficheros\\categorias.txt");
+            foreach (Categoria item in lista_aux)
+            {
+                fichero_categorias_r.WriteLine(item.id_categoria.ToString() + "#" + item.nombre_categoria);
+            }
+            fichero_categorias_r.Close();
+        }
+
+        static public void modificar_categoria(string seleccionado, int T_IdCat, string T_NombreCat)
+        {
+            List<Categoria> lista_cat = new List<Categoria>();
+            StreamReader fichero_categorias_w = new StreamReader("Ficheros\\categorias.txt");
+            string linea = "";
+            while ((linea = fichero_categorias_w.ReadLine()) != null)
+            {
+                string[] datos = linea.Split(new char[] { '#' });
+                int id_categoria = Convert.ToInt32(datos[0]);
+                string nombre_categoria = datos[1];
+                lista_cat.Add(new Categoria(id_categoria, nombre_categoria));
+            }
+            fichero_categorias_w.Close();
+            List<Categoria> lista_aux = new List<Categoria>();
+            foreach (Categoria item in lista_cat)
+            {
+                if (seleccionado != item.nombre_categoria)
+                {
+                    lista_aux.Add(new Categoria(item.id_categoria, item.nombre_categoria));
+                }
+                else
+                {
+                    lista_aux.Add(new Categoria(T_IdCat, T_NombreCat));
+                }
+            }
+
+            StreamWriter fichero_categorias_r = new StreamWriter("Ficheros\\categorias.txt");
+            foreach (Categoria item in lista_aux)
+            {
+                fichero_categorias_r.WriteLine(item.id_categoria.ToString() + "#" + item.nombre_categoria);
+            }
+            fichero_categorias_r.Close();
+        }
+
+    #endregion
+        
     }
 
     

@@ -1,3 +1,3 @@
-2#2#manzana#300
+1#1#manzana#300
 3#3#limon#300
-4#4#fresa#300
+2#2#fresa#300
