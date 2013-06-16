@@ -71,6 +71,17 @@ namespace supermarket
         
         }
 
+        private void B_Enviaralcarro_Click(object sender, EventArgs e) {
+            if (T_IdProd.Text != "") {
+                //ListaProductos.SelectedItem
+                ListaCarro.Items.Add(T_NombreProducto.Text);
+            }
+            else {
+                MessageBox.Show("No has seleccionado ningun elemento");
+            }
+            
+        }
+
         }
 
     

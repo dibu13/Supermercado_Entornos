@@ -255,6 +255,7 @@
             this.B_Enviaralcarro.TabIndex = 11;
             this.B_Enviaralcarro.Text = "Añadir al Carro";
             this.B_Enviaralcarro.UseVisualStyleBackColor = true;
+            this.B_Enviaralcarro.Click += new System.EventHandler(this.B_Enviaralcarro_Click);
             // 
             // T_Precio
             // 
