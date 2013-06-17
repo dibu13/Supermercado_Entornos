@@ -13,11 +13,12 @@ namespace supermarket
 {
     public partial class FormUsuario : Form
     {
+        Cliente cl;
         public FormUsuario(string user)
         {
             InitializeComponent();
 
-            Cliente cl;
+            
 
             StreamReader fichero_users = new StreamReader("Ficheros\\usuarios.txt");
             string linea;
@@ -99,6 +100,11 @@ namespace supermarket
 
         private void B_CerrarSesion_Click(object sender, EventArgs e) {
             this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Cliente.modificar_direccion(cl,T_Direc.Text);
         }
 
         }
