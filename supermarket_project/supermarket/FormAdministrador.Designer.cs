@@ -77,7 +77,7 @@
             this.B_NuevaCat = new System.Windows.Forms.Button();
             this.B_EliminarCat = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.B_CerrarSesion = new System.Windows.Forms.Button();
             this.LabelUser = new System.Windows.Forms.Label();
             this.L_user = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
@@ -552,14 +552,15 @@
             this.label9.TabIndex = 51;
             this.label9.Text = "CATEGORIAS";
             // 
-            // button3
+            // B_CerrarSesion
             // 
-            this.button3.Location = new System.Drawing.Point(682, 12);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(93, 23);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "Cerrar sesion";
-            this.button3.UseVisualStyleBackColor = true;
+            this.B_CerrarSesion.Location = new System.Drawing.Point(682, 12);
+            this.B_CerrarSesion.Name = "B_CerrarSesion";
+            this.B_CerrarSesion.Size = new System.Drawing.Size(93, 23);
+            this.B_CerrarSesion.TabIndex = 6;
+            this.B_CerrarSesion.Text = "Cerrar sesion";
+            this.B_CerrarSesion.UseVisualStyleBackColor = true;
+            this.B_CerrarSesion.Click += new System.EventHandler(this.B_CerrarSesion_Click);
             // 
             // LabelUser
             // 
@@ -584,7 +585,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(787, 343);
             this.Controls.Add(this.L_user);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.B_CerrarSesion);
             this.Controls.Add(this.LabelUser);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
@@ -655,7 +656,7 @@
         private System.Windows.Forms.Label L_IdProducto;
         private System.Windows.Forms.Label L_NombreProd;
         private System.Windows.Forms.Button B_GuardarProd;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button B_CerrarSesion;
         private System.Windows.Forms.Label LabelUser;
         private System.Windows.Forms.Label L_user;
     }

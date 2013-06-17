@@ -198,5 +198,9 @@ namespace supermarket
             ListaCategorias.Items.Add(T_NombreCat.Text);
         }
 
+        private void B_CerrarSesion_Click(object sender, EventArgs e) {
+            this.Close();
+        }
+
     }
 }

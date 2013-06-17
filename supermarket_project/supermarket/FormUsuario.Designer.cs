@@ -65,7 +65,7 @@
             this.ListaPedidos = new System.Windows.Forms.ListBox();
             this.label10 = new System.Windows.Forms.Label();
             this.LabelUser = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.B_CerrarSesion = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.Datos_Usuario.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -420,14 +420,15 @@
             this.LabelUser.Size = new System.Drawing.Size(0, 13);
             this.LabelUser.TabIndex = 3;
             // 
-            // button1
+            // B_CerrarSesion
             // 
-            this.button1.Location = new System.Drawing.Point(657, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Cerrar sesion";
-            this.button1.UseVisualStyleBackColor = true;
+            this.B_CerrarSesion.Location = new System.Drawing.Point(657, 12);
+            this.B_CerrarSesion.Name = "B_CerrarSesion";
+            this.B_CerrarSesion.Size = new System.Drawing.Size(93, 23);
+            this.B_CerrarSesion.TabIndex = 4;
+            this.B_CerrarSesion.Text = "Cerrar sesion";
+            this.B_CerrarSesion.UseVisualStyleBackColor = true;
+            this.B_CerrarSesion.Click += new System.EventHandler(this.B_CerrarSesion_Click);
             // 
             // label6
             // 
@@ -444,7 +445,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(786, 344);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.B_CerrarSesion);
             this.Controls.Add(this.LabelUser);
             this.Controls.Add(this.Datos_Usuario);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
@@ -495,7 +496,7 @@
         private System.Windows.Forms.TextBox T_IdProd;
         private System.Windows.Forms.TextBox T_NombreProducto;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button B_CerrarSesion;
         private System.Windows.Forms.Button B_Enviaralcarro;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ListBox ListaCarro;

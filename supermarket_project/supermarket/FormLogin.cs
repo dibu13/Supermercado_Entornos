@@ -39,30 +39,36 @@ namespace supermarket
             }
 
             fichero_users.Close();
-
+            
             if (datos[5]==Textbox_Password.Text)
             {
+                
+                Textbox_Usuario.Text = null;
+                Textbox_Password.Text = null;
                 if (Convert.ToBoolean(datos[6])==true)
                 {
+                    
                     FormAdministrador ventana_admin = new FormAdministrador();
                     ventana_admin.ShowDialog();
+                    Textbox_Password.Text = null;
+                    Textbox_Usuario.Text = null;
                 }
                 else
                 {
+                    Textbox_Password.Text = null;
+                    Textbox_Usuario.Text = null;
                     FormUsuario ventana_user = new FormUsuario();
                     ventana_user.ShowDialog();
                 }
+                
             }
             else
             {
                 MessageBox.Show("Usuario o contraseña incorrectos.");
+                Textbox_Password.Text = null;
             }
 
-
-
-            /*FormAdministrador ventana = new FormAdministrador();
-            ventana.ShowDialog();*/
         }
-
+        
     }
 }
