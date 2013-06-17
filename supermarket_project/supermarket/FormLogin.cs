@@ -42,22 +42,21 @@ namespace supermarket
             
             if (datos[5]==Textbox_Password.Text)
             {
-                
-                Textbox_Usuario.Text = null;
-                Textbox_Password.Text = null;
+               
                 if (Convert.ToBoolean(datos[6])==true)
                 {
-                    
-                    FormAdministrador ventana_admin = new FormAdministrador();
+                    string user = Textbox_Usuario.Text;
+                    FormAdministrador ventana_admin = new FormAdministrador(user);
                     ventana_admin.ShowDialog();
                     Textbox_Password.Text = null;
                     Textbox_Usuario.Text = null;
                 }
                 else
                 {
+                    string user = Textbox_Usuario.Text;
                     Textbox_Password.Text = null;
                     Textbox_Usuario.Text = null;
-                    FormUsuario ventana_user = new FormUsuario();
+                    FormUsuario ventana_user = new FormUsuario(user);
                     ventana_user.ShowDialog();
                 }
                 

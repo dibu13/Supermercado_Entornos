@@ -13,9 +13,11 @@ namespace supermarket
 {
     public partial class FormAdministrador : Form
     {
-        public FormAdministrador()
+        public FormAdministrador(string user)
         {
             InitializeComponent();
+
+            L_user.Text = user;
 
             StreamReader fichero_users = new StreamReader("Ficheros\\usuarios.txt");
             string linea;
