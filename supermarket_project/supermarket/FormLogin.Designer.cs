@@ -41,7 +41,7 @@
             this.button1.Location = new System.Drawing.Point(130, 139);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(88, 23);
-            this.button1.TabIndex = 9;
+            this.button1.TabIndex = 10;
             this.button1.Text = "Enviar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -77,7 +77,7 @@
             this.Textbox_Password.Name = "Textbox_Password";
             this.Textbox_Password.PasswordChar = '*';
             this.Textbox_Password.Size = new System.Drawing.Size(174, 20);
-            this.Textbox_Password.TabIndex = 10;
+            this.Textbox_Password.TabIndex = 9;
             // 
             // FormLogin
             // 
