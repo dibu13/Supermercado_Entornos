@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="b7581daa-8c94-4a37-9361-c26cfdc9d0eb" name="casosdeuso" linkedPackageId="287654f6-f37e-4bd1-ab94-fa6aeddf0ff7" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="b7581daa-8c94-4a37-9361-c26cfdc9d0eb" name="casosdeuso" linkedPackageId="287654f6-f37e-4bd1-ab94-fa6aeddf0ff7" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <packagedElements>
     <useCaseModelRootHasTypes>
       <actor Id="db46ad53-d0c2-43d6-917a-048f6ccc6ea3" name="ADMINISTRADOR" isAbstract="false" isLeaf="false">
@@ -226,111 +226,87 @@
     <useCaseModelRootHasTypes>
       <useCase Id="f7e72a49-d222-442f-bd89-6366c61f0053" name="LOGOUT" isAbstract="false" isLeaf="false">
         <elementDefinition Id="f57a3e20-55fe-4f32-bea7-5dfbbdfd95f8" />
-        <additions>
-          <include Id="253a505f-d72e-4e95-b799-759be98be0e7">
-            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS" />
-            <elementDefinition Id="3ddf73c4-bfff-4285-a6d3-4cdcde2ddb2a" />
-          </include>
-        </additions>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
       <useCase Id="ce38a3a8-b7fa-4f5f-84c2-a41f664d8ffc" name="VER PRODUCTOS" isAbstract="false" isLeaf="false">
         <elementDefinition Id="d63d4737-a68e-490d-b410-f3e9bc95e5ce" />
-        <additions>
-          <include Id="3c5f27c6-582a-46ba-a196-57d6ccb28ff8">
-            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS" />
-            <elementDefinition Id="38249b35-3c67-4b0a-aca1-8d2ad4eb0f49" />
-          </include>
-        </additions>
+        <extendedCases>
+          <extend Id="1c031c65-34f8-4a2e-8fed-f17bd4871ba1">
+            <useCaseMoniker Id="c2f6dddd-7154-49a3-a9da-420366e01425" LastKnownName="AÑADIR AL CARRO" />
+            <elementDefinition Id="12fabdb1-f4d9-4db2-99f4-544ffe60e50b" />
+          </extend>
+        </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
       <useCase Id="fca57ccd-c11c-4b7b-afde-5a616d20aede" name="BORRAR PRODS/USERS/CATEGORIAS" isAbstract="false" isLeaf="false">
         <elementDefinition Id="8c6bce7b-a664-4827-a001-ef9d933563e5" />
-        <additions>
-          <include Id="f161469e-3f99-4cd8-9da8-240a3a37d292">
-            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS" />
-            <elementDefinition Id="4b4f608b-2694-482e-bb12-7b23c8bc94b6" />
-          </include>
-        </additions>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
       <useCase Id="6a819b97-4f51-4ea9-896c-b6163d37a763" name="MODIFICAR PRODS/USERS/CATEGORIAS " isAbstract="false" isLeaf="false">
         <elementDefinition Id="6a6101e4-0e5a-4bd4-a3c3-a5baf6bca491" />
-        <additions>
-          <include Id="afb74bda-bdf9-4dc1-8bd1-5219aa482f33">
-            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS" />
-            <elementDefinition Id="cf0a01b0-c838-407c-b272-1179ea711035" />
-          </include>
-        </additions>
+        <extendedCases>
+          <extend Id="64c49666-a280-4dfd-aee2-25cd3e685c53">
+            <useCaseMoniker Id="fca57ccd-c11c-4b7b-afde-5a616d20aede" LastKnownName="BORRAR PRODS/USERS/CATEGORIAS" />
+            <elementDefinition Id="cdd032e4-3e33-45e4-95a2-04a0dcbf627a" />
+          </extend>
+        </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
       <useCase Id="28e19b8b-4018-47f2-8364-f1e2ffa65a94" name="CREAR PRODS/USERS/CATEGORIAS" isAbstract="false" isLeaf="false">
         <elementDefinition Id="0dfe82f5-c827-4b73-b18a-ea7303162cbd" />
-        <additions>
-          <include Id="1d1addce-c3cd-4676-ba3c-b529912e9cf3">
-            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS" />
-            <elementDefinition Id="3e249c22-b21f-4647-a121-8f29a2d55f36" />
-          </include>
-        </additions>
+        <extendedCases>
+          <extend Id="d57c3205-e3a5-4e5c-bda3-10b8111da4bc">
+            <useCaseMoniker Id="eae390a9-30d1-41b4-a74b-7e79a7c8d52d" LastKnownName="VER LISTADO DE PEDIDOS" />
+            <elementDefinition Id="b84d67a9-cbe4-4beb-8bc7-d3c2ab2eb059" />
+          </extend>
+        </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
       <useCase Id="0e80bdfc-5499-42f9-98bc-968ab887bf53" name="PEDIDOS ORDENADOS" isAbstract="false" isLeaf="false">
         <elementDefinition Id="0e7bef1c-69db-4d36-ab84-c6592379a80f" />
-        <additions>
-          <include Id="d9d78377-67e2-4e81-9621-9259ff94f678">
-            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS" />
-            <elementDefinition Id="52012e82-dec8-4aaa-ac65-88fe88043e21" />
-          </include>
-        </additions>
+        <extendedCases>
+          <extend Id="6becf54a-ebf8-42ac-b597-389e56e7db45">
+            <useCaseMoniker Id="c4fe9995-cc4a-4efc-9806-0b5e0abec3c9" LastKnownName="MODIFICAR DIRECCION" />
+            <elementDefinition Id="24109754-e5c7-431c-b728-15f5529ede6e" />
+          </extend>
+        </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
       <useCase Id="eae390a9-30d1-41b4-a74b-7e79a7c8d52d" name="VER LISTADO DE PEDIDOS" isAbstract="false" isLeaf="false">
         <elementDefinition Id="d1175ff3-af09-4c2e-bc57-c8db1eb9453c" />
-        <additions>
-          <include Id="dcd220cb-9cd3-4154-b0fa-376898013fcb">
-            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS" />
-            <elementDefinition Id="819f5d61-835d-4a1a-9d15-46f237e356ee" />
-          </include>
-        </additions>
+        <extendedCases>
+          <extend Id="b1ebb1fe-02ba-4c41-900c-5a331c730685">
+            <useCaseMoniker Id="6a819b97-4f51-4ea9-896c-b6163d37a763" LastKnownName="MODIFICAR PRODS/USERS/CATEGORIAS " />
+            <elementDefinition Id="2e043978-1bad-4348-af31-509666dbc016" />
+          </extend>
+        </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
       <useCase Id="c4fe9995-cc4a-4efc-9806-0b5e0abec3c9" name="MODIFICAR DIRECCION" isAbstract="false" isLeaf="false">
         <elementDefinition Id="f285d99e-6e66-4734-ad77-e9b34129b0d0" />
-        <additions>
-          <include Id="1209462a-5cae-417d-85f7-7f747e8a2331">
-            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS" />
-            <elementDefinition Id="7906a6f6-9074-4f1f-9e07-3b54f1f1240f" />
-          </include>
-        </additions>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
       <useCase Id="578f9a3c-c5f5-4673-9926-b9de14b4bc40" name="FINALIZAR EL CARRO" isAbstract="false" isLeaf="false">
         <elementDefinition Id="d253a48d-4195-47bc-8e5a-8e2347cdfd77" />
-        <additions>
-          <include Id="429f1165-392b-4396-88b3-0c1750e5d910">
-            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS" />
-            <elementDefinition Id="a4ad7e3e-45d0-4660-969a-99ca27a84a8a" />
-          </include>
-        </additions>
+        <extendedCases>
+          <extend Id="43c1296f-db1b-453e-8723-40d9ff8caea9">
+            <useCaseMoniker Id="0e80bdfc-5499-42f9-98bc-968ab887bf53" LastKnownName="PEDIDOS ORDENADOS" />
+            <elementDefinition Id="8eac9e93-a968-450f-beaf-20583607505d" />
+          </extend>
+        </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
       <useCase Id="c2f6dddd-7154-49a3-a9da-420366e01425" name="AÑADIR AL CARRO" isAbstract="false" isLeaf="false">
         <elementDefinition Id="1b0a1e80-4e80-48cb-844c-db1aafc92f9b" />
-        <additions>
-          <include Id="ad9560fc-599e-4493-bb72-4a23fbc647a6">
-            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS" />
-            <elementDefinition Id="d50bd67a-ef20-4bf2-8dc2-bac039bf67ee" />
-          </include>
-        </additions>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
@@ -359,17 +335,57 @@
     <useCaseModelRootHasTypes>
       <useCase Id="bb9ba9f6-1afa-4807-a9e4-3fba7f12f772" name="LOGIN" isAbstract="false" isLeaf="false">
         <elementDefinition Id="4c95b98b-0a3c-493e-9649-aafdad4dd30f" />
-        <additions>
-          <include Id="b85aa8aa-a56e-4e6a-907a-8ca8b75209fb">
-            <useCaseMoniker Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS" />
-            <elementDefinition Id="c9e89237-75bf-4cbc-9342-59ebf26f5ce0" />
-          </include>
-        </additions>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
       <useCase Id="ad5a14c1-6cb0-4857-88fe-5973120340cd" name="COMPRUEBA Y ALMACENA             LOS DATOS" isAbstract="false" isLeaf="false">
         <elementDefinition Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7" />
+        <additions>
+          <include Id="0e54a0fb-080a-4b08-acb8-aace83e549bf">
+            <useCaseMoniker Id="28e19b8b-4018-47f2-8364-f1e2ffa65a94" LastKnownName="CREAR PRODS/USERS/CATEGORIAS" />
+            <elementDefinition Id="d8ead67b-4679-40a1-a6f0-75bc118faf2e" />
+          </include>
+          <include Id="909e59e8-070f-4672-ac6e-9e31247dfa36">
+            <useCaseMoniker Id="eae390a9-30d1-41b4-a74b-7e79a7c8d52d" LastKnownName="VER LISTADO DE PEDIDOS" />
+            <elementDefinition Id="937555cc-230e-4313-a5c5-eac919ec2c02" />
+          </include>
+          <include Id="ed1a00b0-c640-4b69-9c3b-1d167d2143a1">
+            <useCaseMoniker Id="6a819b97-4f51-4ea9-896c-b6163d37a763" LastKnownName="MODIFICAR PRODS/USERS/CATEGORIAS " />
+            <elementDefinition Id="d73af55f-96cb-4d26-a733-e1943826baa2" />
+          </include>
+          <include Id="ced2c6ff-8a01-4e63-954e-b15a8c118327">
+            <useCaseMoniker Id="fca57ccd-c11c-4b7b-afde-5a616d20aede" LastKnownName="BORRAR PRODS/USERS/CATEGORIAS" />
+            <elementDefinition Id="ce8e3f62-c6f7-4bd2-b02f-e60a8a308d90" />
+          </include>
+          <include Id="dca517c4-85c6-4ca2-a7b5-063323d238e6">
+            <useCaseMoniker Id="f7e72a49-d222-442f-bd89-6366c61f0053" LastKnownName="LOGOUT" />
+            <elementDefinition Id="1b123d9a-d360-47e1-8cd8-76bf8333a538" />
+          </include>
+          <include Id="529f188f-8281-4af6-888c-afd91bc704a7">
+            <useCaseMoniker Id="bb9ba9f6-1afa-4807-a9e4-3fba7f12f772" LastKnownName="LOGIN" />
+            <elementDefinition Id="b401bd4b-2ba8-4e39-b6e8-369a8aa77eb1" />
+          </include>
+          <include Id="c73b9d2f-e205-47fa-a9c7-6cb5054eae57">
+            <useCaseMoniker Id="ce38a3a8-b7fa-4f5f-84c2-a41f664d8ffc" LastKnownName="VER PRODUCTOS" />
+            <elementDefinition Id="9772c949-4ba1-4c4c-bebc-825ca985eb2e" />
+          </include>
+          <include Id="2512629b-4bf3-4ad5-bfeb-05df31498f2d">
+            <useCaseMoniker Id="c2f6dddd-7154-49a3-a9da-420366e01425" LastKnownName="AÑADIR AL CARRO" />
+            <elementDefinition Id="dfa0574e-3d89-41c3-9564-b4e60a2664f5" />
+          </include>
+          <include Id="050a0f62-0537-42f0-b996-a464c2370b73">
+            <useCaseMoniker Id="0e80bdfc-5499-42f9-98bc-968ab887bf53" LastKnownName="PEDIDOS ORDENADOS" />
+            <elementDefinition Id="7493d839-0aa4-4384-9ebb-1dc942784ccf" />
+          </include>
+          <include Id="a040d28f-7f90-4799-a0bf-70025d2ef580">
+            <useCaseMoniker Id="c4fe9995-cc4a-4efc-9806-0b5e0abec3c9" LastKnownName="MODIFICAR DIRECCION" />
+            <elementDefinition Id="e362ed06-4ed5-4aaa-a90c-f5b00052c66f" />
+          </include>
+          <include Id="8c067e8c-368d-4f02-bbf5-6864ee3ae0b6">
+            <useCaseMoniker Id="578f9a3c-c5f5-4673-9926-b9de14b4bc40" LastKnownName="FINALIZAR EL CARRO" />
+            <elementDefinition Id="1e793a7b-cd89-4fc5-91b7-e5fceecdd4cf" />
+          </include>
+        </additions>
       </useCase>
     </useCaseModelRootHasTypes>
   </packagedElements>

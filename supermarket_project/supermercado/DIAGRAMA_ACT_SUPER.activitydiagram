@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="2f04a1b9-bb4f-4388-b04f-e2e24a7f92a0" name="DIAGRAMA_ACT_SUPER" linkedPackageId="dc913bb6-00c3-4ea0-b167-933e871a9963" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="2f04a1b9-bb4f-4388-b04f-e2e24a7f92a0" name="DIAGRAMA_ACT_SUPER" linkedPackageId="dc913bb6-00c3-4ea0-b167-933e871a9963" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
   <ownedCommentsInternal>
-    <comment Id="fc49499f-4398-4f52-aead-7003e607dc18">
-      <elementDefinition Id="6b2183ee-7fb2-44df-bbf6-9508c482fa60" />
-      <body>SIN ACCIONES
+    <comment Id="300ee19d-9a4b-4b93-bb12-def221528a52">
+      <elementDefinition Id="3913bba6-13f0-4ae1-9670-dde44c8c04f7" />
+      <body>No realiza acciones
 </body>
     </comment>
   </ownedCommentsInternal>
@@ -160,24 +160,24 @@
           <decisionNode Id="63bccdc2-5671-4bbb-991c-69639089b9ac" name="Decision1" isLeaf="false">
             <elementDefinition Id="3998ae8b-2c05-4cde-a24f-8b7356994247" />
             <flowNodeTargets>
-              <controlFlow Id="077b78bb-a23a-4e09-9573-fc44f677e8f0" isLeaf="false">
+              <controlFlow Id="2a8c62a6-2bfa-4bfb-b495-a13702b3a3be" isLeaf="false">
                 <forkNodeMoniker Id="2218105e-49f7-4b8f-ba65-3a6e7c463582" LastKnownName="Fork1" />
-                <elementDefinition Id="3a411f87-6209-491a-89ee-599e245f0366" />
+                <elementDefinition Id="854a9c6b-aba6-4ab3-9074-5a3159411a4d" />
               </controlFlow>
             </flowNodeTargets>
             <objectFlowTargets>
-              <objectFlow Id="dea31b07-aa8f-4b0e-a432-74b8d096415c" isLeaf="false" isMulticast="false" isMultireceive="false">
+              <objectFlow Id="d1fec52d-af28-4ad2-bec0-5e838c8679e7" isLeaf="false" isMulticast="false" isMultireceive="false">
                 <objectNodeMoniker Id="25c85e18-7864-4c27-96c6-4af1d0f578b4" LastKnownName="DESCONECTARSE" />
-                <elementDefinition Id="c4b620c4-28c2-431b-af59-73ec9db97b56" />
+                <elementDefinition Id="68f3dbc5-f010-4582-a14a-5979ce5981d5" />
               </objectFlow>
             </objectFlowTargets>
           </decisionNode>
           <objectNode Id="25c85e18-7864-4c27-96c6-4af1d0f578b4" name="DESCONECTARSE" isLeaf="false" ordering="Unordered" isControlType="false">
             <elementDefinition Id="219be24a-50f5-467a-b67a-4569e4ed9c09" />
             <objectFlowTargets>
-              <objectFlow Id="effa74ce-e578-4b10-a43a-7bf307e34c6b" isLeaf="false" isMulticast="false" isMultireceive="false">
+              <objectFlow Id="04a81a36-caaa-448c-8661-75d3c25eef6e" isLeaf="false" isMulticast="false" isMultireceive="false">
                 <activityFinalNodeMoniker Id="37ee1fcc-68c0-4e35-8e9c-0919e5822519" LastKnownName="ActivityFinal1" />
-                <elementDefinition Id="664b231c-da77-4a2a-86a3-b4e92fdd46c5" />
+                <elementDefinition Id="217a8627-9b9d-4a8d-a506-d30137accdb6" />
               </objectFlow>
             </objectFlowTargets>
             <upperBound>

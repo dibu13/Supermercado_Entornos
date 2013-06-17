@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="0b219d3e-0bda-428b-864f-ca6b95352832"
   name="supermercado" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
   <ownedCommentsInternal>
     <comment
-      Id="6b2183ee-7fb2-44df-bbf6-9508c482fa60">
-      <body>SIN ACCIONES
+      Id="3913bba6-13f0-4ae1-9670-dde44c8c04f7">
+      <body>No realiza acciones
 </body>
     </comment>
   </ownedCommentsInternal>
@@ -1295,7 +1295,7 @@
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
-                Id="3a411f87-6209-491a-89ee-599e245f0366"
+                Id="854a9c6b-aba6-4ab3-9074-5a3159411a4d"
                 isLeaf="false">
                 <forkNodeMoniker
                   Id="30c8e506-e8aa-4b9e-8cff-000443f42a62"
@@ -1305,7 +1305,7 @@
             </flowNodeTargets>
             <objectFlowTargets>
               <objectFlow
-                Id="c4b620c4-28c2-431b-af59-73ec9db97b56"
+                Id="68f3dbc5-f010-4582-a14a-5979ce5981d5"
                 isLeaf="false"
                 isMulticast="false"
                 isMultireceive="false">
@@ -1324,7 +1324,7 @@
             isControlType="false">
             <objectFlowTargets>
               <objectFlow
-                Id="664b231c-da77-4a2a-86a3-b4e92fdd46c5"
+                Id="217a8627-9b9d-4a8d-a506-d30137accdb6"
                 isLeaf="false"
                 isMulticast="false"
                 isMultireceive="false">
@@ -1919,17 +1919,7 @@
         Id="f57a3e20-55fe-4f32-bea7-5dfbbdfd95f8"
         name="LOGOUT"
         isAbstract="false"
-        isLeaf="false">
-        <additions>
-          <include
-            Id="3ddf73c4-bfff-4285-a6d3-4cdcde2ddb2a">
-            <useCaseMoniker
-              Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7"
-              LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS"
-              LastKnownLocation="supermercado.uml" />
-          </include>
-        </additions>
-      </useCase>
+        isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
@@ -1937,15 +1927,15 @@
         name="VER PRODUCTOS"
         isAbstract="false"
         isLeaf="false">
-        <additions>
-          <include
-            Id="38249b35-3c67-4b0a-aca1-8d2ad4eb0f49">
+        <extendedCases>
+          <extend
+            Id="12fabdb1-f4d9-4db2-99f4-544ffe60e50b">
             <useCaseMoniker
-              Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7"
-              LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS"
+              Id="1b0a1e80-4e80-48cb-844c-db1aafc92f9b"
+              LastKnownName="AÑADIR AL CARRO"
               LastKnownLocation="supermercado.uml" />
-          </include>
-        </additions>
+          </extend>
+        </extendedCases>
       </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -1953,17 +1943,7 @@
         Id="8c6bce7b-a664-4827-a001-ef9d933563e5"
         name="BORRAR PRODS/USERS/CATEGORIAS"
         isAbstract="false"
-        isLeaf="false">
-        <additions>
-          <include
-            Id="4b4f608b-2694-482e-bb12-7b23c8bc94b6">
-            <useCaseMoniker
-              Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7"
-              LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS"
-              LastKnownLocation="supermercado.uml" />
-          </include>
-        </additions>
-      </useCase>
+        isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
@@ -1971,15 +1951,15 @@
         name="MODIFICAR PRODS/USERS/CATEGORIAS "
         isAbstract="false"
         isLeaf="false">
-        <additions>
-          <include
-            Id="cf0a01b0-c838-407c-b272-1179ea711035">
+        <extendedCases>
+          <extend
+            Id="cdd032e4-3e33-45e4-95a2-04a0dcbf627a">
             <useCaseMoniker
-              Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7"
-              LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS"
+              Id="8c6bce7b-a664-4827-a001-ef9d933563e5"
+              LastKnownName="BORRAR PRODS/USERS/CATEGORIAS"
               LastKnownLocation="supermercado.uml" />
-          </include>
-        </additions>
+          </extend>
+        </extendedCases>
       </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -1988,15 +1968,15 @@
         name="CREAR PRODS/USERS/CATEGORIAS"
         isAbstract="false"
         isLeaf="false">
-        <additions>
-          <include
-            Id="3e249c22-b21f-4647-a121-8f29a2d55f36">
+        <extendedCases>
+          <extend
+            Id="b84d67a9-cbe4-4beb-8bc7-d3c2ab2eb059">
             <useCaseMoniker
-              Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7"
-              LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS"
+              Id="d1175ff3-af09-4c2e-bc57-c8db1eb9453c"
+              LastKnownName="VER LISTADO DE PEDIDOS"
               LastKnownLocation="supermercado.uml" />
-          </include>
-        </additions>
+          </extend>
+        </extendedCases>
       </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -2005,15 +1985,15 @@
         name="PEDIDOS ORDENADOS"
         isAbstract="false"
         isLeaf="false">
-        <additions>
-          <include
-            Id="52012e82-dec8-4aaa-ac65-88fe88043e21">
+        <extendedCases>
+          <extend
+            Id="24109754-e5c7-431c-b728-15f5529ede6e">
             <useCaseMoniker
-              Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7"
-              LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS"
+              Id="f285d99e-6e66-4734-ad77-e9b34129b0d0"
+              LastKnownName="MODIFICAR DIRECCION"
               LastKnownLocation="supermercado.uml" />
-          </include>
-        </additions>
+          </extend>
+        </extendedCases>
       </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -2022,15 +2002,15 @@
         name="VER LISTADO DE PEDIDOS"
         isAbstract="false"
         isLeaf="false">
-        <additions>
-          <include
-            Id="819f5d61-835d-4a1a-9d15-46f237e356ee">
+        <extendedCases>
+          <extend
+            Id="2e043978-1bad-4348-af31-509666dbc016">
             <useCaseMoniker
-              Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7"
-              LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS"
+              Id="6a6101e4-0e5a-4bd4-a3c3-a5baf6bca491"
+              LastKnownName="MODIFICAR PRODS/USERS/CATEGORIAS "
               LastKnownLocation="supermercado.uml" />
-          </include>
-        </additions>
+          </extend>
+        </extendedCases>
       </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -2038,17 +2018,7 @@
         Id="f285d99e-6e66-4734-ad77-e9b34129b0d0"
         name="MODIFICAR DIRECCION"
         isAbstract="false"
-        isLeaf="false">
-        <additions>
-          <include
-            Id="7906a6f6-9074-4f1f-9e07-3b54f1f1240f">
-            <useCaseMoniker
-              Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7"
-              LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS"
-              LastKnownLocation="supermercado.uml" />
-          </include>
-        </additions>
-      </useCase>
+        isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
@@ -2056,15 +2026,15 @@
         name="FINALIZAR EL CARRO"
         isAbstract="false"
         isLeaf="false">
-        <additions>
-          <include
-            Id="a4ad7e3e-45d0-4660-969a-99ca27a84a8a">
+        <extendedCases>
+          <extend
+            Id="8eac9e93-a968-450f-beaf-20583607505d">
             <useCaseMoniker
-              Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7"
-              LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS"
+              Id="0e7bef1c-69db-4d36-ab84-c6592379a80f"
+              LastKnownName="PEDIDOS ORDENADOS"
               LastKnownLocation="supermercado.uml" />
-          </include>
-        </additions>
+          </extend>
+        </extendedCases>
       </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -2072,17 +2042,7 @@
         Id="1b0a1e80-4e80-48cb-844c-db1aafc92f9b"
         name="AÑADIR AL CARRO"
         isAbstract="false"
-        isLeaf="false">
-        <additions>
-          <include
-            Id="d50bd67a-ef20-4bf2-8dc2-bac039bf67ee">
-            <useCaseMoniker
-              Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7"
-              LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS"
-              LastKnownLocation="supermercado.uml" />
-          </include>
-        </additions>
-      </useCase>
+        isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <actor
@@ -2268,17 +2228,7 @@
         Id="4c95b98b-0a3c-493e-9649-aafdad4dd30f"
         name="LOGIN"
         isAbstract="false"
-        isLeaf="false">
-        <additions>
-          <include
-            Id="c9e89237-75bf-4cbc-9342-59ebf26f5ce0">
-            <useCaseMoniker
-              Id="7dbdc3f8-7975-4cbe-9a9b-dd709f353cc7"
-              LastKnownName="COMPRUEBA Y ALMACENA             LOS DATOS"
-              LastKnownLocation="supermercado.uml" />
-          </include>
-        </additions>
-      </useCase>
+        isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
@@ -2334,6 +2284,85 @@
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
+        <additions>
+          <include
+            Id="d8ead67b-4679-40a1-a6f0-75bc118faf2e">
+            <useCaseMoniker
+              Id="0dfe82f5-c827-4b73-b18a-ea7303162cbd"
+              LastKnownName="CREAR PRODS/USERS/CATEGORIAS"
+              LastKnownLocation="supermercado.uml" />
+          </include>
+          <include
+            Id="937555cc-230e-4313-a5c5-eac919ec2c02">
+            <useCaseMoniker
+              Id="d1175ff3-af09-4c2e-bc57-c8db1eb9453c"
+              LastKnownName="VER LISTADO DE PEDIDOS"
+              LastKnownLocation="supermercado.uml" />
+          </include>
+          <include
+            Id="d73af55f-96cb-4d26-a733-e1943826baa2">
+            <useCaseMoniker
+              Id="6a6101e4-0e5a-4bd4-a3c3-a5baf6bca491"
+              LastKnownName="MODIFICAR PRODS/USERS/CATEGORIAS "
+              LastKnownLocation="supermercado.uml" />
+          </include>
+          <include
+            Id="ce8e3f62-c6f7-4bd2-b02f-e60a8a308d90">
+            <useCaseMoniker
+              Id="8c6bce7b-a664-4827-a001-ef9d933563e5"
+              LastKnownName="BORRAR PRODS/USERS/CATEGORIAS"
+              LastKnownLocation="supermercado.uml" />
+          </include>
+          <include
+            Id="1b123d9a-d360-47e1-8cd8-76bf8333a538">
+            <useCaseMoniker
+              Id="f57a3e20-55fe-4f32-bea7-5dfbbdfd95f8"
+              LastKnownName="LOGOUT"
+              LastKnownLocation="supermercado.uml" />
+          </include>
+          <include
+            Id="b401bd4b-2ba8-4e39-b6e8-369a8aa77eb1">
+            <useCaseMoniker
+              Id="4c95b98b-0a3c-493e-9649-aafdad4dd30f"
+              LastKnownName="LOGIN"
+              LastKnownLocation="supermercado.uml" />
+          </include>
+          <include
+            Id="9772c949-4ba1-4c4c-bebc-825ca985eb2e">
+            <useCaseMoniker
+              Id="d63d4737-a68e-490d-b410-f3e9bc95e5ce"
+              LastKnownName="VER PRODUCTOS"
+              LastKnownLocation="supermercado.uml" />
+          </include>
+          <include
+            Id="dfa0574e-3d89-41c3-9564-b4e60a2664f5">
+            <useCaseMoniker
+              Id="1b0a1e80-4e80-48cb-844c-db1aafc92f9b"
+              LastKnownName="AÑADIR AL CARRO"
+              LastKnownLocation="supermercado.uml" />
+          </include>
+          <include
+            Id="7493d839-0aa4-4384-9ebb-1dc942784ccf">
+            <useCaseMoniker
+              Id="0e7bef1c-69db-4d36-ab84-c6592379a80f"
+              LastKnownName="PEDIDOS ORDENADOS"
+              LastKnownLocation="supermercado.uml" />
+          </include>
+          <include
+            Id="e362ed06-4ed5-4aaa-a90c-f5b00052c66f">
+            <useCaseMoniker
+              Id="f285d99e-6e66-4734-ad77-e9b34129b0d0"
+              LastKnownName="MODIFICAR DIRECCION"
+              LastKnownLocation="supermercado.uml" />
+          </include>
+          <include
+            Id="1e793a7b-cd89-4fc5-91b7-e5fceecdd4cf">
+            <useCaseMoniker
+              Id="d253a48d-4195-47bc-8e5a-8e2347cdfd77"
+              LastKnownName="FINALIZAR EL CARRO"
+              LastKnownLocation="supermercado.uml" />
+          </include>
+        </additions>
       </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
