@@ -198,8 +198,5 @@ namespace supermarket
             ListaCategorias.Items.Add(T_NombreCat.Text);
         }
 
-
-
-
     }
 }

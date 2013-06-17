@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             this.button1 = new System.Windows.Forms.Button();
             this.Textbox_Usuario = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -37,17 +38,17 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(170, 138);
+            this.button1.Location = new System.Drawing.Point(130, 139);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(88, 23);
             this.button1.TabIndex = 9;
-            this.button1.Text = "ENVIAR";
+            this.button1.Text = "Enviar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Textbox_Usuario
             // 
-            this.Textbox_Usuario.Location = new System.Drawing.Point(130, 23);
+            this.Textbox_Usuario.Location = new System.Drawing.Point(130, 40);
             this.Textbox_Usuario.Name = "Textbox_Usuario";
             this.Textbox_Usuario.Size = new System.Drawing.Size(174, 20);
             this.Textbox_Usuario.TabIndex = 7;
@@ -55,24 +56,24 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(41, 88);
+            this.label2.Location = new System.Drawing.Point(47, 84);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 13);
+            this.label2.Size = new System.Drawing.Size(64, 13);
             this.label2.TabIndex = 6;
-            this.label2.Text = "PASSWORD";
+            this.label2.Text = "Contraseña:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(38, 23);
+            this.label1.Location = new System.Drawing.Point(65, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 13);
+            this.label1.Size = new System.Drawing.Size(46, 13);
             this.label1.TabIndex = 5;
-            this.label1.Text = "USUARIO";
+            this.label1.Text = "Usuario:";
             // 
             // Textbox_Password
             // 
-            this.Textbox_Password.Location = new System.Drawing.Point(130, 88);
+            this.Textbox_Password.Location = new System.Drawing.Point(130, 81);
             this.Textbox_Password.Name = "Textbox_Password";
             this.Textbox_Password.PasswordChar = '*';
             this.Textbox_Password.Size = new System.Drawing.Size(174, 20);
@@ -88,8 +89,12 @@
             this.Controls.Add(this.Textbox_Usuario);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "FormLogin";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Login";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

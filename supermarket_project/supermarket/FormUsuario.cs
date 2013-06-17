@@ -32,7 +32,6 @@ namespace supermarket
             T_Nombre.Text = datos[2];
             T_Direc.Text = datos[3];
             T_Email.Text = datos[4];
-            T_Pass.Text = datos[5];
             
 
             StreamReader fichero_productos = new StreamReader("Ficheros\\productos.txt");
@@ -72,14 +71,18 @@ namespace supermarket
         }
 
         private void B_Enviaralcarro_Click(object sender, EventArgs e) {
-            if (T_IdProd.Text != "") {
+            if ((string)ListaProductos.SelectedItem != null) {
                 //ListaProductos.SelectedItem
-                ListaCarro.Items.Add(T_NombreProducto.Text);
+                ListaCarro.Items.Add((string)ListaProductos.SelectedItem);
             }
             else {
                 MessageBox.Show("No has seleccionado ningun elemento");
             }
             
+        }
+
+        private void button2_Click(object sender, EventArgs e) {
+
         }
 
         }
