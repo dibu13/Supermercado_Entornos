@@ -81,7 +81,7 @@ namespace supermarket_class
 
             fichero_pedidos.Close();
 
-            StreamWriter fichero_compra = new StreamWriter("Ficheros\\compra.txt");
+            StreamWriter fichero_compra = new StreamWriter("Ficheros\\compra.txt",true);
             foreach (Producto item in lista_productos_carro)
             {
                 fichero_compra.WriteLine(id + "#" + item.id_prod + "#" + item.cantidad);

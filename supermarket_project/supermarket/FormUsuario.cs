@@ -98,7 +98,7 @@ namespace supermarket
                     }
                 }
                 
-                lista_prod_carro.Add(new Producto(Convert.ToInt32(datos[0]),Convert.ToInt32(T_cantidad.Text)));
+                lista_prod_carro.Add(new Producto(Convert.ToInt32(datos[0]),datos[2],Convert.ToInt32(T_cantidad.Text)));
                 T_cantidad.Text = "1";
             }
             else {
@@ -117,6 +117,22 @@ namespace supermarket
         private void button3_Click(object sender, EventArgs e)
         {
             Cliente.modificar_direccion(cl,T_Direc.Text);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            List<Producto> aux = new List<Producto>();
+            foreach (Producto item in lista_prod_carro)
+            {
+                if(item.nombre_prod!=(string)ListaCarro.SelectedItem)
+                {
+                    aux.Add(new Producto(item.id_prod,item.nombre_prod,item.cantidad));
+                }
+            }
+
+            lista_prod_carro = aux;
+
+            ListaCarro.Items.Remove(ListaCarro.SelectedItem);
         }
 
         }

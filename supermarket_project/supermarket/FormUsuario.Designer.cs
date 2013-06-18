@@ -43,6 +43,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label7 = new System.Windows.Forms.Label();
+            this.T_cantidad = new System.Windows.Forms.TextBox();
             this.B_Enviaralcarro = new System.Windows.Forms.Button();
             this.T_Precio = new System.Windows.Forms.TextBox();
             this.T_IdCategoria = new System.Windows.Forms.TextBox();
@@ -67,8 +69,6 @@
             this.LabelUser = new System.Windows.Forms.Label();
             this.B_CerrarSesion = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.T_cantidad = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.Datos_Usuario.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -229,6 +229,23 @@
             this.tabPage2.Text = "Productos";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(299, 236);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(52, 13);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Cantidad:";
+            // 
+            // T_cantidad
+            // 
+            this.T_cantidad.Location = new System.Drawing.Point(422, 236);
+            this.T_cantidad.Name = "T_cantidad";
+            this.T_cantidad.Size = new System.Drawing.Size(115, 20);
+            this.T_cantidad.TabIndex = 12;
+            this.T_cantidad.Text = "1";
+            // 
             // B_Enviaralcarro
             // 
             this.B_Enviaralcarro.Location = new System.Drawing.Point(599, 236);
@@ -351,6 +368,7 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "Eliminar Producto";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button2
             // 
@@ -443,23 +461,6 @@
             this.label6.Size = new System.Drawing.Size(35, 13);
             this.label6.TabIndex = 5;
             this.label6.Text = "label6";
-            // 
-            // T_cantidad
-            // 
-            this.T_cantidad.Location = new System.Drawing.Point(422, 236);
-            this.T_cantidad.Name = "T_cantidad";
-            this.T_cantidad.Size = new System.Drawing.Size(115, 20);
-            this.T_cantidad.TabIndex = 12;
-            this.T_cantidad.Text = "1";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(299, 236);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(52, 13);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Cantidad:";
             // 
             // FormUsuario
             // 

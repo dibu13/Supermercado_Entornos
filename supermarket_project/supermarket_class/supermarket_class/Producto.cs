@@ -22,9 +22,10 @@ namespace supermarket_class
             this.nombre_prod = _nombre_prod;
             this.precio_prod = _precio_prod;
         }
-        public Producto(int _id_prod, int _cantidad)
+        public Producto(int _id_prod, string _nombre_prod, int _cantidad)
         {
             this.id_prod = _id_prod;
+            this.nombre_prod = _nombre_prod;
             this.cantidad = _cantidad;
         }
     }
