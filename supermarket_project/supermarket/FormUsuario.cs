@@ -14,11 +14,10 @@ namespace supermarket
     public partial class FormUsuario : Form
     {
         Cliente cl;
+        List<Producto> lista_prod_carro = new List<Producto>();
         public FormUsuario(string user)
         {
             InitializeComponent();
-
-            
 
             StreamReader fichero_users = new StreamReader("Ficheros\\usuarios.txt");
             string linea;
@@ -84,6 +83,23 @@ namespace supermarket
         private void B_Enviaralcarro_Click(object sender, EventArgs e) {
             if ((string)ListaProductos.SelectedItem != null) {
                 ListaCarro.Items.Add((string)ListaProductos.SelectedItem);
+
+                StreamReader fichero_productos = new StreamReader("Ficheros\\productos.txt");
+                string linea;
+                string[] datos = null;
+                bool encontrado = false;
+
+                while ((linea = fichero_productos.ReadLine()) != null && encontrado == false)
+                {
+                    datos = linea.Split(new char[] { '#' });
+                    if (datos[2] == (string)ListaProductos.SelectedItem)
+                    {
+                        encontrado = true;
+                    }
+                }
+                
+                lista_prod_carro.Add(new Producto(Convert.ToInt32(datos[0]),Convert.ToInt32(T_cantidad.Text)));
+                T_cantidad.Text = "1";
             }
             else {
                 MessageBox.Show("No has seleccionado ningun elemento");
@@ -91,7 +107,7 @@ namespace supermarket
             
         }
         private void button2_Click(object sender, EventArgs e) {
-            Cliente.finalizar_carro(cl);
+            Cliente.finalizar_carro(cl,lista_prod_carro);
         }
 
         private void B_CerrarSesion_Click(object sender, EventArgs e) {

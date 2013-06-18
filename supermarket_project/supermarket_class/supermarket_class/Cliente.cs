@@ -54,7 +54,7 @@ namespace supermarket_class
             fichero_users_r.Close();
         }
 
-        static public void finalizar_carro(Cliente cl)
+        static public void finalizar_carro(Cliente cl, List<Producto> lista_productos_carro)
         {
             StreamReader fichero_pedidos_w = new StreamReader("Ficheros\\pedidos.txt");
             string linea = "";
@@ -80,6 +80,13 @@ namespace supermarket_class
             fichero_pedidos.WriteLine(id + "#" + cl.id_user + "#" + DateTime.Now.ToShortDateString());
 
             fichero_pedidos.Close();
+
+            StreamWriter fichero_compra = new StreamWriter("Ficheros\\compra.txt");
+            foreach (Producto item in lista_productos_carro)
+            {
+                fichero_compra.WriteLine(id + "#" + item.id_prod + "#" + item.cantidad);
+            }
+            fichero_compra.Close();
         }
 
     }

@@ -67,6 +67,8 @@
             this.LabelUser = new System.Windows.Forms.Label();
             this.B_CerrarSesion = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
+            this.T_cantidad = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.Datos_Usuario.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -163,27 +165,27 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(83, 166);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(39, 13);
+            this.label5.Size = new System.Drawing.Size(35, 13);
             this.label5.TabIndex = 4;
-            this.label5.Text = "EMAIL";
+            this.label5.Text = "Email:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(380, 54);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 13);
+            this.label4.Size = new System.Drawing.Size(55, 13);
             this.label4.TabIndex = 3;
-            this.label4.Text = "DIRECCIÓN";
+            this.label4.Text = "Dirección:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(83, 129);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 13);
+            this.label3.Size = new System.Drawing.Size(47, 13);
             this.label3.TabIndex = 2;
-            this.label3.Text = "NOMBRE";
+            this.label3.Text = "Nombre:";
             // 
             // label2
             // 
@@ -192,19 +194,21 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(26, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "DNI";
+            this.label2.Text = "Dni:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(83, 54);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(18, 13);
+            this.label1.Size = new System.Drawing.Size(19, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "ID";
+            this.label1.Text = "Id:";
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.label7);
+            this.tabPage2.Controls.Add(this.T_cantidad);
             this.tabPage2.Controls.Add(this.B_Enviaralcarro);
             this.tabPage2.Controls.Add(this.T_Precio);
             this.tabPage2.Controls.Add(this.T_IdCategoria);
@@ -227,7 +231,7 @@
             // 
             // B_Enviaralcarro
             // 
-            this.B_Enviaralcarro.Location = new System.Drawing.Point(423, 249);
+            this.B_Enviaralcarro.Location = new System.Drawing.Point(599, 236);
             this.B_Enviaralcarro.Name = "B_Enviaralcarro";
             this.B_Enviaralcarro.Size = new System.Drawing.Size(85, 23);
             this.B_Enviaralcarro.TabIndex = 11;
@@ -237,28 +241,28 @@
             // 
             // T_Precio
             // 
-            this.T_Precio.Location = new System.Drawing.Point(423, 208);
+            this.T_Precio.Location = new System.Drawing.Point(422, 195);
             this.T_Precio.Name = "T_Precio";
             this.T_Precio.Size = new System.Drawing.Size(115, 20);
             this.T_Precio.TabIndex = 10;
             // 
             // T_IdCategoria
             // 
-            this.T_IdCategoria.Location = new System.Drawing.Point(423, 168);
+            this.T_IdCategoria.Location = new System.Drawing.Point(422, 155);
             this.T_IdCategoria.Name = "T_IdCategoria";
             this.T_IdCategoria.Size = new System.Drawing.Size(115, 20);
             this.T_IdCategoria.TabIndex = 9;
             // 
             // T_IdProd
             // 
-            this.T_IdProd.Location = new System.Drawing.Point(423, 131);
+            this.T_IdProd.Location = new System.Drawing.Point(422, 118);
             this.T_IdProd.Name = "T_IdProd";
             this.T_IdProd.Size = new System.Drawing.Size(115, 20);
             this.T_IdProd.TabIndex = 8;
             // 
             // T_NombreProducto
             // 
-            this.T_NombreProducto.Location = new System.Drawing.Point(423, 92);
+            this.T_NombreProducto.Location = new System.Drawing.Point(422, 79);
             this.T_NombreProducto.Name = "T_NombreProducto";
             this.T_NombreProducto.Size = new System.Drawing.Size(115, 20);
             this.T_NombreProducto.TabIndex = 7;
@@ -266,38 +270,38 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(300, 211);
+            this.label12.Location = new System.Drawing.Point(299, 198);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(37, 13);
+            this.label12.Size = new System.Drawing.Size(40, 13);
             this.label12.TabIndex = 6;
-            this.label12.Text = "Precio";
+            this.label12.Text = "Precio:";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(300, 168);
+            this.label11.Location = new System.Drawing.Point(299, 155);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(67, 13);
+            this.label11.Size = new System.Drawing.Size(70, 13);
             this.label11.TabIndex = 5;
-            this.label11.Text = "Id_Categoria";
+            this.label11.Text = "Id_Categoria:";
             // 
             // L_IdProducto
             // 
             this.L_IdProducto.AutoSize = true;
-            this.L_IdProducto.Location = new System.Drawing.Point(300, 131);
+            this.L_IdProducto.Location = new System.Drawing.Point(299, 118);
             this.L_IdProducto.Name = "L_IdProducto";
-            this.L_IdProducto.Size = new System.Drawing.Size(16, 13);
+            this.L_IdProducto.Size = new System.Drawing.Size(19, 13);
             this.L_IdProducto.TabIndex = 4;
-            this.L_IdProducto.Text = "Id";
+            this.L_IdProducto.Text = "Id:";
             // 
             // L_NombreProd
             // 
             this.L_NombreProd.AutoSize = true;
-            this.L_NombreProd.Location = new System.Drawing.Point(300, 92);
+            this.L_NombreProd.Location = new System.Drawing.Point(299, 79);
             this.L_NombreProd.Name = "L_NombreProd";
-            this.L_NombreProd.Size = new System.Drawing.Size(90, 13);
+            this.L_NombreProd.Size = new System.Drawing.Size(93, 13);
             this.L_NombreProd.TabIndex = 3;
-            this.L_NombreProd.Text = "Nombre Producto";
+            this.L_NombreProd.Text = "Nombre Producto:";
             // 
             // B_VerProductos
             // 
@@ -440,6 +444,23 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "label6";
             // 
+            // T_cantidad
+            // 
+            this.T_cantidad.Location = new System.Drawing.Point(422, 236);
+            this.T_cantidad.Name = "T_cantidad";
+            this.T_cantidad.Size = new System.Drawing.Size(115, 20);
+            this.T_cantidad.TabIndex = 12;
+            this.T_cantidad.Text = "1";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(299, 236);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(52, 13);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Cantidad:";
+            // 
             // FormUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -509,5 +530,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox T_cantidad;
     }
 }
