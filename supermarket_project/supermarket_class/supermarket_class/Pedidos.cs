@@ -11,6 +11,12 @@ namespace supermarket_class
         int id_user;
         string fecha;
 
+        /// <summary>
+        /// Contructor de pedidos
+        /// </summary>
+        /// <param name="_id_pedido">Atributo para el id del pedido</param>
+        /// <param name="_id_user">Atributo para el id del usuario</param>
+        /// <param name="_fecha">Atributo para la fecha en la que se realiza el pedido</param>
         public Pedidos(int _id_pedido, int _id_user, string _fecha) 
         {
             this.id_pedido = _id_pedido;

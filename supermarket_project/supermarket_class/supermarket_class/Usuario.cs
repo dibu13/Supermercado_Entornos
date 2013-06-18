@@ -15,6 +15,16 @@ namespace supermarket_class
         public string contraseña_user;
         public bool admin_user;
 
+        /// <summary>
+        /// Contructor de usuarios
+        /// </summary>
+        /// <param name="_id_user">Atributo para el id del usuario</param>
+        /// <param name="_dni_user">Atributo para el dni del usuario</param>
+        /// <param name="_nombre_user">Atributo para el nombre del usuario</param>
+        /// <param name="_direccion_user">Atributo para la direccion del usuario</param>
+        /// <param name="_email_user">Atributo para el email del usuario</param>
+        /// <param name="_contraseña_user">Atributo para la contraseña del usuario</param>
+        /// <param name="_admin_user">Atributo para indicar si el usuario es administrador</param>
         public Usuario(int _id_user, string _dni_user, string _nombre_user, string _direccion_user, string _email_user, string _contraseña_user, bool _admin_user)
         {
             this.id_user = _id_user;

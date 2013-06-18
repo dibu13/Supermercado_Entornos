@@ -12,6 +12,17 @@ namespace supermarket_class
         Administrador(int _id_user, string _dni_user, string _nombre_user, string _direccion_user, string _email_user, string _contraseña_user, bool _admin_user) : base(_id_user, _dni_user, _nombre_user, _direccion_user, _email_user, _contraseña_user, _admin_user){ }
 
         #region Metodos usuarios
+        
+        /// <summary>
+        /// Crea un usuario nuevo con los datos de los textbox
+        /// </summary>
+        /// <param name="T_Id">Contenido Texbox para el id del usuario</param>
+        /// <param name="T_Dni">Contenido Texbox para el dni del usuario</param>
+        /// <param name="T_Nombre">Contenido Texbox para el nombre del usuario</param>
+        /// <param name="T_Direc">Contenido Texbox para la direccion del usuario</param>
+        /// <param name="T_Email">Contenido Texbox para el email del usuario</param>
+        /// <param name="T_Pass">Contenido Texbox para la contraseña del usuario</param>
+        /// <param name="T_Admin">Variable para indicar si el usuario sera admin</param>
         static public void crear_user(int T_Id, string T_Dni, string T_Nombre, string T_Direc, string T_Email, string T_Pass, bool T_Admin){
 
             StreamWriter fichero_users = new StreamWriter("Ficheros\\usuarios.txt", true);
@@ -23,6 +34,10 @@ namespace supermarket_class
 
         }
 
+        /// <summary>
+        /// Borra el usuario seleccionado en el listbox
+        /// </summary>
+        /// <param name="seleccionado">Variable con la seleccion del listbox</param>
         static public void borrar_user(string seleccionado)
         {
             List<Usuario> lista_user = new List<Usuario>();
@@ -61,6 +76,17 @@ namespace supermarket_class
             fichero_users_r.Close();
         }
 
+        /// <summary>
+        /// Guarda los datos cambiados en los textbox del usuario
+        /// </summary>
+        /// <param name="seleccionado">Variable con la seleccion del listbox</param>
+        /// <param name="T_Id">Contenido Texbox para el id del usuario</param>
+        /// <param name="T_Dni">Contenido Texbox para el dni del usuario</param>
+        /// <param name="T_Nombre">Contenido Texbox para el nombre del usuario</param>
+        /// <param name="T_Direc">Contenido Texbox para la direccion del usuario</param>
+        /// <param name="T_Email">Contenido Texbox para el email del usuario</param>
+        /// <param name="T_Pass">Contenido Texbox para la contraseña del usuario</param>
+        /// <param name="T_Admin">Variable para indicar si el usuario sera admin</param>
         static public void modificar_user(string seleccionado, int T_Id, string T_Dni, string T_Nombre, string T_Direc, string T_Email, string T_Pass, bool T_Admin)
         {
             List<Usuario> lista_user = new List<Usuario>();
@@ -106,6 +132,13 @@ namespace supermarket_class
 
         #region Metodos productos
 
+        /// <summary>
+        /// Crea un producto nuevo con los datos de los textbox
+        /// </summary>
+        /// <param name="T_id_P">Contenido Texbox para el id del producto</param>
+        /// <param name="T_id_cat_P">Contenido Texbox para el id de la categoria</param>
+        /// <param name="T_nom_P">Contenido Texbox para el nombre del producto</param>
+        /// <param name="T_precio_P">Contenido Texbox para el precio del producto</param>
         static public void crear_productos(int T_id_P, int T_id_cat_P, string T_nom_P, double T_precio_P)
         {
             StreamWriter fichero_productos = new StreamWriter("Ficheros\\productos.txt", true);
@@ -115,6 +148,10 @@ namespace supermarket_class
             fichero_productos.Close();
         }
 
+        /// <summary>
+        /// Borra el producto seleccionado en el listbox
+        /// </summary>
+        /// <param name="seleccionado">Variable con la seleccion del listbox</param>
         static public void borrar_prod(string seleccionado)
         {
             List<Producto> lista_productos = new List<Producto>();
@@ -152,6 +189,14 @@ namespace supermarket_class
 
         }
 
+        /// <summary>
+        /// Guarda los datos cambiados en los textbox del producto
+        /// </summary>
+        /// <param name="seleccionado">Variable con la seleccion del listbox</param>
+        /// <param name="T_id_P">Contenido Texbox para el id del producto</param>
+        /// <param name="T_id_cat_P">Contenido Texbox para el id de la categoria</param>
+        /// <param name="T_nom_P">Contenido Texbox para el nombre del producto</param>
+        /// <param name="T_precio_P">Contenido Texbox para el precio del producto</param>
         static public void modificar_prod(string seleccionado, int T_id_P, int T_id_cat_P, string T_nom_P, double T_precio_P)
         {
             List<Producto> lista_productos = new List<Producto>();
@@ -195,6 +240,11 @@ namespace supermarket_class
 
         #region Metodos categorias
 
+        /// <summary>
+        /// Crea una categoria nueva con los datos de los textbox
+        /// </summary>
+        /// <param name="T_IdCat">Contenido Texbox para el id de la categoria</param>
+        /// <param name="T_NombreCat">Contenido Texbox para el nombre de la categoria</param>
         static public void crear_categorias(int T_IdCat, string T_NombreCat)
         {
             StreamWriter fichero_categorias = new StreamWriter("Ficheros\\categorias.txt", true);
@@ -204,6 +254,10 @@ namespace supermarket_class
             fichero_categorias.Close();
         }
 
+        /// <summary>
+        /// Borra la categoria seleccionada en el listbox
+        /// </summary>
+        /// <param name="seleccionado">Variable con la seleccion del listbox</param>
         static public void borrar_categoria(string seleccionado)
         {
             List<Categoria> lista_cat = new List<Categoria>();
@@ -234,6 +288,12 @@ namespace supermarket_class
             fichero_categorias_r.Close();
         }
 
+        /// <summary>
+        /// Guarda los datos cambiados en los textbox de la categoria
+        /// </summary>
+        /// <param name="seleccionado">Variable con la seleccion del listbox</param>
+        /// <param name="T_IdCat">Contenido Texbox para el id de la categoria</param>
+        /// <param name="T_NombreCat">Contenido Texbox para el nombre de la categoria</param>
         static public void modificar_categoria(string seleccionado, int T_IdCat, string T_NombreCat)
         {
             List<Categoria> lista_cat = new List<Categoria>();
