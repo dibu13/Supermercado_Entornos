@@ -83,7 +83,6 @@ namespace supermarket
 
         private void B_Enviaralcarro_Click(object sender, EventArgs e) {
             if ((string)ListaProductos.SelectedItem != null) {
-                //ListaProductos.SelectedItem
                 ListaCarro.Items.Add((string)ListaProductos.SelectedItem);
             }
             else {
@@ -91,11 +90,8 @@ namespace supermarket
             }
             
         }
-        /*private void FormUsuario_FormClose(object sender, FormClosedEventArgs e) {
-            Application.Exit();
-        }*/
         private void button2_Click(object sender, EventArgs e) {
-
+            Cliente.finalizar_carro(cl);
         }
 
         private void B_CerrarSesion_Click(object sender, EventArgs e) {

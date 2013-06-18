@@ -54,5 +54,33 @@ namespace supermarket_class
             fichero_users_r.Close();
         }
 
+        static public void finalizar_carro(Cliente cl)
+        {
+            StreamReader fichero_pedidos_w = new StreamReader("Ficheros\\pedidos.txt");
+            string linea = "";
+            int id = 0;
+            while ((linea = fichero_pedidos_w.ReadLine()) != null)
+            {
+                string[] datos = linea.Split(new char[] { '#' });
+
+                int id_pedido = Convert.ToInt32(datos[0]);
+
+                if (id_pedido > id) {
+                    id = id_pedido;
+                }
+
+            }
+
+            id++;
+
+            fichero_pedidos_w.Close();
+
+            StreamWriter fichero_pedidos = new StreamWriter("Ficheros\\pedidos.txt", true);
+
+            fichero_pedidos.WriteLine(id + "#" + cl.id_user + "#" + DateTime.Now.ToShortDateString());
+
+            fichero_pedidos.Close();
+        }
+
     }
 }
