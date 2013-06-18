@@ -148,6 +148,8 @@ namespace supermarket_class
                 fichero_productos_r.WriteLine(item.id_prod + "#" + item.id_prod + "#" + item.nombre_prod + "#" +  item.precio_prod);
             }
             fichero_productos_r.Close();
+
+
         }
 
         static public void modificar_prod(string seleccionado, int T_id_P, int T_id_cat_P, string T_nom_P, double T_precio_P)

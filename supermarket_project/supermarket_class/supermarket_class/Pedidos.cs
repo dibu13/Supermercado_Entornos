@@ -5,7 +5,7 @@ using System.Text;
 
 namespace supermarket_class
 {
-    class Pedidos
+    public class Pedidos
     {
         int id_pedido;
         int id_user;

@@ -12,6 +12,7 @@ using supermarket_class;
 namespace supermarket
 {
     public partial class FormAdministrador : Form
+
     {
         public FormAdministrador(string user)
         {
@@ -51,6 +52,19 @@ namespace supermarket
             }
 
             fichero_categorias.Close();
+
+            StreamReader fichero_pedidos = new StreamReader("Ficheros\\pedidos.txt");
+            string linea2 = "";
+            while ((linea2 = fichero_pedidos.ReadLine()) != null)
+            {
+                string[] datos2 = linea2.Split(new char[] { '#' });
+                int id_pedido = Convert.ToInt32(datos2[0]);
+                int id_user = Convert.ToInt32(datos2[1]);
+                string fecha = datos2[2];
+                dataGridView1.Rows.Add(datos2[0],datos2[1],datos2[2]);
+            }
+            fichero_pedidos.Close();
+
 
         }
 

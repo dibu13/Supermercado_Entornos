@@ -63,7 +63,6 @@
             this.ListaCarro = new System.Windows.Forms.ListBox();
             this.label9 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.B_VerPedidos = new System.Windows.Forms.Button();
             this.ListaPedidos = new System.Windows.Forms.ListBox();
             this.label10 = new System.Windows.Forms.Label();
             this.LabelUser = new System.Windows.Forms.Label();
@@ -399,7 +398,6 @@
             // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.B_VerPedidos);
             this.tabPage4.Controls.Add(this.ListaPedidos);
             this.tabPage4.Controls.Add(this.label10);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
@@ -408,15 +406,6 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Pedidos";
             this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // B_VerPedidos
-            // 
-            this.B_VerPedidos.Location = new System.Drawing.Point(285, 39);
-            this.B_VerPedidos.Name = "B_VerPedidos";
-            this.B_VerPedidos.Size = new System.Drawing.Size(75, 23);
-            this.B_VerPedidos.TabIndex = 2;
-            this.B_VerPedidos.Text = "Ver Pedidos";
-            this.B_VerPedidos.UseVisualStyleBackColor = true;
             // 
             // ListaPedidos
             // 
@@ -527,7 +516,6 @@
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.ListBox ListaPedidos;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button B_VerPedidos;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label6;

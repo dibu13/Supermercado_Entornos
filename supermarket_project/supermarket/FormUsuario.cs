@@ -53,7 +53,24 @@ namespace supermarket
 
             fichero_productos.Close();
 
+            StreamReader fichero_pedidos = new StreamReader("Ficheros\\pedidos.txt");
+            string linea2;
+            string[] datos2 = null;
+
+            while ((linea2 = fichero_pedidos.ReadLine()) != null)
+            {
+                datos2 = linea2.Split(new char[] { '#' });
+                if(Convert.ToInt32(datos2[1])==cl.id_user)
+                {
+                    ListaPedidos.Items.Add(datos2[2]);
+            
+                }
+            }
+            fichero_pedidos.Close();
+
         }
+
+
 
         private void B_VerProductos_Click(object sender, EventArgs e) {
            
